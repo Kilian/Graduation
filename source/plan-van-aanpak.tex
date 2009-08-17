@@ -1,24 +1,53 @@
-\documentclass[a4paper, 10pt, twoside, pdftex]{article}
-	\usepackage[dutch]{babel}
-	\usepackage{fullpage}
-	\linespread{1.04}
+\documentclass[a4paper, 10pt, pdftex]{article}
+  \usepackage[dutch]{babel}
+  %\usepackage{fullpage}
+  \usepackage{times}
+  \usepackage{ulem}
+  \usepackage{alltt}
 
-\title{\textsc{Gebruiksvriendelijkheid van Sociale Netwerken} \linebreak $Plan~van~Aanpak$}
-\author{Kilian Valkhof}
-\date{17 augustus 2009}
-\makeindex
+  \linespread{1.04}
+
+  %prettypage
+  \usepackage{lastpage}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyfoot{}
+
+  \lhead{}
+  \rhead{}
+  \rfoot{\thepage~van \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+
+
+	% List items
+	\renewcommand{\theenumi}{\roman{enumi}}
+	\renewcommand{\labelenumi}{\theenumi}
+	\renewcommand{\theenumii}{\alph{enumii}}
+	\renewcommand{\labelenumii}{\theenumii}
+
+  % metadata
+  \title{\textsc{Gebruiksvriendelijkheid van Sociale Netwerken} \linebreak $Plan~van~Aanpak$}
+  \author{\textbf{Kilian Valkhof}\\
+  Hogeschool Rotterdam\\
+  \\
+  \textit{Stagebegeleider:} Sandra Hekkelman\\
+  \textit{Tweede begeleider:}\\
+  \textit{Bedrijfsbegeleider:} Robert Gaal}
+
+  \date{\today}
+
+  \makeindex
 
 \begin{document}
+  \normalem
+  \maketitle
 
-\maketitle
+  \newpage
+  \tableofcontents
 
-\begin{quote}
-
-\end{quote}
-\newpage
-\tableofcontents
-
-\newpage
+  \newpage
 \section{Aanleiding}
 In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
 en gebruiksvriendelijkheid voor websites hebben terecht een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
@@ -41,9 +70,9 @@ Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn soc
 
 \section{Probleemstelling}
 Deze afstudeerstage heeft de volgende onderzoeksvraag:
-\begin{quote}
+\begin{quotation}
  \textbf{Hebben sociale netwerken andere eisen op het gebied van gebruiksvriendelijkheid dan de huidige inzichten op webgebied, welke zijn dat en hoe verhoud het sociaal netwerk Wakoopa zich tot deze eisen?}
-\end{quote}
+\end{quotation}
 
 
 \section{Onderzoeksvragen}
@@ -105,10 +134,10 @@ Dit project zal zich, hoewel het in beginsel over sociale netwerken in het algem
 In hoeverre we gebruik kunnen maken van technieken zoals A/B testen is nog niet bekend, en zal per item moeten worden besproken met de bedrijfsbegeleider om er voor te zorgen dat het niet nadelig voor Wakoopa werkt.
 
 \section{Producten}
-\begin{itemize}
+\begin{enumerate}
 \item
 Een usability onderzoeksverslag met daarin de bevindingen van:
-  \begin{itemize}
+  \begin{enumerate}
   \item
   De geanalyseerde expert reviews
   \item
@@ -121,7 +150,7 @@ Een usability onderzoeksverslag met daarin de bevindingen van:
   Analyse van de statistieken en A/B testen
   \item
   Eigen Expert review
-  \end{itemize}
+  \end{enumerate}
 \item
 Usabilityverbeteringen doorgevoerd op Wakoopa
 
@@ -134,7 +163,7 @@ De best werkende aanbevelingen worden gebundeld in een kort "Best practices" art
 Scriptieverslag
 
 Dit alles wordt beschreven in het scriptieverslag
-\end{itemize}
+\end{enumerate}
 
 
 \section{Kosten en Baten}
@@ -161,8 +190,8 @@ Door een goede planning te maken qua onderzoek hou ik voldoende tijd over om wij
 \section{Betrokken partijen}
 De betrokken partijen bij deze afstudeerscriptie zijn:
 \begin{center}
-\begin{tabular}{rlll}
-× & Functie & E-mail & Telefoonnummer\\
+\begin{tabular}{r|lll}
+× & Functie & E-mail & Telefoonnummer\\ \hline
 Kilian Valkhof & Afstudeerder & kilian@wakoopa.com & 06 40 96 84 20\\
 Robert Gaal & Bedrijfsbegeleider & Robert@wakoopa.com & 06 41 24 23 58\\
 Sandra Hekkelman & Stagebegeleider & × & ×
