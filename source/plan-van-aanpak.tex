@@ -1,13 +1,13 @@
 \documentclass[a4paper, 10pt, pdftex]{article}
   \usepackage[dutch]{babel}
   %\usepackage{fullpage}
-  \usepackage{times}
   \usepackage{ulem}
   \usepackage{alltt}
 
-  \linespread{1.04}
-
   %prettypage
+  \hoffset = -0.6in
+  \textwidth = 6in
+
   \usepackage{lastpage}
   \usepackage{fancyhdr}
   \pagestyle{fancy}
@@ -21,14 +21,14 @@
   \renewcommand{\footrulewidth}{0.4pt}
 
 
-	% List items
-	\renewcommand{\theenumi}{\roman{enumi}}
-	\renewcommand{\labelenumi}{\theenumi}
-	\renewcommand{\theenumii}{\alph{enumii}}
-	\renewcommand{\labelenumii}{\theenumii}
+  % List items
+  \renewcommand{\theenumi}{\roman{enumi}}
+  \renewcommand{\labelenumi}{\theenumi}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\theenumii}
 
   % metadata
-  \title{\textsc{Gebruiksvriendelijkheid van Sociale Netwerken} \linebreak $Plan~van~Aanpak$}
+  \title{\textsc{Gebruiksvriendelijkheid~van Sociale~Netwerken} \linebreak $Plan~van~Aanpak$}
   \author{\textbf{Kilian Valkhof}\\
   Hogeschool Rotterdam\\
   \\
@@ -36,7 +36,7 @@
   \textit{Tweede begeleider:}\\
   \textit{Bedrijfsbegeleider:} Robert Gaal}
 
-  \date{\today}
+  \date{17 augustus 2009 -- \today}
 
   \makeindex
 
@@ -50,22 +50,22 @@
   \newpage
 \section{Aanleiding}
 In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
-en gebruiksvriendelijkheid voor websites hebben terecht een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
-als Jacob Neilsen en Jesse James Garret het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
+en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
+als Jacob Neilsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
 om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
 informatieve websites (nieuwssites, bedrijfswebsites en weblogs) en minder op de nieuwe vorm van websites: social networks.
 
-Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van actief lezen ---
-leek het mij dat dit gevolgen heeft voor de gebruiksvriendelijkheid
-van sociale netwerken. Mijn afstudeerbedrijf, $Wakoopa$, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren
-van de gebruikersvriendelijkheid van hun site en het uitvinden welke regels er gelden rondom de gebruikersvriendelijkheid van sociale netwerken.
+Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van passief lezen ---
+lijkt het dat dit gevolgen heeft voor de gebruiksvriendelijkheid
+van sociale netwerken. Mijn afstudeerbedrijf, \emph{Wakoopa}, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren
+van de gebruikersvriendelijkheid van de website en het uitvinden welke regels er gelden rondom de gebruikersvriendelijkheid van sociale netwerken.
 
-Gedurende mijn minor user experience design heb ik veel aandacht besteeds aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design
+Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design
 goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
 
 \section{Doelstelling}
 Het doel van deze afstudeerstage is het uitvinden wat gebruiksvriendelijkheid voor sociale netwerken anders maakt, en welke regels voor dit type websites gelden.
-Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus.
+Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus.
 
 
 \section{Probleemstelling}
@@ -79,7 +79,7 @@ Deze afstudeerstage heeft de volgende onderzoeksvraag:
 \begin{quote}
  \textbf{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
 \end{quote}
-Er zijn een aantal onderzoeken over sociale netwerken in het algemeen, en een aantal usability onderzoeken specifiek voor Wakoopa. Ik begin met een analyse van deze onderzoeken, waar mogelijk aan de hand van de Heuristics van Nielssen, hier komen een aantal globaal geldende conclusies en een aantal specifiek voor Wakoopa.
+Er zijn een aantal onderzoeken over sociale netwerken in het algemeen, en een aantal usability onderzoeken specifiek voor Wakoopa. Ik begin met een analyse van deze onderzoeken, waar mogelijk aan de hand van de Heuristics van Nielssen. Daaruit komen een aantal globaal geldende conclusies en een aantal specifiek voor Wakoopa.
 
 \begin{quote}
 \textbf{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
@@ -113,7 +113,7 @@ In dit hoofdstuk wil ik een checklist voor sociale netwerken opzetten waarmee an
 \section{Projectactiviteiten en Planning}
 Deze afstudeerstage bestaat uit een aantal fasen:
 
-\begin{itemize}
+\begin{enumerate}
 \item
 Analyse van bestaande literatuur
 \item
@@ -126,7 +126,21 @@ Vergelijken met bestaande literatuur
 Doorvoeren op de website van Wakoopa
 \item
 Evalueren
-\end{itemize}
+\end{enumerate}
+
+Deze activiteiten zal ik in iteraties van 2 weken uitvoeren, waarbij ik de eerste en de laatste week gebruik voor opstarten en afronden. In totaal komt dit uit op 7 iteraties. Na elke iteratie evalueer ik het gedane werk en per iteratie gebruik ik éen onderzoeksmethode. Dit met uitzondering van week 14 -- 15, waar ik de statistiek en A/B tests herhaal. Dit doe ik omdat deze na de verbeteringen uit de andere fasen het snelst nieuwe inzichten zullen geven. De planning inclusief onderzoeksmethodes ziet er zo uit:
+
+\begin{enumerate}
+\item Plan van aanpak, vinden referenties, \emph{opstarten} --- Week 1
+\item Analyse Literatuur --- Week 2 -- 3
+\item Analyse bestaande expert reviews Wakoopa --- Week 4 -- 5
+\item Statistiek en A/B testen --- Week 6 -- 7
+\item Analyse Enquetering --- Week 8 -- 9
+\item Interviews --- Week 10 -- 11
+\item Lab tests --- Week 12 -- 13
+\item nogmaals statistiek en A/B testen --- week 14 -- 15
+\item \emph{afronding} --- week 16
+\end{enumerate}
 
 \section{Projectgrenzen}
 Dit project zal zich, hoewel het in beginsel over sociale netwerken in het algemeen gaat, richten op het sociale netwerk Wakoopa. Dit doen we omdat hier naast een expert review ook andere analyse op kan worden toegepast, zoals analyse van de statistieken en interviewen van gebruikers.
@@ -147,9 +161,9 @@ Een usability onderzoeksverslag met daarin de bevindingen van:
   \item
   De gebruikersinterviews
   \item
-  Analyse van de statistieken en A/B testen
+  De lab tests
   \item
-  Eigen Expert review
+  Analyse van de statistieken en A/B testen
   \end{enumerate}
 \item
 Usabilityverbeteringen doorgevoerd op Wakoopa
@@ -181,20 +195,25 @@ Dit ondervang ik door duidelijke afspraken met mijn bedrijfsbegeleider qua opdra
 \item
 Het niet volledig kunnen onderzoeken van usability vanwege de benodigde aanpassingen aan de website.
 
-Dit ondervang ik door de grote hoeveelheid onderzoek die er al is gedaan, wat ik kan analyseren.
+Dit ondervang ik door de grote hoeveelheid onderzoek dat er al is gedaan wat ik kan analyseren, en door ook onderzoeksmethoden te gebruiken die niet van invloed zijn op de website.
+
 \item
 Niet toekomen aan het doorvoeren van de wijzigingen vanwege de grootte van het onderzoek.
 
-Door een goede planning te maken qua onderzoek hou ik voldoende tijd over om wijzigingen ook in de praktijk te brengen
+Door niet met de watervalmethode, maar met een iteratieve methode te werken, zorg ik er voor dat zowel onderzoek als uitvoering aan bod komen.
 \end{itemize}
+
+
 \section{Betrokken partijen}
 De betrokken partijen bij deze afstudeerscriptie zijn:
+
 \begin{center}
 \begin{tabular}{r|lll}
 × & Functie & E-mail & Telefoonnummer\\ \hline
 Kilian Valkhof & Afstudeerder & kilian@wakoopa.com & 06 40 96 84 20\\
 Robert Gaal & Bedrijfsbegeleider & Robert@wakoopa.com & 06 41 24 23 58\\
-Sandra Hekkelman & Stagebegeleider & × & ×
+Sandra Hekkelman & Stagebegeleider & s.m.hekkelman@hro.nl & × \\
+× & Tweede begeleider & × & ×
 \end{tabular}
 \end{center}
 
