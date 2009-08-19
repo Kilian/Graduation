@@ -4,29 +4,6 @@
   \usepackage{ulem}
   \usepackage{alltt}
 
-  %prettypage
-  \hoffset = -0.6in
-  \textwidth = 6in
-
-  \usepackage{lastpage}
-  \usepackage{fancyhdr}
-  \pagestyle{fancy}
-  \fancyhead{}
-  \fancyfoot{}
-
-  \lhead{}
-  \rhead{}
-  \rfoot{\thepage~van \pageref{LastPage}}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0.4pt}
-
-
-  % List items
-  \renewcommand{\theenumi}{\roman{enumi}}
-  \renewcommand{\labelenumi}{\theenumi}
-  \renewcommand{\theenumii}{\alph{enumii}}
-  \renewcommand{\labelenumii}{\theenumii}
-
   % metadata
   \title{\textsc{Gebruiksvriendelijkheid~van Sociale~Netwerken} \linebreak $Plan~van~Aanpak$}
   \author{\textbf{Kilian Valkhof}\\
@@ -39,6 +16,30 @@
   \date{17 augustus 2009 -- \today}
 
   \makeindex
+
+
+  %prettypage
+  \hoffset = -0.6in
+  \textwidth = 6in
+
+  \usepackage{lastpage}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyfoot{}
+
+  \lhead{}
+  \rhead{}
+  \lfoot{$Plan~van~Aanpak$}
+  \rfoot{\thepage~van \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+
+  % List items
+  \renewcommand{\theenumi}{\roman{enumi}}
+  \renewcommand{\labelenumi}{\theenumi}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\theenumii}
 
 \begin{document}
   \normalem
@@ -76,39 +77,37 @@ Deze afstudeerstage heeft de volgende onderzoeksvraag:
 
 
 \section{Onderzoeksvragen}
-\begin{quote}
+\begin{enumerate}
+\item
  \textbf{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
-\end{quote}
+
 Er zijn een aantal onderzoeken over sociale netwerken in het algemeen, en een aantal usability onderzoeken specifiek voor Wakoopa. Ik begin met een analyse van deze onderzoeken, waar mogelijk aan de hand van de Heuristics van Nielssen. Daaruit komen een aantal globaal geldende conclusies en een aantal specifiek voor Wakoopa.
 
-\begin{quote}
+\item
 \textbf{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
-\end{quote}
+
 Door gebruikersonderzoek binnen de leden van Wakoopa doe ik onderzoek naar hun meningen. Dit wil ik kwantitatief d.m.v. A/B-testen, statistiekanalyse en een survey en analyse daarvan, en kwalitatief door middel van interviews en remote/lab tests onderzoeken.
 
-
-\begin{quote}
+\item
 \textbf{Hoe verhouden de bevindingen van de onderzoeken zich tot algemeen geaccepteerde usability standaarden?}
-\end{quote}
+
 Hierin kijk ik naar welke usabilitystandaarden voor het wel web er nu zijn. Na dit ge\"{i}ntroduceerd te hebben zal ik de conclusies uit de vorige hoofdstukken vergelijken met deze standaarden.
 
-
-\begin{quote}
+\item
 \textbf{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
-\end{quote}
+
 Kijkend naar de conclusies van de vorige hoofdstukken, hoe kan Wakoopa verbeterd worden?
 
-
-\begin{quote}
+\item
 \textbf{Welke eisen hebben sociale netwerken op het gebied van usability?}
-\end{quote}
+
 Hierin beantwoord ik het belangrijkste gedeelte van de hoofdvraag, met conclusies gebaseerd op de vorige hoofdstukken
 
-
-\begin{quote}
+\item
 \textbf{Wat zijn de quick wins op het gebied van usability voor sociale netwerken?}
-\end{quote}
+
 In dit hoofdstuk wil ik een checklist voor sociale netwerken opzetten waarmee andere bedrijven hun sociale netwerk onder de loep kunnen nemen.
+\end{enumerate}
 
 \section{Projectactiviteiten en Planning}
 Deze afstudeerstage bestaat uit een aantal fasen:
@@ -130,20 +129,30 @@ Evalueren
 
 Deze activiteiten zal ik in iteraties van 2 weken uitvoeren, waarbij ik de eerste en de laatste week gebruik voor opstarten en afronden. In totaal komt dit uit op 7 iteraties. Na elke iteratie evalueer ik het gedane werk en per iteratie gebruik ik éen onderzoeksmethode. Dit met uitzondering van week 14 -- 15, waar ik de statistiek en A/B tests herhaal. Dit doe ik omdat deze na de verbeteringen uit de andere fasen het snelst nieuwe inzichten zullen geven. De planning inclusief onderzoeksmethodes ziet er zo uit:
 
-\begin{enumerate}
-\item Plan van aanpak, vinden referenties, \emph{opstarten} --- Week 1
-\item Analyse Literatuur --- Week 2 -- 3
-\item Analyse bestaande expert reviews Wakoopa --- Week 4 -- 5
-\item Statistiek en A/B testen --- Week 6 -- 7
-\item Analyse Enquetering --- Week 8 -- 9
-\item Interviews --- Week 10 -- 11
-\item Lab tests --- Week 12 -- 13
-\item nogmaals statistiek en A/B testen --- week 14 -- 15
-\item \emph{afronding} --- week 16
-\end{enumerate}
-
+\begin{flushleft}
+  \begin{enumerate}
+    \item Plan van aanpak, vinden referenties, \emph{opstarten}
+      \linebreak Week 1
+    \item Analyse Literatuur
+      \linebreak Week 2 -- 3
+    \item Analyse bestaande expert reviews Wakoopa
+      \linebreak Week 4 -- 5
+    \item Statistiek en A/B testen
+      \linebreak Week 6 -- 7
+    \item Analyse Enquetering
+      \linebreak Week 8 -- 9
+    \item Interviews
+      \linebreak Week 10 -- 11
+    \item Lab tests
+      \linebreak Week 12 -- 13
+    \item Nogmaals statistiek en A/B testen
+      \linebreak week 14 -- 15
+    \item \emph{afronding}
+      \linebreak week 16
+  \end{enumerate}
+\end{flushleft}
 \section{Projectgrenzen}
-Dit project zal zich, hoewel het in beginsel over sociale netwerken in het algemeen gaat, richten op het sociale netwerk Wakoopa. Dit doen we omdat hier naast een expert review ook andere analyse op kan worden toegepast, zoals analyse van de statistieken en interviewen van gebruikers.
+Dit project zal zich, hoewel het in beginsel over sociale netwerken in het algemeen gaat, richten op het sociale netwerk Wakoopa. Dit doen we omdat hier naast een expert review ook andere analyse op kan worden toegepast, zoals analyse van de statistieken en interviewen van gebruikers. Ik weerhoud mij dan ook van het doen van uitspraken over andere sociale netwerken specifiek, met uitzondering van de quick wins voor social networks in het algemeen.
 
 In hoeverre we gebruik kunnen maken van technieken zoals A/B testen is nog niet bekend, en zal per item moeten worden besproken met de bedrijfsbegeleider om er voor te zorgen dat het niet nadelig voor Wakoopa werkt.
 
@@ -202,7 +211,6 @@ Niet toekomen aan het doorvoeren van de wijzigingen vanwege de grootte van het o
 
 Door niet met de watervalmethode, maar met een iteratieve methode te werken, zorg ik er voor dat zowel onderzoek als uitvoering aan bod komen.
 \end{itemize}
-
 
 \section{Betrokken partijen}
 De betrokken partijen bij deze afstudeerscriptie zijn:

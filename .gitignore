@@ -3,5 +3,7 @@ source/*.idx
 source/*.log
 source/*.toc
 source/*.pdf
-spirce/*.xml
+source/*.xml
+source/*.bbl
+source/*.blg
 
