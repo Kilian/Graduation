@@ -1,0 +1,218 @@
+\documentclass[a4paper, 10pt, pdftex]{article}
+  \usepackage[dutch]{babel}
+  %\usepackage{fullpage}
+  \usepackage{ulem}
+  \usepackage{alltt}
+  \usepackage{amssymb}
+
+  \usepackage{natbib}
+  \bibpunct{(}{)}{;}{a}{,}{,}
+
+  % metadata
+  \title{\textsc{Gebruiksvriendelijkheid~van Sociale~Netwerken} \linebreak (werktitel) \linebreak $Afstudeerverslag$}
+  \author{\textbf{Kilian Valkhof}\\
+  Hogeschool Rotterdam\\
+  \\
+  \textit{Stagebegeleider:} Sandra Hekkelman\\
+  \textit{Tweede begeleider:}\\
+  \textit{Bedrijfsbegeleider:} Robert Gaal}
+
+  \date{17 augustus 2009 -- \today}
+
+  \makeindex
+
+
+  %prettypage
+  \hoffset = -0.6in
+  \textwidth = 6in
+
+  \usepackage{lastpage}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyfoot{}
+
+  \lhead{}
+  \rhead{}
+  \lfoot{$Afstudeerverslag$}
+  \rfoot{\thepage~van \pageref{LastPage}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+
+  % List items
+  \renewcommand{\theenumi}{\roman{enumi}}
+  \renewcommand{\labelenumi}{\theenumi}
+  \renewcommand{\theenumii}{\alph{enumii}}
+  \renewcommand{\labelenumii}{\theenumii}
+
+\begin{document}
+  \normalem
+  \maketitle
+
+  \newpage
+  \tableofcontents
+
+  \newpage
+  \section{Introductie}
+    \subsection{Introductie van Wakoopa}
+      Een korte introductie van Wakoopa is voor het verdere verslag van belang, zodat de lezer een duidelijk beeld heeft van Wakoopa als social network en de mogelijkheden daarvan. Op de About pagina van Wakoopa \citep{Gaal2007} staat de volgende beschrijving:
+        \begin{quote} Wakoopa is a social network that helps people discover the best software, games and web apps on the market. Sign-up, install a small tracker on your desktop and automatically create your online software profile that you can share with friends and the world, also through widgets. Wakoopa keeps you updated about what your contacts are using, and sends you smart recommendations. Games, audio \& video players, instant messengers or office tools: Wakoopa knows what's hot.
+        \end{quote}
+      Door het installeren van een kleine applicatie op je computer (de tracker), kan Wakoopa bijhouden welke applicaties je allemaal op je computer gebruikt. Deze gegevens worden in een online profiel weergegeven. Daarnaast kunnen gebruikers hun mening geven over de applicaties die zij gebruiken. Dit wordt gecombineerd met een sociaal aspect van het leggen van contacten, het maken van teams, het behalen van punten en het \emph{raten} van applicaties.
+
+        \subsubsection{Het sociale aspect van Wakoopa}
+        In hun paper \emph{Functionality for learning networks: lessons learned from social web application} noemen \citeauthor*{Berlanga2007} een aantal kenmerken van sociale netwerken die ook \emph{learning networks} zijn. In plaats van het maken van contacten is het focuspunt van deze sociale netwerken objecten. Een voorbeeld hiervan is Flickr, een sociaal network rondom foto's. Op Wakoopa zijn deze objecten de applicaties die je gebruikt. Om vast te stellen of Wakoopa onder dezelfde categorie valt en om een overzicht te geven van de functionaliteit die Wakoopa biedt, zullen we Wakoopa vergelijken met de kenmerken die \citeauthor{Berlanga2007} hebben opgesteld. Zie hiervoor tabellen \ref{tab:functies} \ref{tab:acties} en \ref{tab:metaacties}
+
+         De drie door \citeauthor{Berlanga2007}  onderzochte social networks (Delicious, Youtube en Flickr) Bevatten niet \emph{alle} omschreven functionaliteit, maar evenals Wakoopa wel het merendeel van de genoemde items. Hiermee kunnen we Wakoopa als een social web application aanduiden. Een verduidelijking van de omschreven functionaliteit is te vinden in \citet{Berlanga2007}.
+
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{r|l}
+          × & Wakoopa \\ \hline
+          Profile & \checkmark \\
+          Contacts & \checkmark \\
+          Resources & \\
+          Tagging & \checkmark
+        \end{tabular}
+        \caption{Self-management functionality}
+        \label{tab:functies}
+        \end{table}
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{r|l}
+        \label{acties}
+          × & Wakoopa \\ \hline
+          Comment & \checkmark \\
+          Recommend & \\
+          Copy & \\
+          Subscribe & \checkmark \\
+          Add as favourite & \checkmark \\
+          Rate & \checkmark \\
+          Related resources & \checkmark \\
+          Search & Software, Users, Teams, Developers
+        \end{tabular}
+        \caption{Self-organisation functionality}
+        \label{tab:acties}
+        \end{table}
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{r|l}
+        \label{metaacties}
+          Markeer\ldots & Wakoopa \\ \hline
+          Resources as offensive & \checkmark \\
+          Communities as offensive & \\
+          Private and public resources & \checkmark \\
+          Private and public communities/groups & \checkmark
+        \end{tabular}
+        \caption{Self-regulation functionality}
+        \label{tab:metaacties}
+        \end{table}
+
+
+
+
+
+
+  \newpage
+  \section{Voorwoord}
+
+    In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
+    en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
+    als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
+    om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
+    informatieve websites (nieuwssites, bedrijfswebsites en weblogs) en minder op de nieuwe vorm van websites: social networks.
+
+    Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van passief lezen ---
+    lijkt het dat dit gevolgen heeft voor de gebruiksvriendelijkheid
+    van sociale netwerken. Mijn afstudeerbedrijf, \emph{Wakoopa}, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren
+    van de gebruikersvriendelijkheid van de website en het uitvinden welke regels er gelden rondom de gebruikersvriendelijkheid van sociale netwerken.
+
+    Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
+
+
+
+  \newpage
+  \section{Samenvatting}
+
+  \newpage
+  \section{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
+      In dit hoofdstuk bekijken we wat er blijkt uit onderzoeken uitgevoerd door anderen op het gebied van usability en sociale netwerken, en hoe dit tot verhoging van de participatie leidt. We onderzoeken twee soorten bronnen: Papers die in het algemeen op sociale netwerken ingaan, en een drietal onderzoeken specifiek voor Wakoopa uitgevoerd.
+
+      De bevindingen van deze onderzoeken zullen waar mogelijk door middel van A/B testen doorgevoerd worden op Wakoopa. De resultaten hiervan zijn te vinden in Hoofdstuk \ref{datachapter}.
+
+    \subsection{Onderzoeken}
+      Er zijn een drietal onderzoeksinstellingen die veel onderzoek doen naar usability en social networks. Veel van hun papers worden dan ook gerefereerd in dit verslag. De drietal instellingen zijn:
+        \begin{itemize}
+          \item TENC --- TENCompetence
+          \item ACM --- Association for computing machinery
+          \item JCMC --- Journal of computer mediated communication
+        \end{itemize}
+      Naast de papers van deze instellingen, refereer ik ook naar enkele expert reviews.
+
+      \paragraph{\cite{Beenen2004}}
+
+      In \emph{Using social psychology to motivate contributions to online communities} onderzoeken \cite{Beenen2004} welke factoren en stimulansen bijdragen aan meer participatie van gebruikers, in hun case die van een filmsite. Door middel van een onderzoek met doelen voor gebruikers, waarbij ze de bewoording aanpasten, kwamen ze tot de conclusie dat, wanneer je aan een gebruiker duidelijk maakt hoe uniek ze zijn, ze dan veel meer zullen participeren op de website. Daarintegen is het heel lastig ze te motiveren. Enkel het noemen van voordelen om te participeren zorgt er volgens hun onderzoek voor dat mensen dat minder snel zullen doen. Een mogelijke verklaring die ze hiervoor geven is dat, wanneer mensen vertelt wordt dat ze iets moeten doen, ze minder snel geneigd zijn dat ook daadwerkelijk te doen.
+
+      Volgens het onderzoek werkt dit zo, omdat mensen gestimuleerd worden door intrensieke motivatie, maar juist minder snel zullen participeren wanneer ze een extrensieke motievatie wordt gegeven. De overkoepelende conclusie is dus dat je gebruikers moet tonen hoe uniek hun bijdragen zijn, zonder dat je daarbij vermeld wat de voordelen van deze bijdrages zijn.
+
+      Bij Wakoopa kan dit toegepast worden door bijvoorbeeld de \emph{call to actions} te bekijken, en ons af te vragen of dit slechts het noemen van een voordeel is, of laat zien op welke manier een gebruiker zich hiermee kan onderscheiden. Dit zullen we in Hoofdstuk \ref{datachapter} door middel van A/B testsen onderzoeken.
+
+     \paragraph{\cite{Sohn2005}}
+
+      In \emph{Dimensions of interactivity: Differential effects of social and psychological factors} onderzoeken \cite{Sohn2005} uit welke componenten interactiviteit bestaat, en welke eigenschappen of omgevingen van invloed zijn op deze componenten. Uit hun onderzoek blijkt dat interactie bestaat uit een drietal componenten:
+        \begin{enumerate}
+          \item Controle
+          \item Reactiekwaliteit
+          \item Werkbaarheid van de interactie
+        \end{enumerate}
+      Na analyse van de eigenschappen van proefpersonen en hun netwerk, kwamen er vier factoren uit die invloed hadden op de componenten van Interactiviteit. Deze zijn:
+        \begin{description}
+          \item[Need for cognition]
+            Need for cognition is een term die gebruikt wordt om aan te geven hoe leergierig je bent
+          \item[Web usage time]
+            De tijd die je op het web spendeert
+          \item[Communication direction]
+            de richting van de communicatie, dit kan naar de proefpersoon zijn, maar de proefpersoon kan tegen met andere mensen uit zijn netwerk praten.
+          \item[Network density]
+            Dit is de mate waarin de sociale relaties van de proefpersoon ook connecties met elkaar hebben. Met andere woorden: hoeveel van jouw vrienden kennen anderen van jouw vrienden?
+        \end{description}
+        Van deze vier factoren waren \emph{need for cognition} en \emph{web usage time} de sterkste indicatoren voor de mate waarin iemand interactiviteit ervaart. \emph{Need for cognition} had grote invloed op alle drie de componenten. \emph{Web usage time} enkel op de werkbaarheid van de interactie. \emph{Communition direction} en \emph{Network density} hebben beide invloed op de reactiekwaliteit.
+
+        \paragraph{}
+        Voor social networks betekent dit een aantal dingen:
+        \begin{itemize}
+          \item Maak het gemakkelijk om connecties met anderen te leggen (network density verhogen)
+          \item Zorg voor stimulansen die de nieuwschierigheid van gebruikers opwekken (need for cognition)
+          \item Zorg voor passieve berichtgeving van je netwerk, bijvoorbeeld wanneer connecties hun profiel wijzigen (communication directions)
+          \item Zorg ervoor dat gebruikers langere tijd iets op je site te doen hebben of redenen hebben om terug te keren(web usage time)
+        \end{itemize}
+
+  \newpage
+  \section{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
+
+  \newpage
+  \section{Welke verbeteringen vinden we door analyse van data?}
+    \label{datachapter}
+  \newpage
+  \section{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
+
+  \newpage
+  \section{Welke eisen hebben sociale netwerken op het gebied van usability?}
+
+  \newpage
+  \section{Wat zijn de quick wins op het gebied van usability voor sociale netwerken?}
+
+  \newpage
+  \section{Conclusie}
+
+  \newpage
+  \section{Discussie}
+
+  testreferentie.\citep{Boyd2002} %remove this!!
+
+  \bibliography{referenties}
+  \bibliographystyle{plainnat}
+
+
+\end{document}
+
