@@ -1,0 +1,23 @@
+A/B testen om in week 3 op te zetten (naar aanleiding van externe onderzoeken)
+
+- call to action titels op de homepagina
+    huidige titels of:
+      track your apps
+      discover new software
+      show what you use (new)
+      get updated by friends
+
+      (hierbij afhankelijk van wat interne onderzoeken zeggen)
+
+- plaatsing signup op homepagina
+    rechtsboven erbij
+    of niet
+
+- plaatsing signup op google-intro pages
+    linksboven
+    rechtsboven
+
+- aangeven welk detail ingevuld moet worden bij profielen-alert-bar
+-   mét call to action
+    zonder call to action
+
