@@ -141,7 +141,9 @@
 
   \newpage
   \section{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
-      In dit hoofdstuk bekijken we wat er blijkt uit onderzoeken uitgevoerd door anderen op het gebied van usability en sociale netwerken, en hoe dit tot verhoging van de participatie leidt. We onderzoeken twee soorten bronnen: Papers die in het algemeen op sociale netwerken ingaan, en een drietal onderzoeken specifiek voor Wakoopa uitgevoerd.
+    \label{researchchapter}
+
+    In dit hoofdstuk bekijken we wat er blijkt uit onderzoeken uitgevoerd door anderen op het gebied van usability en sociale netwerken, en hoe dit tot verhoging van de participatie leidt. We onderzoeken twee soorten bronnen: Papers die in het algemeen op sociale netwerken ingaan, en een drietal onderzoeken specifiek voor Wakoopa uitgevoerd.
 
       De bevindingen van deze onderzoeken zullen waar mogelijk door middel van A/B testen doorgevoerd worden op Wakoopa. De resultaten hiervan zijn te vinden in Hoofdstuk \ref{datachapter}.
 
@@ -222,6 +224,28 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
   \newpage
   \section{Welke verbeteringen vinden we door analyse van data?}
     \label{datachapter}
+    \subsection{A/B testing}
+    A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.
+
+   Het ontwikkelplatform wat Wakoopa gebruikt, Ruby on Rails, heeft door middel van een plugin de optie om A/B testen uit te voeren. Deze automatiseert het verdelen van de verschillende opties tussen bezoekers en houd per variatie bij hoe vaak de geteste links of functionaliteit aangeklikt wordt.
+
+    Naar aanleiding van de in Hoofdstuk \ref{researchchapter} genoemde onderzoeken hebben we een aantal A/B tests uitgevoerd, die hieronder beschreven staan:
+
+    \subsubsection{Plaats van de sign-up link op de homepagina}
+      Uit het onderzoek van \cite{Editorial2008} bleek dat de meeste social networks rechtbovenin een sign-up link hebben. Momenteel heeft Wakoopa enkel een sign-up link in het midden van de homepagina. In deze A/B test bekijken we of het toevoegen van een sign-up link in de rechterbovenhoek, naast de al aanwezige sign-up knop in het midden van de pagina, effect heeft op het aantal clicks.
+
+      [resultaten]
+
+    \subsubsection{Plaats van de sign-up link op landing pages}
+      In tegenstelling tot de homepagina hebben onze landing pages (Pagina's waar bezoekers via zoekmachines op terecht komen) wel een sign-up link in de header. Momenteel staat deze in de linkerbovenhoek. In deze A/B test bekijken we of een variate waarin deze in de rechterbovenhoek staat, tot meer clicks leidt dan wanneer deze in de linkerbovenhoek staat.
+
+      [resultaten]
+
+    \subsubsection{Het benoemen van de mate waarin een profiel is ingevuld}
+      Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.
+
+
+
   \newpage
   \section{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
 
