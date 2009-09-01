@@ -9,11 +9,11 @@ A/B testen om in week 3 op te zetten (naar aanleiding van externe onderzoeken)
 
       (hierbij afhankelijk van wat interne onderzoeken zeggen)
 
-- plaatsing signup op homepagina
+- plaatsing extra signup-link op homepagina
     enkel login rechtsboven
     login en signup rechtsboven
 
-- plaatsing signup op google-intro pages
+- plaatsing signup-cta op google-intro pages
     linksboven
     rechtsboven
 
