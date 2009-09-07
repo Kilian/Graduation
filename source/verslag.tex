@@ -10,17 +10,16 @@
   \bibpunct{(}{)}{;}{a}{,}{,}
 
   % metadata
-  \title{\textsc{Gebruiksvriendelijkheid~van Participatie op Sociale~Netwerken} \linebreak (werktitel) \linebreak \emph{Afstudeerverslag}}
+  \title{\textsc{Participatie op learning networks verhogen door middel van gebruiksvriendelijkheid} \linebreak (werktitel) \linebreak \emph{Projectverslag}}
   \author{\textbf{Kilian Valkhof}\\
   Hogeschool Rotterdam\\
   \textit{studentnr.:} 0783312\\
   \\
-  \textit{Stagebegeleider:} Sandra Hekkelman\\
+  \textit{Afstudeerbegeleider:} Sandra Hekkelman\\
   \textit{Tweede begeleider:}\\
   \\
   \textit{Bedrijf:} Wakoopa bv.\\
-  \textit{Bedrijfsbegeleider:} Robert Gaal}\\
-
+  \textit{Bedrijfsbegeleider:} Robert Gaal}
 
   \date{17 augustus 2009 -- \today}
 
@@ -58,21 +57,42 @@
   \end{center}
 
 
+
+  \newpage
+  \section{Samenvatting}
+\begin{enumerate}
+	\item
+\end{enumerate}
   \newpage
   \tableofcontents
 
   \newpage
   \section{Introductie}
+    In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
+  en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
+  als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
+  om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
+  informatieve websites (nieuwssites, bedrijfswebsites en weblogs) en minder op de nieuwe vorm van websites: social networks.
+
+    Een sociaal netwerk staat of valt bij participatie van haar gebruikers. Omdat de interactiviteit van dit soort websites zo'n grote rol speelt, is het belangrijk dat de gebruiker zo min mogelijk drempels tegen komt tijdens het gebruiken van de website. Het weghalen van drempels wordt gebruiksvriendelijkheid genoemd. Dit verslag richt zich op deze gebruiksvriendelijkheid met als doel de interactiviteit beter te laten verlopen en zo de participatie op het sociale netwerk te verhogen.
+
+  Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van passief lezen --- Denk ik dat dit gevolgen heeft voor de gebruiksvriendelijkheid. Waar gebruiksvriendelijkheid op informatieve websites gaat om het effectief vinden van informatie, is het hoofddoel van sociale netwerken de participatie. Mijn afstudeerbedrijf, \emph{Wakoopa}, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren van de gebruikersvriendelijkheid van de website en het uitvinden welke factoren voor meer participatie zorgen.
+
+    Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
+
+
+
+
     \subsection{Introductie van Wakoopa}
       Een korte introductie van Wakoopa is voor het verdere verslag van belang, zodat de lezer een duidelijk beeld heeft van Wakoopa als social network en de mogelijkheden daarvan. Op de About pagina van Wakoopa \citep{Gaal2007} staat de volgende beschrijving:
         \begin{quote} Wakoopa is a social network that helps people discover the best software, games and web apps on the market. Sign-up, install a small tracker on your desktop and automatically create your online software profile that you can share with friends and the world, also through widgets. Wakoopa keeps you updated about what your contacts are using, and sends you smart recommendations. Games, audio \& video players, instant messengers or office tools: Wakoopa knows what's hot.
         \end{quote}
       Door het installeren van een kleine applicatie op je computer (de tracker), kan Wakoopa bijhouden welke applicaties je allemaal op je computer gebruikt. Deze gegevens worden in een online profiel weergegeven. Daarnaast kunnen gebruikers hun mening geven over de applicaties die zij gebruiken. Dit wordt gecombineerd met een sociaal aspect van het leggen van contacten, het maken van teams, het behalen van punten en het \emph{raten} van applicaties.
 
-        \subsubsection{Het sociale aspect van Wakoopa}
+        \subsubsection{Wakoopa als learning network}
         In hun paper \emph{Functionality for learning networks: lessons learned from social web application} noemen \citeauthor{Berlanga2007} een aantal kenmerken van sociale netwerken die ook \emph{learning networks} zijn. In plaats van het maken van contacten is het focuspunt van deze sociale netwerken objecten. Een voorbeeld hiervan is Flickr, een sociaal network rondom foto's. Op Wakoopa zijn deze objecten de applicaties die je gebruikt. Om vast te stellen of Wakoopa onder dezelfde categorie valt en om een overzicht te geven van de functionaliteit die Wakoopa biedt, zullen we in tabellen \ref{tab:functies} \ref{tab:acties} en \ref{tab:metaacties} \label{learningnetwork} Wakoopa vergelijken met de kenmerken die \citeauthor{Berlanga2007} hebben opgesteld.
 
-         De drie door \citeauthor{Berlanga2007}  onderzochte social networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar evenals Wakoopa wel het merendeel van de genoemde items. Hiermee kunnen we Wakoopa als een \emph{learning network} aanduiden.
+         De drie door \citeauthor{Berlanga2007}  onderzochte social networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar worden hoe dan ook als \emph{learning networks} omschreven. Wakoopa voldoet in deze tabellen ook niet aan alle vereisten, maar zit qua functionaliteit op vergelijkbare hoogte met Youtube en Flickr (waarbij Delicious minder functionaliteit bied). We kunnen Wakoopa dus als learning network beschouwen.
 
         \begin{table}[ht]
         \centering
@@ -124,32 +144,16 @@
 
   \newpage
   \section{Voorwoord}
+  \newpage
 
-    In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
-    en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
-    als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
-    om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
-    informatieve websites (nieuwssites, bedrijfswebsites en weblogs) en minder op de nieuwe vorm van websites: social networks.
-
-    Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van passief lezen ---
-    lijkt het dat dit gevolgen heeft voor de gebruiksvriendelijkheid
-    van sociale netwerken. Mijn afstudeerbedrijf, \emph{Wakoopa}, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren
-    van de gebruikersvriendelijkheid van de website en het uitvinden welke regels er gelden rondom de gebruikersvriendelijkheid van sociale netwerken.
-
-    Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
-
-    \subsection{Doelstelling}
+  \section{Doelstelling}
     Het doel van deze afstudeerstage is uitvinden welke usability factoren invloed hebben op de participatie van gebruikers van sociale netwerken. Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus. Via deze methode kan ik zeggen of de factoren inderdaad invloed hebben, en in welke mate.
 
-    \subsection{Probleemstelling}
+  \section{Probleemstelling}
     Deze afstudeerstage heeft de volgende onderzoeksvraag:
     \begin{quotation}
-     \textbf{Hoe kan de participatie op een sociaal netwerk verhoogd worden door middel van usability?}
+     \textbf{Hoe kan de participatie op een learning network verhoogd worden door middel van usability?}
     \end{quotation}
-
-
-  \newpage
-  \section{Samenvatting}
 
   \newpage
   \section{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
@@ -164,9 +168,9 @@
 
       In \emph{Using social psychology to motivate contributions to online communities} onderzoeken \citeauthor{Beenen2004} welke factoren en stimulansen bijdragen aan meer participatie van gebruikers, in hun case die van een filmsite. Door middel van een onderzoek met doelen voor gebruikers, waarbij ze de bewoording aanpasten, kwamen ze tot de conclusie dat, wanneer je aan een gebruiker duidelijk maakt hoe uniek ze zijn, ze dan veel meer zullen participeren op de website. Daarentegen is het heel lastig ze te motiveren. Enkel het noemen van voordelen om te participeren zorgt er volgens hun onderzoek voor dat mensen dat minder snel zullen doen. Een mogelijke verklaring die ze hiervoor geven is dat, wanneer mensen vertelt wordt dat ze iets moeten doen, ze minder snel geneigd zijn dat ook daadwerkelijk te doen.
 
-      Volgens het onderzoek werkt dit zo, omdat mensen gestimuleerd worden door intrensieke motivatie, maar juist minder snel zullen participeren wanneer ze een extrensieke motievatie wordt gegeven. De overkoepelende conclusie is dus dat je gebruikers moet tonen hoe uniek hun bijdragen zijn, zonder dat je daarbij vermeld wat de voordelen van deze bijdrages zijn.
+      Volgens het onderzoek werkt dit zo, omdat mensen gestimuleerd worden door intrensieke motivatie, maar juist minder snel zullen participeren wanneer ze een extrensieke motievatie wordt gegeven. De overkoepelende conclusie is dat je gebruikers moet tonen hoe uniek hun bijdragen zijn, zonder dat je daarbij vermeld wat de voordelen van deze bijdragen zijn.
 
-      Bij Wakoopa kan dit toegepast worden door bijvoorbeeld de \emph{call to actions} te bekijken, en ons af te vragen of dit slechts het noemen van een voordeel is, of laat zien op welke manier een gebruiker zich hiermee kan onderscheiden. Dit zullen we in Hoofdstuk \ref{datachapter} door middel van A/B testsen onderzoeken.
+      Bij Wakoopa kan dit toegepast worden door bijvoorbeeld de \emph{call to actions} te bekijken, en ons af te vragen of dit slechts het noemen van een voordeel is, of laat zien op welke manier een gebruiker zich hiermee kan onderscheiden.
 
      \paragraph{\cite{Sohn2005}}
 
@@ -242,7 +246,7 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
   \section{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
 
   \newpage
-  \section{Welke verbeteringen vinden we door analyse van data?}
+  \section{Analyse van de data}
     \label{datachapter}
     \subsection{A/B testing}
     A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.
@@ -260,17 +264,17 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
       Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.
 
   \newpage
-  \section{Welke usabilitytechnieken verhogen de participatie op sociale netwerken?}
+  \section{Usabilitytechnieken die de participatie op een learning network verhogen}
 
 
   \newpage
   \section{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
 
   \newpage
-  \section{Wat zijn de quick wins op het gebied van usability voor sociale netwerken?}
+  \section{De quick wins om participatie te verhogen op learning networks}
 
   \newpage
-  \section{Conclusie}
+  \section{Conclusie en Aanbevelingen}
 
   \newpage
   \section{Discussie}
