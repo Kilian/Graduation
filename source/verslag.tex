@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10pt, pdftex]{article}
+\documentclass[a4paper, 10pt, pdftex]{report}
   \usepackage[dutch]{babel}
   \usepackage{ulem}
   \usepackage{alltt}
@@ -52,22 +52,17 @@
 \begin{document}
   \normalem
   \maketitle
-  \begin{center}
-    \includegraphics{../images/nozzman_level_enthusiast}
-  \end{center}
-
-
 
   \newpage
-  \section*{Samenvatting}
-  \addcontentsline{toc}{section}{Samenvatting}
+  \chapter*{Samenvatting}
+  \addcontentsline{toc}{chapter}{Samenvatting}
 
   \newpage
   \tableofcontents
 
   \newpage
-  \section*{Introductie}
-  \addcontentsline{toc}{section}{Introductie}
+  \chapter*{Introductie}
+  \addcontentsline{toc}{chapter}{Introductie}
     In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
   en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
   als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
@@ -83,15 +78,13 @@
 
 
 
-    \subsection*{Introductie van Wakoopa}
-    \addcontentsline{toc}{subsection}{Introductie van Wakoopa}
+    \section{Introductie van Wakoopa}
       Een korte introductie van Wakoopa is voor het verdere verslag van belang, zodat de lezer een duidelijk beeld heeft van Wakoopa als social network en de mogelijkheden daarvan. Op de About pagina van Wakoopa \citep{Gaal2007} staat de volgende beschrijving:
         \begin{quote} Wakoopa is a social network that helps people discover the best software, games and web apps on the market. Sign-up, install a small tracker on your desktop and automatically create your online software profile that you can share with friends and the world, also through widgets. Wakoopa keeps you updated about what your contacts are using, and sends you smart recommendations. Games, audio \& video players, instant messengers or office tools: Wakoopa knows what's hot.
         \end{quote}
       Door het installeren van een kleine applicatie op je computer (de tracker), kan Wakoopa bijhouden welke applicaties je allemaal op je computer gebruikt. Deze gegevens worden in een online profiel weergegeven. Daarnaast kunnen gebruikers hun mening geven over de applicaties die zij gebruiken. Dit wordt gecombineerd met een sociaal aspect van het leggen van contacten, het maken van teams, het behalen van punten en het \emph{raten} van applicaties.
 
-        \subsubsection*{Wakoopa als learning network}
-        \addcontentsline{toc}{subsubsection}{Wakoopa als learning network}
+        \subsection{Wakoopa als learning network}
         In hun paper \emph{Functionality for learning networks: lessons learned from social web application} noemen \citeauthor{Berlanga2007} een aantal kenmerken van sociale netwerken die ook \emph{learning networks} zijn. In plaats van het maken van contacten is het focuspunt van deze sociale netwerken objecten. Een voorbeeld hiervan is Flickr, een sociaal network rondom foto's. Op Wakoopa zijn deze objecten de applicaties die je gebruikt. Om vast te stellen of Wakoopa onder dezelfde categorie valt en om een overzicht te geven van de functionaliteit die Wakoopa biedt, zullen we in tabellen \ref{tab:functies} \ref{tab:acties} en \ref{tab:metaacties} \label{learningnetwork} Wakoopa vergelijken met de kenmerken die \citeauthor{Berlanga2007} hebben opgesteld.
 
          De drie door \citeauthor{Berlanga2007}  onderzochte social networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar worden hoe dan ook als \emph{learning networks} omschreven. Wakoopa voldoet in deze tabellen ook niet aan alle vereisten, maar zit qua functionaliteit op vergelijkbare hoogte met Youtube en Flickr (waarbij Delicious minder functionaliteit bied). We kunnen Wakoopa dus als learning network beschouwen.
@@ -145,30 +138,30 @@
 
 
   \newpage
-  \section*{Voorwoord}
-  \addcontentsline{toc}{section}{Voorwoord}
+  \chapter*{Voorwoord}
+  \addcontentsline{toc}{chapter}{Voorwoord}
 
   \newpage
-  \section*{Doelstelling}
-  \addcontentsline{toc}{section}{Doelstelling}
+  \chapter*{Doelstelling}
+  \addcontentsline{toc}{chapter}{Doelstelling}
     Het doel van deze afstudeerstage is uitvinden welke usability factoren invloed hebben op de participatie van gebruikers van sociale netwerken. Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus. Via deze methode kan ik zeggen of de factoren inderdaad invloed hebben, en in welke mate.
 
-  \section*{Probleemstelling}
-  \addcontentsline{toc}{section}{Probleemstelling}
+  \chapter*{Probleemstelling}
+  \addcontentsline{toc}{chapter}{Probleemstelling}
     Deze afstudeerstage heeft de volgende onderzoeksvraag:
     \begin{quotation}
      \textbf{Hoe kan de participatie op een learning network verhoogd worden door middel van usability?}
     \end{quotation}
 
   \newpage
-  \section{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
+  \chapter{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
     \label{researchchapter}
 
     In dit hoofdstuk bekijken we wat er blijkt uit onderzoeken uitgevoerd door anderen op het gebied van usability en sociale netwerken, en hoe dit tot verhoging van de participatie leidt. We onderzoeken twee soorten bronnen: Papers die in het algemeen op sociale netwerken ingaan, en een drietal onderzoeken specifiek voor Wakoopa uitgevoerd.
 
       De bevindingen van deze onderzoeken zullen waar mogelijk door middel van A/B testen doorgevoerd worden op Wakoopa. De resultaten hiervan zijn te vinden in Hoofdstuk \ref{datachapter}.
 
-    \subsection{Externe onderzoeken}
+    \section{Externe onderzoeken}
       \paragraph{\cite{Beenen2004}}
 
       In \emph{Using social psychology to motivate contributions to online communities} onderzoeken \citeauthor{Beenen2004} welke factoren en stimulansen bijdragen aan meer participatie van gebruikers, in hun case die van een filmsite. Door middel van een onderzoek met doelen voor gebruikers, waarbij ze de bewoording aanpasten, kwamen ze tot de conclusie dat, wanneer je aan een gebruiker duidelijk maakt hoe uniek ze zijn, ze dan veel meer zullen participeren op de website. Daarentegen is het heel lastig ze te motiveren. Enkel het noemen van voordelen om te participeren zorgt er volgens hun onderzoek voor dat mensen dat minder snel zullen doen. Een mogelijke verklaring die ze hiervoor geven is dat, wanneer mensen vertelt wordt dat ze iets moeten doen, ze minder snel geneigd zijn dat ook daadwerkelijk te doen.
@@ -244,56 +237,56 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
 
     Naast het weergeven van een bericht testte de onderzoeker ook of het permanent weergeven, of het langzaam laten wegfaden van een bericht beter was. Omdat niet iedere gebruiker continue naar het scherm keek, kwamen zij tot de conclusie dat een persistene berichtgeving beter was.
 
-  \subsection{Interne onderzoeken}
+  \section{Interne onderzoeken}
 
 
   \newpage
-  \section{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
+  \chapter{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
 
   \newpage
-  \section{Analyse van de data}
+  \chapter{Analyse van de data}
     \label{datachapter}
-    \subsection{A/B testing}
+    \section{A/B testing}
     A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.
 
    Het ontwikkelplatform wat Wakoopa gebruikt, Ruby on Rails, heeft door middel van een plugin de optie om A/B testen uit te voeren. Deze automatiseert het verdelen van de verschillende opties tussen bezoekers en houd per variatie bij hoe vaak de geteste links of functionaliteit aangeklikt wordt.
 
     Naar aanleiding van de in Hoofdstuk \ref{researchchapter} genoemde onderzoeken hebben we een aantal A/B tests uitgevoerd, die hieronder beschreven staan:
 
-    \subsubsection{Plaats van de sign-up link op landing pages}
+    \subsection{Plaats van de sign-up link op landing pages}
       In tegenstelling tot de homepagina hebben onze landing pages (Pagina's waar bezoekers via zoekmachines op terecht komen) wel een sign-up link in de header. Momenteel staat deze in de linkerbovenhoek. In deze A/B test bekijken we of een variate waarin deze in de rechterbovenhoek staat, tot meer clicks leidt dan wanneer deze in de linkerbovenhoek staat.
 
       [resultaten]
 
-    \subsubsection{Het benoemen van de mate waarin een profiel is ingevuld}
+    \subsection{Het benoemen van de mate waarin een profiel is ingevuld}
       Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.
 
   \newpage
-  \section{Usabilitytechnieken die de participatie op een learning network verhogen}
+  \chapter{Usabilitytechnieken die de participatie op een learning network verhogen}
 
 
   \newpage
-  \section{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
+  \chapter{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
 
   \newpage
-  \section{De quick wins om participatie te verhogen op learning networks}
+  \chapter{De quick wins om participatie te verhogen op learning networks}
 
   \newpage
-  \section*{Conclusie \& Aanbevelingen}
-  \addcontentsline{toc}{section}{Conclusie \& Aanbevelingen}
+  \chapter*{Conclusie \& Aanbevelingen}
+  \addcontentsline{toc}{chapter}{Conclusie \& Aanbevelingen}
 
   \newpage
-  \section*{Discussie}
-  \addcontentsline{toc}{section}{Discussie}
+  \chapter*{Discussie}
+  \addcontentsline{toc}{chapter}{Discussie}
 
   \newpage
-  \section*{Verklarende woordenlijst}
-  \addcontentsline{toc}{section}{Verklarende woordenlijst}
+  \chapter*{Verklarende woordenlijst}
+  \addcontentsline{toc}{chapter}{Verklarende woordenlijst}
 
   \newpage
   \bibliography{../references/referenties}
   \bibliographystyle{plainnat}
-  \addcontentsline{toc}{section}{Referenties}
+  \addcontentsline{toc}{chapter}{Bibliografie}
 
 
 \end{document}
