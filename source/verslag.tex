@@ -61,7 +61,7 @@
   \tableofcontents
 
   \newpage
-  \chapter*{Introductie}
+  \section*{Introductie}
   \addcontentsline{toc}{chapter}{Introductie}
     In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
   en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
@@ -133,20 +133,23 @@
         \end{table}
 
   \newpage
-  \chapter*{Voorwoord}
+  \section*{Voorwoord}
   \addcontentsline{toc}{chapter}{Voorwoord}
 
   \newpage
-  \chapter*{Doelstelling}
+  \section*{Doelstelling}
   \addcontentsline{toc}{chapter}{Doelstelling}
     Het doel van deze afstudeerstage is uitvinden welke usability factoren invloed hebben op de participatie van gebruikers van sociale netwerken. Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus. Via deze methode kan ik zeggen of de factoren inderdaad invloed hebben, en in welke mate.
 
-  \chapter*{Probleemstelling}
+  \section*{Probleemstelling}
   \addcontentsline{toc}{chapter}{Probleemstelling}
     Deze afstudeerstage heeft de volgende onderzoeksvraag:
     \begin{quotation}
      \textbf{Hoe kan de participatie op een learning network verhoogd worden door middel van usability?}
     \end{quotation}
+
+  \section*{Projectgrenzen}
+  \addcontentsline{toc}{chapter}{Projectgrenzen}
 
   \newpage
   \chapter{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
@@ -236,7 +239,7 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
     Sinds het online plaatsen het nieuwe design van Wakoopa in 2008 zijn er een drietal usability onderzoeken uitgevoerd: \citet{Timmerman2008, Hoekman2008, Alfrink2008}. De bevindingen van deze usabilityonderzoeken en op welke manier ze momenteel op Wakoopa van toepassing zijn worden hieronder beschreven.
 
     \subsection{Usability Review \citet{Alfrink2008}}
-    Leapfrog heeft een expert review van het in 2008 in ontwikkeling zijnde herontwerp gedaan. Bij deze expert review is gebruikt van een aantal heuristics, zoals die van Jacob Nielsen \footnote{http://www.useit.com/papers/heuristic/heuristics\_list.html, geraadpleegd op 9 september 2009} en die van Steven Kruger uit zijn boek \emph{Don't make me think} \citep{Krug2000}. Deze laatste staan niet online beschreven, en zijn daarom hieronder opnieuw geprint:
+    Leapfrog heeft een expert review van het in 2008 in ontwikkeling zijnde herontwerp gedaan. Bij deze expert review is gebruikt van een aantal heuristics, zoals die van Jacob Nielsen\footnote{http://www.useit.com/papers/heuristic/heuristics\_list.html, geraadpleegd op 9 september 2009} en die van Steven Kruger uit zijn boek \emph{Don't make me think} \citep{Krug2000}. Deze laatste staan niet online beschreven, en zijn daarom hieronder opnieuw geprint:
 
       \begin{enumerate}
         \item Create pages that are self-evident, or at least self-explanatory
@@ -249,17 +252,17 @@ Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, 
         \item Omit needless words
       \end{enumerate}
 
-    In het onderzoek van \citeauthor{Alfrink2008} worden veel detailpunten besproken, met veel nadruk op het verhogen van gebruik. Wanneer je dit vertaalt naar globale richtlijnen komen er een aantal punten uit. Zo kan je gebruikers best op een directere manier om participatie, zoals het schrijven van een review, vragen, en hier kan je eventueel punten tegenover stellen. Hetzelfde proces wordt beschreven voor direct na het inloggen. Wat moet een gebruiker nu doen? Door middel van uitgebreidere begeleiding maak je het de gebruiker gemakkelijker, in een stadium waar de gebruiker nog niet bekend is met het systeem. Dit kan ook later door bij verschillende onderdelen op de site duidelijk de waarde van een functie aan te geven. Bijvoorbeeld het taggen van items of het aangeven waarom je bepaalde aanbevelingen krijgt.
+    In het onderzoek van \citeauthor{Alfrink2008} worden veel detailpunten besproken, met veel nadruk op het verhogen van gebruik. Wanneer je dit vertaalt naar globale richtlijnen komen er een aantal punten uit. Zo kan je gebruikers best op een directere manier om participatie, zoals het schrijven van een review, vragen, en hier kan je eventueel punten tegenover stellen. Hetzelfde proces wordt beschreven voor het moment direct na het inloggen. Wat moet een gebruiker nu doen? Door middel van uitgebreidere begeleiding maak je het de gebruiker gemakkelijker, in een stadium waar de gebruiker nog niet bekend is met het systeem. Dit kan ook later door bij verschillende onderdelen op de site duidelijk de waarde van een functie aan te geven. Bijvoorbeeld bij het taggen van items of het aangeven waarom je bepaalde aanbevelingen krijgt.
 
-    Soorgelijke doortastende dingen zijn te doen met andere punten van een site. Zo kan je bij zoekfunctionaliteit bijvoorbeeld voorspellen waar de gebruiker naar wilt zoeken afhankelijk van het soort pagina waar hij of zij op zitten. Wanneer een gebruiker op een andere gebruikerspagina zit, zal hij of zij waarschijnlijk naar gebruikers zoeken, terwijl wanneer je op een objectpagina waarschijnlijk naar andere object op zoek bent. Op een globale overzichtspagina kan je ook persoonlijke informatie kwijt, zoals bij categorie\"en de applicaties die jij in die categorie gebruikt.
+    Soorgelijke doortastende dingen zijn te doen met andere delen van een site. Zo kan je bij zoekfunctionaliteit bijvoorbeeld voorspellen waar de gebruiker naar wilt zoeken afhankelijk van het soort pagina waar hij of zij op zitten. Wanneer een gebruiker op een andere gebruikerspagina zit, zal hij of zij waarschijnlijk naar gebruikers zoeken, terwijl wanneer je op een objectpagina waarschijnlijk naar andere object op zoek bent. Op een globale overzichtspagina kan je ook persoonlijke informatie kwijt, zoals bij categorie\"en de applicaties die jij in die categorie gebruikt.
 
     \subsection{Usability Review \citet{Hoekman2008}}
     In tegenstelling tot het onderzoek van \citeauthor{Alfrink2008} richt het usabilityonderzoek van Miskeeto zich meer op de globale indeling van de pagina's en de navigatie hierop. De nadruk wordt gelegd op een homepage die zeer duidelijk de voordelen (en expliciet niet de \emph{functionaliteit}) uitlegt, en dit in een duidelijk visueel blok zet. \citeauthor{Hoekman2008} Maken een punt voor een abstracter niveau van navigatie, waar dit in drie delen wordt opgedeeld: website-brede navigatie; secundaire navigatie en object navigatie. Dit laatste gaat om de pagina's die bij een bepaald object horen (zoals bijvoorbeeld een pagina met alle tags voor een object) Door deze strict gescheiden te houden, zorg je ervoor dat de gebruiker niet per se hoeft te onthouden waar bepaalde functionaliteit zit, maar dit kan afleiden aan het type functionaliteit.
 
-    Dit idee wordt ook gebruikt als tip voor andere delen van een site. Door specifieke blokken een gelijke kleur te geven (zoals bijvoorbeeld \emph{geel} voor \emph{persoonlijk}) cree\"er je een snel overzicht van welke delen van de pagina waarop van toepassing zijn. Dit moet echter wel zeer consistent zijn doorgevoerd, omdat het anders de bezoeker zal verwarren.
+    Dit idee wordt ook gebruikt als tip voor andere delen van een site. Door specifieke blokken een gelijke kleur te geven (zoals bijvoorbeeld \emph{geel} voor \emph{persoonlijk}) cree\"er je een snel overzicht van welke delen van de pagina bij een specifieke soort functionaliteit horen. Dit moet echter wel zeer consistent zijn doorgevoerd, omdat het anders de bezoeker zal verwarren.
 
     \subsection{Usability Review \citet{Timmerman2008}}
-    \citeauthor{Timmerman2008} van Usarchy heeft in zijn review veel aandacht voor de analyse van gegevens en algemeen gebruikte usabilitytechnieken. Volgens hem is het erg belangrijk om te beginnen met het maken van persona's. Dit zijn fictieve personen die jouw learning network gebruiken. Voor elk van de verschillende doelgroepen maak je er eentje. Door deze persona's zo echt mogelijk te maken (inclusief naam, foto, hobbies) kan je ze gebruiken om bij nieuwe functionaliteit te kijken voor welke persona, en dus welke doelgroep, je het maakt.
+    \citeauthor{Timmerman2008} van Usarchy heeft in zijn review veel aandacht voor de analyse van gegevens en algemeen gebruikte usabilitytechnieken. Volgens hem is het erg belangrijk om te beginnen met het maken van persona's. Dit zijn fictieve personen die jouw learning network gebruiken. Voor elk van de verschillende doelgroepen maak je er eentje. Door deze persona's zo echt mogelijk te maken (inclusief naam, foto en hobbies) kan je ze gebruiken om bij nieuwe functionaliteit te kijken voor welke persona, en dus welke doelgroep, je het maakt.
 
     Verder maakt \citeauthor{Timmerman2008} de case om op de site behoeftegericht te werken. Door teksten op zo'n manier aan te passen dat ze de behoefte voor een gebruiker vervullen, zorg je ervoor dat deze gebruikers actiever zullen participeren.
 
