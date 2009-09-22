@@ -293,6 +293,14 @@
 
     Daarintegen klikt een op de vier bezoekers door naar de signup pagina, waar vervolgens meer dan de helft zich ook daadwerkelijk inschrijft (dit komt uit de signup funnel). Dat zijn hoge cijfers. Niettemin moet het lukken dit hoger te krijgen door ervoor te zorgen dat mensen op de homepagina minder snel wegklikken. Onder andere het onderzoek van \cite{Hoekman2008} doet een voorstel van hoe dit verbeterd kan worden.
 
+    \subsection{Custom Tracking}
+    Veel learning networks maken gebruik van \emph{AJAX}, een term die gebruikt wordt om aan te duiden dat delen van de pagina informatie van de server halen, maar niet de gehele pagina verversen. Het nadeel van deze techniek is dat er geen nieuwe \emph{page view} is, en dat dit dus ook niet automatisch met een statistiekprogramma wordt bijgehouden. In Google analytics heb je de mogelijkheid om via JavaScript zelf aan tracking te doen. Door een klein stukje code kan je aangeven dat iemand iets via AJAX heeft opgevraagd:
+    \begin{verbatim}
+    pageTracker._trackPageview(’/event/nameofevent’);
+    \end{verbatim}
+    Op deze manier kan je als learning network een hoop verschillende gebeurtenissen bijhouden. Bijvoorbeeld hoe vaak er op een banner wordt geklikt, of een comment wordt ingevoerd. Je krijgt hiermee inzicht in hoevaak een bepaalde functie wordt gebruikt.
+
+    Op Wakoopa worden nog geen van de javascript opties getracked. Door middel van bovenstaande code gaan we dit inbouwen, waarna we kunnen analyseren welke functies hoevaak worden gebruikt. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{javascript/naam-van-functie}.
 
     \section{A/B testing}
     A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.
