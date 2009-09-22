@@ -281,6 +281,7 @@
     \section{Statistieken}
     Een learning network doet er goed aan om statistieken bij te houden. een statistiekprogramma houdt allerlei gegevens over de bezoekers van een site bij. Bijvoorbeeld hoeveel bezoeken per dag je hebt, uit welk land ze komen en welke pagina's het meest bezocht worden. Maar ook gedetailleerdere dingen, zoals hoelang ze op een website bleven, hoe vaak ze er terugkomen of via welke site ze binnen zijn gekomen. In geavanceerde statistiekprogramma's, zoals die van Google Analytics, kan je naast deze gegevens ook bepaalde doelen instellen.
 
+    \subsection{Goal Funnel}
     Bijvoorbeeld het doel van mensen aanmelden. Je kijkt dan vanaf welke pagina's mensen op het aanmeldformulier komen, en hoeveel van die mensen zich daadwerkelijk aanmelden. Het proces heet en Goal Funnel. Deze naam is gekozen omdat de gegevens vaan een trechtervorm hebben. Veel mensen komen op de homepagina, een kleiner aantal klikt door naar het formulier en een nog kleiner aantal schrijft zich daadwerkelijk in. Doel van het maken van zo'n goal funnel is om knelpunten te vinden. Zo kan er op \'e\'en bepaald punt in de rij van pagina's een probleem zitten waardoor de meeste mensen afhaken. Dit merk je omdat de trechter dan opeens v\'e\'e;l dunner wordt.
 
     Het doel van zo'n funnel analyseren is uitvinden op welke manier je de trechtervorm dikker kan krijgen, en dus meer mensen het door jouw gestelde doel kan laten bereiken. Doordat je op een goede manier kan laten zien waar de knelpunten zitten, kun je dit stap voor stap oplossen.
@@ -301,7 +302,7 @@
     \end{verbatim}
     Op deze manier kan je als learning network een hoop verschillende gebeurtenissen bijhouden. Bijvoorbeeld hoe vaak er op een banner wordt geklikt, of een comment wordt ingevoerd. Je krijgt hiermee inzicht in hoevaak een bepaalde functie wordt gebruikt.
 
-    Op Wakoopa worden nog geen van de javascript opties getracked. Door middel van bovenstaande code gaan we dit inbouwen, waarna we kunnen analyseren welke functies hoevaak worden gebruikt. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{javascript/naam-van-functie}.
+    Op Wakoopa worden nog geen van de javascript opties getracked. Met behulp van van bovenstaande code gaan we dit inbouwen, waarna we kunnen analyseren welke functies hoevaak worden gebruikt. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{/javascript/pagina-naam/naam-van-functie}. Door middel van de filters in Google Analytics kunnen deze dan gemakkelijk gevonden worden
 
 
 
@@ -309,16 +310,16 @@
       \begin{center}
         \includegraphics[width=70mm]{../images/heatmap}
       \caption{Heatmap van de homepagina}
+      \label{heatmap}
       \end{center}
     \end{wrapfigure}
 
     \subsection{Heatmaps}
-    Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via javascript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt.
+    Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via javascript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt. Omdat dit vrij intensief is voor de browser van de bezoeker, wordt het pas sinds recent toegepast, en nooit voor een lange duur.
 
-    Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. Links een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{http://crazyegg.com} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt
+    Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. In Figuur \ref{heatmap} zie je een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{http://crazyegg.com} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt
 
-    Van belang bij dit soort onderzoeken dat je van te voren bepaalt wat je verwacht. Als je dit doet kan je bepalen of de pagina aan de door jou gestelde eisen voldoet. Met de bevindingen kan je vervolgens itereren.
-
+    Het is belangrijk om voordat je een heatmap laat genereren, te bepalen wat de doelen op een pagina zijn, waar de bezoeker moet klikken en welke delen welke soort bezoeker moeten aanspreken. Wanneer je dit doet is het achteraf gemakkelijk om te kijken in hoeverre bezoekers de pagina gebruiken op de manier dat jij bedoelde, en of de doelen die je hebt opgestelt ook daadwerkelijk behaald worden.
 
 
     \section{A/B testing}
