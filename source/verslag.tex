@@ -332,13 +332,60 @@
 
     \subsection{Plaats van de sign-up link op landing pages}
       \label{ctatest}
-      In tegenstelling tot de homepagina hebben onze landing pages (Pagina's waar bezoekers via zoekmachines op terecht komen) wel een sign-up link in de header. Momenteel staat deze in de linkerbovenhoek. In deze A/B test bekijken we of een variate waarin deze in de rechterbovenhoek staat, tot meer clicks leidt dan wanneer deze in de linkerbovenhoek staat.
+      In tegenstelling tot de homepagina hebben onze landing pages (Pagina's waar bezoekers via zoekmachines op terecht komen) wel een sign-up link in de header. Momenteel staat deze in de linkerbovenhoek. In deze A/B test bekijken we of een variate waarin deze in de rechterbovenhoek staat, tot meer clicks leidt dan wanneer deze in de linkerbovenhoek staat. De resultaten staan in Tabel \ref{tab:signupcta}, de conclusie in Hoofdstuk \ref{wak:Editorial2008}.
 
-      [resultaten]
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{r|l|l|l}
+          \textbf{Versie}  & Conversie  & Verbetering & Clicks / Pageviews \\ \hline
+          \textbf{Links}   & 0.00036\%  & \emph{n.v.t.}        & 1544 / 4200125 \\
+          Rechts  & 0.00025\%  & -32\%                & 1058 / 4199310 \\
+        \end{tabular}
+        \caption{Resultaten van de sign-up link}
+        \label{tab:signupcta}
+        \end{table}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{../images/abtest/left}
+      \caption{Links}
+    \end{figure}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{../images/abtest/right}
+      \caption{Rechts}
+    \end{figure}
 
     \subsection{Het benoemen van de mate waarin een profiel is ingevuld}
       \label{profileprogress}
-      Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.
+      Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.  De resultaten staan in Tabel \ref{tab:profilecta}, de conclusie in Hoofdstuk \ref{wak:Brouns2008}
+
+        \begin{table}[ht]
+        \centering
+        \begin{tabular}{r|l|l|l}
+          \textbf{Versie}                   & Conversie  & Verbetering   & Clicks / Pageviews \\ \hline
+          Origineel                         & 9\%        & \emph{n.v.t.} & 502 / 5357 \\
+          Met suggestie                     & 7\%        & -22\%         & 430 / 5402\\
+          \textbf{Met progressiemeter}      & 15\%       & 66\%          & 819 / 5355\\
+          Met beide  & 12\%       & 33\%          & 635 / 5284\\
+        \end{tabular}
+        \caption{Resultaten van het benoemen van de mate waarin een profiel is ingevuld}
+        \label{tab:profilecta}
+        \end{table}
+
+    \begin{figure}
+      \includegraphics[width=\textwidth]{../images/abtest/original}
+      \caption{origineel}
+    \end{figure}
+    \begin{figure}
+            \includegraphics[width=\textwidth]{../images/abtest/suggestion}
+      \caption{met suggestie}
+    \end{figure}
+    \begin{figure}
+            \includegraphics[width=\textwidth]{../images/abtest/progresbar}
+      \caption{met progressiemeter}
+    \end{figure}
+    \begin{figure}
+            \includegraphics[width=\textwidth]{../images/abtest/both}
+      \caption{met suggestie en progressiemeter}
+    \end{figure}
 
   \newpage
   \chapter{Usabilitytechnieken die de participatie op een learning network verhogen}
@@ -372,6 +419,7 @@
 
 
     \subsection{\cite{Brouns2008}}
+    \label{wak:Brouns2008}
     Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, maar geeft niet aan wat de vervolgstappen zijn. De implementatie van een progressiemeter kan er voor zorgen dat meer gebruikers hun profiel invullen. Om dit te toetsen hebben we in hoofdstuk \ref{datachapter} een A/B test uitgevoerd (zie pagina \pageref{profileprogress}). Uit deze A/B test bleek dat enkel het tonen van een progressiemeter effectiever is dan het tonen van enkel een bericht, een bericht met een suggestie van een leeg veld of het tonen van een bericht met zowel een progressiemeter en een suggestie. Mogelijke verklaringen hiervoor zijn dat de zin te lang wordt wanneer er ook een suggestie in staat, of dat de suggestie velden aangeeft die mensen niet in willen vullen.
 
       \paragraph{\textbf{Verbeterpunten:}}
@@ -380,6 +428,7 @@
       \end{itemize}
 
     \subsection{\cite{Editorial2008}}
+    \label{wak:Editorial2008}
     Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Een mogelijke verklaring hiervoor is dat de call to action links direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}
 
       \paragraph{\textbf{Verbeterpunten:}}
