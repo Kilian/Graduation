@@ -6,5 +6,6 @@ source/*.pdf
 source/*.xml
 source/*.bbl
 source/*.blg
+source/*.out
 */internal/*
 
