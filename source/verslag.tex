@@ -5,7 +5,8 @@
   \usepackage{amssymb}
   \usepackage{graphicx}
   \usepackage{wrapfig}
-
+  \usepackage{hyperref}
+  \usepackage[all]{hypcap}
 
   \usepackage{natbib}
   \bibpunct{(}{)}{;}{a}{,}{,}
@@ -40,7 +41,7 @@
   \lhead{}
   \rhead{}
   \lfoot{$Projectverslag$}
-  \rfoot{\thepage~van \pageref{LastPage}}
+  \rfoot{\thepage~van \pageref*{LastPage}}
   \renewcommand{\headrulewidth}{0.0pt}
   \renewcommand{\footrulewidth}{0.4pt}
 
@@ -213,7 +214,7 @@
 
     \subsection{\cite{Editorial2008}}
 
-    Smashing Magazine, een bekende weblog over web development technieken, heeft in \emph{Web Form Design Patterns: Sign-Up Forms} onderzoek gedaan naar de aanmeldformulieren van honderd learning networking sites\footnote{http://media2.smashingmagazine.com/images/web-form-design-patterns/urls.html, geraadpleegd op 9 september 2009}. Een van de opmerkelijke feiten was dat in 43\% van de websites, de sign-up link rechtsboven stond.
+    Smashing Magazine, een bekende weblog over web development technieken, heeft in \emph{Web Form Design Patterns: Sign-Up Forms} onderzoek gedaan naar de aanmeldformulieren van honderd learning networking sites\footnote{\url{http://media2.smashingmagazine.com/images/web-form-design-patterns/urls.html}, geraadpleegd op 9 september 2009}. Een van de opmerkelijke feiten was dat in 43\% van de websites, de sign-up link rechtsboven stond.
 
     \subsection{\cite{Sloep2009}}
 
@@ -239,7 +240,7 @@
     Sinds het online plaatsen het nieuwe design van Wakoopa in 2008 zijn er een drietal usability onderzoeken uitgevoerd: \citet{Timmerman2008, Hoekman2008, Alfrink2008}. De bevindingen van deze usabilityonderzoeken en op welke manier ze momenteel op Wakoopa van toepassing zijn worden hieronder beschreven.
 
     \subsection{Usability Review \citet{Alfrink2008}}
-    Leapfrog heeft een expert review van het in 2008 in ontwikkeling zijnde herontwerp gedaan. Bij deze expert review is gebruikt van een aantal heuristics, zoals die van Jacob Nielsen\footnote{http://www.useit.com/papers/heuristic/heuristics\_list.html, geraadpleegd op 9 september 2009} en die van Steven Kruger uit zijn boek \emph{Don't make me think} \citep{Krug2000}. Deze laatste staan niet online beschreven, en zijn daarom hieronder opnieuw geprint:
+    Leapfrog heeft een expert review van het in 2008 in ontwikkeling zijnde herontwerp gedaan. Bij deze expert review is gebruikt van een aantal heuristics, zoals die van Jacob Nielsen\footnote{\url{http://www.useit.com/papers/heuristic/heuristics\_list.html}, geraadpleegd op 9 september 2009} en die van Steven Kruger uit zijn boek \emph{Don't make me think} \citep{Krug2000}. Deze laatste staan niet online beschreven, en zijn daarom hieronder opnieuw geprint:
 
       \begin{enumerate}
         \item Create pages that are self-evident, or at least self-explanatory
@@ -317,7 +318,7 @@
     \subsection{Heatmaps}
     Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via javascript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt. Omdat dit vrij intensief is voor de browser van de bezoeker, wordt het pas sinds recent toegepast, en nooit voor een lange duur.
 
-    Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. In Figuur \ref{heatmap} zie je een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{http://crazyegg.com} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt
+    Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. In Figuur \ref{heatmap} zie je een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{\url{http://crazyegg.com}} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt. Het is dan aan de ontwikkelaar om te beslissen of dit betekent dat de rechter twee verbeterd moeten worden, weggehaald, of minder nadruk moeten krijgen waarbij de linker twee meer nadruk krijgen.
 
     Het is belangrijk om voordat je een heatmap laat genereren, te bepalen wat de doelen op een pagina zijn, waar de bezoeker moet klikken en welke delen welke soort bezoeker moeten aanspreken. Wanneer je dit doet is het achteraf gemakkelijk om te kijken in hoeverre bezoekers de pagina gebruiken op de manier dat jij bedoelde, en of de doelen die je hebt opgestelt ook daadwerkelijk behaald worden.
 
@@ -379,7 +380,7 @@
       \end{itemize}
 
     \subsection{\cite{Editorial2008}}
-    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Een mogelijke verklaring hiervoor is dat de call to action links direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{http://www.useit.com/alertbox/reading\_pattern.html}
+    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Een mogelijke verklaring hiervoor is dat de call to action links direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
