@@ -7,5 +7,6 @@ source/*.xml
 source/*.bbl
 source/*.blg
 source/*.out
+source/*.lot
 */internal/*
 
