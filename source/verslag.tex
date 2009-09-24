@@ -3,11 +3,20 @@
   \usepackage{ulem}
   \usepackage{alltt}
   \usepackage{amssymb}
+
+  %graphics
   \usepackage{graphicx}
   \usepackage{wrapfig}
+
+  %links
   \usepackage{hyperref}
   \usepackage[all]{hypcap}
+
+  %colours
   \usepackage[table]{xcolor}
+  \definecolor{lightgray}{gray}{0.90}
+
+  %references
   \usepackage{natbib}
   \bibpunct{(}{)}{;}{a}{,}{,}
 
@@ -521,6 +530,9 @@
   \newpage
   \chapter*{Verklarende woordenlijst}
   \addcontentsline{toc}{chapter}{Verklarende woordenlijst}
+
+  \listoftables
+  \addcontentsline{toc}{chapter}{Lijst van tabellen}
 
   \newpage
   \bibliography{../references/referenties}
