@@ -7,7 +7,7 @@
   \usepackage{wrapfig}
   \usepackage{hyperref}
   \usepackage[all]{hypcap}
-
+  \usepackage[table]{xcolor}
   \usepackage{natbib}
   \bibpunct{(}{)}{;}{a}{,}{,}
 
@@ -93,6 +93,8 @@
 
         \begin{table}[ht]
         \centering
+        \caption{Self-management functionality}
+        \rowcolors{1}{white}{lightgray}
         \begin{tabular}{r|l}
           × & Wakoopa \\ \hline
           Profile & \checkmark \\
@@ -100,13 +102,13 @@
           Resources & \\
           Tagging & \checkmark
         \end{tabular}
-        \caption{Self-management functionality}
         \label{tab:functies}
         \end{table}
         \begin{table}[ht]
         \centering
+        \caption{Self-organisation functionality}
+        \rowcolors{1}{white}{lightgray}
         \begin{tabular}{r|l}
-        \label{acties}
           × & Wakoopa \\ \hline
           Comment & \checkmark \\
           Recommend & \\
@@ -117,20 +119,19 @@
           Related resources & \checkmark \\
           Search & Software, Users, Teams, Developers
         \end{tabular}
-        \caption{Self-organisation functionality}
         \label{tab:acties}
         \end{table}
         \begin{table}[ht]
         \centering
+        \caption{Self-regulation functionality}
+        \rowcolors{1}{white}{lightgray}
         \begin{tabular}{r|l}
-        \label{metaacties}
           Markeer\ldots & Wakoopa \\ \hline
           Resources as offensive & \checkmark \\
           Communities as offensive & \\
           Private and public resources & \checkmark \\
           Private and public communities/groups & \checkmark
         \end{tabular}
-        \caption{Self-regulation functionality}
         \label{tab:metaacties}
         \end{table}
 
@@ -283,12 +284,9 @@
     Een learning network doet er goed aan om statistieken bij te houden. een statistiekprogramma houdt allerlei gegevens over de bezoekers van een site bij. Bijvoorbeeld hoeveel bezoeken per dag je hebt, uit welk land ze komen en welke pagina's het meest bezocht worden. Maar ook gedetailleerdere dingen, zoals hoelang ze op een website bleven, hoe vaak ze er terugkomen of via welke site ze binnen zijn gekomen. In geavanceerde statistiekprogramma's, zoals die van Google Analytics, kan je naast deze gegevens ook bepaalde doelen instellen.
 
     \subsection{Goal Funnel}
-      \begin{wrapfigure}{r}{55mm}
-      \begin{center}
-        \includegraphics[width=60mm]{../images/goalfunnel}
+      \begin{wrapfigure}{r}{50mm}
       \caption{Een voorbeeld goalfunnel in Google Analytics}
-      \label{goalfunnel}
-      \end{center}
+        \includegraphics[width=50mm]{../images/goalfunnel}
     \end{wrapfigure}
 
     Bijvoorbeeld het doel van mensen aanmelden. Je kijkt dan vanaf welke pagina's mensen op het aanmeldformulier komen, en hoeveel van die mensen zich daadwerkelijk aanmelden. Het proces heet en Goal Funnel. Deze naam is gekozen omdat de gegevens vaan een trechtervorm hebben. Veel mensen komen op de homepagina, een kleiner aantal klikt door naar het formulier en een nog kleiner aantal schrijft zich daadwerkelijk in. Doel van het maken van zo'n goal funnel is om knelpunten te vinden. Zo kan er op \'e\'en bepaald punt in de rij van pagina's een probleem zitten waardoor de meeste mensen afhaken. Dit merk je omdat de trechter dan opeens v\'e\'e;l dunner wordt.
@@ -311,17 +309,45 @@
     \end{verbatim}
     Op deze manier kan je als learning network een hoop verschillende gebeurtenissen bijhouden. Bijvoorbeeld hoe vaak er op een banner wordt geklikt, of een comment wordt ingevoerd. Je krijgt hiermee inzicht in hoevaak een bepaalde functie wordt gebruikt.
 
-    Op Wakoopa worden nog geen van de javascript opties getracked. Met behulp van van bovenstaande code gaan we dit inbouwen, waarna we kunnen analyseren welke functies hoevaak worden gebruikt. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{/javascript/pagina-naam/naam-van-functie}. Door middel van de filters in Google Analytics kunnen deze dan gemakkelijk gevonden worden
+    Op Wakoopa werd nog geen van de javascript opties getracked. Met behulp van van bovenstaande code is dit ingebouwd zodat we kunnen analyseren welke functies veel gebruikt worden. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{/javascript/pagina-naam/naam-van-functie}. Door middel van de filters in Google Analytics kunnen deze dan gemakkelijk gevonden worden.
+
+     De volgende items zullen worden getracked:
+     \begin{itemize}
+     \item vergroten van een screenshot
+     \item bekijken van de category graph, periode dag
+     \item bekijken van de category graph, periode week
+     \item bekijken van de category graph, periode maand
+     \item bekijken van de most used graph, periode dag
+     \item bekijken van de most used graph, periode week
+     \item bekijken van de most used graph, periode maand
+     \item openen van de redenatie voor een aanbeveling
+     \item het verwijderen van een aanbeveling
+     \item het schrijven van een review
+     \item zoeken via een ajax zoekveld
+     \item openen van het favorite-toevoegen blok op een software pagina
+     \item scrollen door gebruikers op een software pagina
+     \item scrollen door screenshots op een software pagina
+     \item openen van het tag-toevoegen blok op een software pagina
+     \item iemand toevoegen als contact
+     \item verwijderen van een favorite
+     \item openen van het privacy-settins blok op een software pagina
+     \item verbergen van de intro promobar
+     \item verzenden van een bericht via een reply
+     \item verbergen van de promobar
+     \item verbergen van de profile-completion bar
+     \item laten zien van de software editing guidelines
+     \end{itemize}
+
 
 
     \subsection{Heatmaps}
-      \begin{wrapfigure}{r}{55mm}
+      \begin{figure}
       \begin{center}
-        \includegraphics[width=70mm]{../images/heatmap}
       \caption{Heatmap van de homepagina}
+        \includegraphics[width=70mm]{../images/heatmap}
       \label{heatmap}
       \end{center}
-    \end{wrapfigure}
+    \end{figure}
     Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via javascript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt. Omdat dit vrij intensief is voor de browser van de bezoeker, wordt het pas sinds recent toegepast, en nooit voor een lange duur.
 
     Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. In Figuur \ref{heatmap} zie je een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{\url{http://crazyegg.com}} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt. Het is dan aan de ontwikkelaar om te beslissen of dit betekent dat de rechter twee verbeterd moeten worden, weggehaald, of minder nadruk moeten krijgen waarbij de linker twee meer nadruk krijgen.
@@ -342,21 +368,20 @@
 
         \begin{table}[ht]
         \centering
-        \begin{tabular}{r|l|l|l}
+        \caption{Resultaten van de sign-up link}
+        \begin{tabular}{r|*{3}{c}}
           \textbf{Versie}  & Conversie  & Verbetering & Clicks / Pageviews \\ \hline
           \textbf{Links}   & 0.00036\%  & \emph{n.v.t.}        & 1544 / 4200125 \\
           Rechts  & 0.00025\%  & -32\%                & 1058 / 4199310 \\
         \end{tabular}
-        \caption{Resultaten van de sign-up link}
+
         \label{tab:signupcta}
         \end{table}
     \begin{figure}
-      \includegraphics[width=\textwidth]{../images/abtest/left}
       \caption{Links}
-    \end{figure}
-    \begin{figure}
-      \includegraphics[width=\textwidth]{../images/abtest/right}
+      \includegraphics[width=\textwidth]{../images/abtest/left}
       \caption{Rechts}
+      \includegraphics[width=\textwidth]{../images/abtest/right}
     \end{figure}
 
     \subsection{Het benoemen van de mate waarin een profiel is ingevuld}
@@ -365,32 +390,30 @@
 
         \begin{table}[ht]
         \centering
-        \begin{tabular}{r|l|l|l}
+        \caption{Resultaten van het benoemen van de mate waarin een profiel is ingevuld}
+        \rowcolors{1}{white}{lightgray}
+        \begin{tabular}{r|*{3}{c}}
           \textbf{Versie}                   & Conversie  & Verbetering   & Clicks / Pageviews \\ \hline
           Origineel                         & 9\%        & \emph{n.v.t.} & 502 / 5357 \\
           Met suggestie                     & 7\%        & -22\%         & 430 / 5402\\
           \textbf{Met progressiemeter}      & 15\%       & 66\%          & 819 / 5355\\
           Met beide  & 12\%       & 33\%          & 635 / 5284\\
         \end{tabular}
-        \caption{Resultaten van het benoemen van de mate waarin een profiel is ingevuld}
         \label{tab:profilecta}
         \end{table}
 
     \begin{figure}
-      \includegraphics[width=\textwidth]{../images/abtest/original}
       \caption{origineel}
-    \end{figure}
-    \begin{figure}
-            \includegraphics[width=\textwidth]{../images/abtest/suggestion}
+      \includegraphics[width=\textwidth]{../images/abtest/original}
+
       \caption{met suggestie}
-    \end{figure}
-    \begin{figure}
-            \includegraphics[width=\textwidth]{../images/abtest/progresbar}
+      \includegraphics[width=\textwidth]{../images/abtest/suggestion}
+
       \caption{met progressiemeter}
-    \end{figure}
-    \begin{figure}
-            \includegraphics[width=\textwidth]{../images/abtest/both}
+      \includegraphics[width=\textwidth]{../images/abtest/progresbar}
+
       \caption{met suggestie en progressiemeter}
+      \includegraphics[width=\textwidth]{../images/abtest/both}
     \end{figure}
 
   \newpage
@@ -488,8 +511,8 @@
     \newpage
 
   \newpage
-  \chapter*{Conclusie \& Aanbevelingen}
-  \addcontentsline{toc}{chapter}{Conclusie \& Aanbevelingen}
+  \chapter*{Conclusie en Aanbevelingen}
+  \addcontentsline{toc}{chapter}{Conclusie en Aanbevelingen}
 
   \newpage
   \chapter*{Discussie}
