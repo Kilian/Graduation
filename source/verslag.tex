@@ -334,9 +334,11 @@
      \item het schrijven van een review
      \item zoeken via een ajax zoekveld
      \item openen van het favorite-toevoegen blok op een software pagina
+     \item toevoegen van een favorite
      \item scrollen door gebruikers op een software pagina
      \item scrollen door screenshots op een software pagina
      \item openen van het tag-toevoegen blok op een software pagina
+     \item toevoegen van een tag
      \item iemand toevoegen als contact
      \item verwijderen van een favorite
      \item openen van het privacy-settins blok op een software pagina
@@ -447,18 +449,21 @@
       \end{itemize}
 
     \subsection{\cite{Berlanga2007}}
-    Een aantal van de punten uit het onderzoek van \citeauthor{Berlanga2007} worden in het geval van Wakoopa al gebruikt. Het is gemakkelijk om nieuwe connecties te leggen (dit kan via een klik op iemands profiel) en we stimuleren dit door aan te geven welke gebruikers op jou lijken. We laten mensen weten wanneer hun vrienden nieuwe applicaties gebruiken, een review schrijven, een level omhoog gaan of iets op een teampagina schrijven. Dit punt wordt ook ondersteund door onderzoek van \cite{Berlanga2007}. We stimuleren nieuwsgierigheid door het puntensysteem, waarbij gebruikers meer punten verdienen door meer software te gebruiken. Een punt waar verbetering te behalen valt is het langer vasthouden van bezoekers. Wakoopa kan dit verbeteren door mensen meer acties op de site uit te laten voeren, en interessante(re) statistieken weer te geven op profielen.
+    Een aantal van de punten uit het onderzoek van \citeauthor{Berlanga2007} werden in het geval van Wakoopa al gebruikt. Het is gemakkelijk om nieuwe connecties te leggen (dit kan via een enkele klik op iemands profiel) en dit wordt gestimuleerd door aan te geven welke gebruikers op jou lijken. Gebruikers krijgen een bericht wanneer hun vrienden nieuwe applicaties gebruiken, een review schrijven, een level omhoog gaan of iets op een teampagina schrijven. De effectiviteit van dit punt wordt ook ondersteund door onderzoek van \cite{Berlanga2007}. Nieuwsgierigheid wordt gestimuleerd door het puntensysteem, waarbij gebruikers meer punten verdienen door meer software te gebruiken en door acties op de site uit te voeren. Er wordt hier enkel het level getoond, en niet het totaal aantal punten. Door dit toe voegen bied je ook voor mensen die op eht hoogste level zitten een manier om zich met anderen te vergelijken. Een ander punt waar verbetering te behalen valt is het langer vasthouden van bezoekers. Wakoopa kan dit verbeteren door mensen meer acties op de site uit te laten voeren, en interessante(re) statistieken weer te geven op profielen.
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
-        \item Bestaande sociale functionaliteit uitbreiden
+        \item Totaal aantal punten op het profiel laten zien
+        \item Bestaande functionaliteit uitbreiden
         \item Meer statistieken bieden
       \end{itemize}
 
 
     \subsection{\cite{Brouns2008}}
     \label{wak:Brouns2008}
-    Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, maar geeft niet aan wat de vervolgstappen zijn. De implementatie van een progressiemeter kan er voor zorgen dat meer gebruikers hun profiel invullen. Om dit te toetsen hebben we in hoofdstuk \ref{datachapter} een A/B test uitgevoerd (zie pagina \pageref{profileprogress}). Uit deze A/B test bleek dat enkel het tonen van een progressiemeter effectiever is dan het tonen van enkel een bericht, een bericht met een suggestie van een leeg veld of het tonen van een bericht met zowel een progressiemeter en een suggestie. Mogelijke verklaringen hiervoor zijn dat de zin te lang wordt wanneer er ook een suggestie in staat, of dat de suggestie velden aangeeft die mensen niet in willen vullen.
+    Wakoopa toonde enkel een melding dat een profiel nog niet compleet was, zonder vervolgstappen aan te geven. Door het implementeren van een progressiemeter zijn er 15\% meer mensen die doorklikken naar hun accountgegevens.
+
+    Dit resultaat bleek uit een A/B test in hoofdstuk \ref{datachapter} (zie pagina \pageref{profileprogress}). Uit deze A/B test bleek dat enkel het tonen van een progressiemeter effectiever is dan het tonen van enkel een bericht, een bericht met een suggestie van een leeg veld of het tonen van een bericht met zowel een progressiemeter en een suggestie. Mogelijke verklaringen hiervoor zijn dat de zin te lang wordt wanneer er ook een suggestie in staat, of dat de suggestie velden aangeeft die mensen niet in willen vullen.
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
@@ -467,7 +472,7 @@
 
     \subsection{\cite{Editorial2008}}
     \label{wak:Editorial2008}
-    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Een mogelijke verklaring hiervoor is dat de call to action links direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}
+    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Hier zijn twee mogelijke verklaringen voor. De eerste is dat de call to action links al direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}. Een andere verklaring is \emph{banner blindness}. Omdat de call to action rechts naast de banner stond en het leek alsof de call to action daarbij hoorde, zullen mensen eerst de banner zien en dan automatisch de banner negeren, en daarmee ook de call to action negeren.\footnote{\url{http://www.useit.com/alertbox/fancy-formatting.html}}
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
@@ -483,7 +488,7 @@
       \end{itemize}
 
     \subsection{\cite{Alfrink2008}}
-    Sinds dit rapport heeft wakoopa een speciale pagina aangemaakt die de gebruiker direct ziet na het aanmelden, waar in punten uit wordt gelegd welke vervolgstappen een nieuwe gebruiker heeft (de tracker downloaden, contacten zoeken, naar zijn dashboard gaan). Op andere punten kan Wakoopa dit beter stimuleren, bijvoorbeeld door middel van e-mails wanneer een gebruiker een week of twee weken lang de service niet heeft gebruikt, of alerts wanneer een gebruiker een applicatie veel gebruikt maar nog niet heeft gereviewt. Deze twee directe vragen om participatie zouden volgens \citeauthor{Alfrink2008} zeer geschikt zijn om in te zetten.
+    Sinds dit rapport heeft Wakoopa een speciale pagina aangemaakt die de gebruiker direct ziet na het aanmelden, waar in punten uit wordt gelegd welke vervolgstappen een nieuwe gebruiker heeft (de tracker downloaden, contacten zoeken, naar zijn dashboard gaan). Op andere punten kan Wakoopa dit beter stimuleren, bijvoorbeeld door middel van e-mails wanneer een gebruiker een week of twee weken lang de service niet heeft gebruikt, of alerts wanneer een gebruiker een applicatie veel gebruikt maar nog niet heeft gereviewt. Deze twee directe vragen om participatie zouden volgens \citeauthor{Alfrink2008} zeer geschikt zijn om in te zetten.
 
     Naast deze oproepen tot participatie noemt \citeauthor{Alfrink2008} het weergeven van persoonlijke informatie op algemene pagina's als een punt van verbetering. Sinds dit rapport wordt er al veel persoonlijke informatie weergegeven op bijvoorbeeld de software en developer-pagina's, maar niet op bijvoorbeeld de categoriepagina's, waar je heel goed een top-5 van door jouw gebruikte applicaties in die categorie kan laten zien.
     \paragraph{\textbf{Verbeterpunten:}}
