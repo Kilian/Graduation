@@ -74,7 +74,7 @@
   \newpage
   \section*{Introductie}
   \addcontentsline{toc}{chapter}{Introductie}
-    In de recente jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
+    In de afgelopen jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
   en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
   als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
   om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
@@ -334,9 +334,11 @@
      \item het schrijven van een review
      \item zoeken via een ajax zoekveld
      \item openen van het favorite-toevoegen blok op een software pagina
+     \item toevoegen van een favorite
      \item scrollen door gebruikers op een software pagina
      \item scrollen door screenshots op een software pagina
      \item openen van het tag-toevoegen blok op een software pagina
+     \item toevoegen van een tag
      \item iemand toevoegen als contact
      \item verwijderen van een favorite
      \item openen van het privacy-settins blok op een software pagina
@@ -447,18 +449,21 @@
       \end{itemize}
 
     \subsection{\cite{Berlanga2007}}
-    Een aantal van de punten uit het onderzoek van \citeauthor{Berlanga2007} worden in het geval van Wakoopa al gebruikt. Het is gemakkelijk om nieuwe connecties te leggen (dit kan via een klik op iemands profiel) en we stimuleren dit door aan te geven welke gebruikers op jou lijken. We laten mensen weten wanneer hun vrienden nieuwe applicaties gebruiken, een review schrijven, een level omhoog gaan of iets op een teampagina schrijven. Dit punt wordt ook ondersteund door onderzoek van \cite{Berlanga2007}. We stimuleren nieuwsgierigheid door het puntensysteem, waarbij gebruikers meer punten verdienen door meer software te gebruiken. Een punt waar verbetering te behalen valt is het langer vasthouden van bezoekers. Wakoopa kan dit verbeteren door mensen meer acties op de site uit te laten voeren, en interessante(re) statistieken weer te geven op profielen.
+    Een aantal van de punten uit het onderzoek van \citeauthor{Berlanga2007} werden in het geval van Wakoopa al gebruikt. Het is gemakkelijk om nieuwe connecties te leggen (dit kan via een enkele klik op iemands profiel) en dit wordt gestimuleerd door aan te geven welke gebruikers op jou lijken. Gebruikers krijgen een bericht wanneer hun vrienden nieuwe applicaties gebruiken, een review schrijven, een level omhoog gaan of iets op een teampagina schrijven. De effectiviteit van dit punt wordt ook ondersteund door onderzoek van \cite{Berlanga2007}. Nieuwsgierigheid wordt gestimuleerd door het puntensysteem, waarbij gebruikers meer punten verdienen door meer software te gebruiken en door acties op de site uit te voeren. Er wordt hier enkel het level getoond, en niet het totaal aantal punten. Door dit toe voegen bied je ook voor mensen die op eht hoogste level zitten een manier om zich met anderen te vergelijken. Een ander punt waar verbetering te behalen valt is het langer vasthouden van bezoekers. Wakoopa kan dit verbeteren door mensen meer acties op de site uit te laten voeren, en interessante(re) statistieken weer te geven op profielen.
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
-        \item Bestaande sociale functionaliteit uitbreiden
+        \item Totaal aantal punten op het profiel laten zien
+        \item Bestaande functionaliteit uitbreiden
         \item Meer statistieken bieden
       \end{itemize}
 
 
     \subsection{\cite{Brouns2008}}
     \label{wak:Brouns2008}
-    Momenteel toont Wakoopa enkel een melding dat een profiel nog niet compleet is, maar geeft niet aan wat de vervolgstappen zijn. De implementatie van een progressiemeter kan er voor zorgen dat meer gebruikers hun profiel invullen. Om dit te toetsen hebben we in hoofdstuk \ref{datachapter} een A/B test uitgevoerd (zie pagina \pageref{profileprogress}). Uit deze A/B test bleek dat enkel het tonen van een progressiemeter effectiever is dan het tonen van enkel een bericht, een bericht met een suggestie van een leeg veld of het tonen van een bericht met zowel een progressiemeter en een suggestie. Mogelijke verklaringen hiervoor zijn dat de zin te lang wordt wanneer er ook een suggestie in staat, of dat de suggestie velden aangeeft die mensen niet in willen vullen.
+    Wakoopa toonde enkel een melding dat een profiel nog niet compleet was, zonder vervolgstappen aan te geven. Door het implementeren van een progressiemeter zijn er 15\% meer mensen die doorklikken naar hun accountgegevens.
+
+    Dit resultaat bleek uit een A/B test in hoofdstuk \ref{datachapter} (zie pagina \pageref{profileprogress}). Uit deze A/B test bleek dat enkel het tonen van een progressiemeter effectiever is dan het tonen van enkel een bericht, een bericht met een suggestie van een leeg veld of het tonen van een bericht met zowel een progressiemeter en een suggestie. Mogelijke verklaringen hiervoor zijn dat de zin te lang wordt wanneer er ook een suggestie in staat, of dat de suggestie velden aangeeft die mensen niet in willen vullen.
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
@@ -467,7 +472,7 @@
 
     \subsection{\cite{Editorial2008}}
     \label{wak:Editorial2008}
-    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Een mogelijke verklaring hiervoor is dat de call to action links direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}
+    Het merendeel van de onderzochte sociale netwerken heeft een signup call to action in de rechterbovenhoek staan. Bij Wakoopa staat deze onder het logo aan de linkerkant. Door middel van een A/B test (zie pagina \pageref{ctatest}) is gekeken of dit ook voor Wakoopa meer clicks opleverde. Opvallend genoeg bleek rechts ongeveer twee keer zo slecht te werken als links. Hier zijn twee mogelijke verklaringen voor. De eerste is dat de call to action links al direct onder het logo stond, een plek waar veel mensen bij het openen van een nieuwe site als eerste kijken\footnote{\url{http://www.useit.com/alertbox/reading\_pattern.html}}. Een andere verklaring is \emph{banner blindness}. Omdat de call to action rechts naast de banner stond en het leek alsof de call to action daarbij hoorde, zullen mensen eerst de banner zien en dan automatisch de banner negeren, en daarmee ook de call to action negeren.\footnote{\url{http://www.useit.com/alertbox/fancy-formatting.html}}
 
       \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
@@ -483,7 +488,7 @@
       \end{itemize}
 
     \subsection{\cite{Alfrink2008}}
-    Sinds dit rapport heeft wakoopa een speciale pagina aangemaakt die de gebruiker direct ziet na het aanmelden, waar in punten uit wordt gelegd welke vervolgstappen een nieuwe gebruiker heeft (de tracker downloaden, contacten zoeken, naar zijn dashboard gaan). Op andere punten kan Wakoopa dit beter stimuleren, bijvoorbeeld door middel van e-mails wanneer een gebruiker een week of twee weken lang de service niet heeft gebruikt, of alerts wanneer een gebruiker een applicatie veel gebruikt maar nog niet heeft gereviewt. Deze twee directe vragen om participatie zouden volgens \citeauthor{Alfrink2008} zeer geschikt zijn om in te zetten.
+    Sinds dit rapport heeft Wakoopa een speciale pagina aangemaakt die de gebruiker direct ziet na het aanmelden, waar in punten uit wordt gelegd welke vervolgstappen een nieuwe gebruiker heeft (de tracker downloaden, contacten zoeken, naar zijn dashboard gaan). Op andere punten kan Wakoopa dit beter stimuleren, bijvoorbeeld door middel van e-mails wanneer een gebruiker een week of twee weken lang de service niet heeft gebruikt, of alerts wanneer een gebruiker een applicatie veel gebruikt maar nog niet heeft gereviewt. Deze twee directe vragen om participatie zouden volgens \citeauthor{Alfrink2008} zeer geschikt zijn om in te zetten.
 
     Naast deze oproepen tot participatie noemt \citeauthor{Alfrink2008} het weergeven van persoonlijke informatie op algemene pagina's als een punt van verbetering. Sinds dit rapport wordt er al veel persoonlijke informatie weergegeven op bijvoorbeeld de software en developer-pagina's, maar niet op bijvoorbeeld de categoriepagina's, waar je heel goed een top-5 van door jouw gebruikte applicaties in die categorie kan laten zien.
     \paragraph{\textbf{Verbeterpunten:}}
@@ -496,22 +501,31 @@
     \subsection{\cite{Hoekman2008}}
     Het grootste kritiekpunt uit dit onderzoek was de navigatie en de indeling van de homepagina. De homepagina had niet \'e\'en duidelijk focuspunt en de vier punten geven niet duidelijk genoeg de voordelen van Wakoopa weer. Voor de navigatie stellen ze voor om deze te herstructureren naar drie niveau's, gefocust op gebruikersdoelen. Hoewel dit niet in het onderzoek wordt genoemd, kunnen we dit goed doen door middel van het maken van persona's en vanuit deze persona's een cardsorting sessie te houden.
 
-    Naast deze twee punten noemde Hoekman de inconsistentie van kleurgecodeerde gebieden op de site. Een specifiek probleempunt is dat sommige mededelingen in eenzelfde soort geel als de persoonlijke punten worden weergegeven, deze kleur kan beter in een neutrale kleur worden omgezet.
-
     \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
         \item Navigatiestructuur focussen op gebruikersdoelen
         \item Homepagina re-align maken, waarin de aandacht gaat naar voordelen in een duidelijk blok, en er meer uitleg is.
-        \item De kleur van mededelingen veranderen in een neutralere kleur.
       \end{itemize}
 
     \subsection{\cite{Timmerman2008}}
     In dit onderzoek wordt veel verwezen naar het analyseren van data en gebruik van andere usabilitytechnieken dan een expert review. Het analyseren van Statistieken, het gebruik van A/B testen en het maken van persona's worden als nuttige middelen genoemt. Door middel van deze persona's kan bij (nieuwe) functionaliteit worden gekeken of dit wel overeenkomt met gebruikersdoelen.
 
+
     \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
         \item Maak persona's en gebruikersdoelen
         \item Analyseer de statistieken op trends
+      \end{itemize}
+
+    \subsection{Custom tracking}
+    Na het toevoegen van custom tracking was er meer inzicht in welke javascriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
+
+    Het toevoegen van favorites gebeurd bijna driemaal zovaak als het toevoegen van tags. Dit is te verklaren met het feit dat favorites op de site vrij gemakkelijk te vinden zijn, terwijl dit bij tags nog niet het geval is. Een conclusie zou kunnen zijn dat mensen favorites als een `gemakkelijke' of socialere vorm van taggen zien.
+
+    \paragraph{\textbf{Verbeterpunten:}}
+      \begin{itemize}
+        \item Toon de meest interessante grafiek als eerste
+        \item Maak tagging duidelijker
       \end{itemize}
 
 
