@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Enquete Charts</title>
+    <script src="prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="raphael.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ico.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css" media="screen">
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th { font-size: 1em; font-weight: normal; font-style: normal; }
+fieldset, img { border: none; }
+body { font-family: "Lucida Grande", Helvetica, sans-serif; font-size: 12px; background-color: #fff; padding: 0; margin: 10px 5%; color: #000 }
+h1, h2 { font-size: 2em; margin: 0.5em 0; }
+
+p { margin: 1em 0; }
+p.example { color: #555; }
+    </style>
+  </head>
+  <body>
+  <h2>Gender</h2>
+  <div id="gender" style="width:300px;height:300px;"></div>
+
+  <script type="text/javascript">
+var bargraph_5 =
+  new Ico.BarGraph($('gender'),
+  [90.1, 9.09],
+   {
+   labels: ["Man (90.1%)", "Vrouw (9.9%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#b64b80",
+   });
+</script>
+
+  <h2>Country</h2>
+  <div id="country" style="width:700px;height:300px;"></div>
+
+  <script type="text/javascript">
+var country =
+  new Ico.BarGraph($('country'),
+  [24.23, 12.16,8.42,3.84,3.27,2.9,2.53,2.43,2.43,2.34,2.34],
+   {
+   labels: ["U.S.A.", "Netherlands", "U.K.","Russia","Canada","Brazil","Sweden","Belgium","Germany","Australia","Other"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#666",
+   });
+</script>
+
+  <h2>How good are you with computers?</h2>
+  <div id="goodcomp" style="width:600px;height:300px;"></div>
+
+
+  <script type="text/javascript">
+var goodcomp =
+  new Ico.BarGraph($('goodcomp'),
+  [0.3, 1.5, 21, 49.2, 28.0],
+   {
+   labels: ["Novice (0.3%)", "Learning (1.5%)", 'Pretty good (21%)', 'Excellent (49.2%)', 'I create my \nown software (28%)'],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+//   bargraph_lastcolour: "#b64b80",
+   });
+</script>
+
+  <h2>Income Levels</h2>
+  <div id="income" style="width:600px;height:300px;"></div>
+
+
+  <script type="text/javascript">
+var income =
+  new Ico.BarGraph($('income'),
+  [22.5,39.8,21,16.7],
+   {
+   labels: ["Below Average (22.5%)", "Average (39.8%)", 'Above average (21%)', 'You don\'t need \nto know (16.7%)'],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#666666",
+   });
+</script>
+  <h2>Crisis</h2>
+  <div id="crisis" style="width:600px;height:300px;"></div>
+
+  <script type="text/javascript">
+var crisis =
+  new Ico.BarGraph($('crisis'),
+  [31.3, 23.7,20.1, 13.6,11.3],
+   {
+   labels: ["I'm watching\n what I spend (31.3%)","What crisis? (23.7%)", "I've cut back\n a little (20.1%)", "I pay for apps\n that are fun (13.6%)", "I pay for things \nfor my job (11.3%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   });
+</script>
+
+  <h2>How often to you check the site</h2>
+  <div id="often" style="width:600px;height:300px;"></div>
+
+  <script type="text/javascript">
+var often =
+  new Ico.BarGraph($('often'),
+  [16,30.2,43.1,7.2, 3.5],
+   {
+   labels: ["Multiple times a day (16%)", "Daily (30.2%)", "Weekly (43.1%)", "Monthly (7.2%)", "Even less (3.5%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+//   bargraph_lastcolour: "#b64b80",
+   });
+</script>
+  <h2>Which of our recent additions do you like best?</h2>
+  <div id="additions" style="width:1000px;height:300px;"></div>
+
+  <script type="text/javascript">
+var additions =
+  new Ico.BarGraph($('additions'),
+  [37.3,29.6,9.5,9.5,4.5,2.9,2.7,2.4,1.4],
+   {
+   labels: ["Software \nrecommendations (37.3%)",
+"Web apps \ntracking (29.6%)",
+"Reputation & levels\n system (9.5%)",
+"Linux \ntracker (9.5%)",
+"Software pages \nredesign (4.5%)",
+"Facebook app (2.9%)",
+"Editors pick in \nnewsletter (2.7%)",
+"API additions (2.4%)",
+"Improved team \nfunctionality (1.4%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+//   bargraph_lastcolour: "#b64b80",
+   });
+</script>
+
+  <h2>Have you ever installed a Wakoopa widget on your personal blog, Facebook page, etc?</h2>
+  <div id="widget" style="width:300px;height:300px;"></div>
+
+  <script type="text/javascript">
+var widget =
+  new Ico.BarGraph($('widget'),
+  [33.8, 66.2],
+   {
+   labels: ["Yes (33.8%)", "No (66.2%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   });
+</script>
+
+  <h2>Where do you find Wakoopa lacking?</h2>
+  <div id="lacking" style="width:700px;height:300px;"></div>
+  <script type="text/javascript">
+var lacking =
+  new Ico.BarGraph($('lacking'),
+  [36.7,20.3,9.1,8.5,7.2,18.1],
+   {
+   labels: ["Nowhere - you\n guys rock! (36.7%)",
+"Software \ninformation (20.3%)",
+"Functionality (9.1%)",
+"Interface (8.5%)",
+"Personal data (7.2%)",
+"Other (18.1%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#b64b80",
+   });
+</script>
+
+
+
+  <h2>What do you think of our recommendations?</h2>
+  <div id="recomm" style="width:600px;height:300px;"></div>
+  <script type="text/javascript">
+var recomm =
+  new Ico.BarGraph($('recomm'),
+  [7.8,55,24.9,2.9,0.9,8.4],
+   {
+   labels: ["Awesome (7.8%)",
+"Pretty good (55.0%)",
+"Average (24.9%)",
+"Poor (2.9%)",
+"Useless (0.9%)",
+"I don't use them (8.4%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#666666",
+   });
+</script>
+
+  <h2>Have you downloaded and started using software or web applications after receiving or viewing an alert or a recommendation?</h2>
+  <div id="startuser" style="width:300px;height:300px;"></div>
+
+  <script type="text/javascript">
+var startuser =
+  new Ico.BarGraph($('startuser'),
+  [49.8, 50.2],
+   {
+   labels: ["Yes (49.8%)", "No (52.2%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   });
+</script>
+
+  <h2>Have you purchased software after receiving or viewing an alert or a recommendation?</h2>
+  <div id="startuserb" style="width:300px;height:300px;"></div>
+
+  <script type="text/javascript">
+var startuserb =
+  new Ico.BarGraph($('startuserb'),
+  [7.4, 92.6],
+   {
+   labels: ["Yes (7.4%)", "No (92.6%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   });
+</script>
+
+  <h2>What do you think of the advertisements on our website?</h2>
+  <div id="ads" style="width:600px;height:300px;"></div>
+
+  <script type="text/javascript">
+var ads =
+  new Ico.BarGraph($('ads'),
+  [67.4,29.2,3.3],
+   {
+   labels: ["I don't notice them,\n they're not obtrusive (67.4%)",
+"They're visible, but I don't \nmind them that much (29.2%)",
+"They distract me from\n using the site (3.3%)"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   });
+</script>
+  </body>
+</html>
+

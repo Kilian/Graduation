@@ -1,0 +1,20 @@
+h2. Introduction
+
+This is a fork of http://github.com/alexyoung/ico/tree. It adds hover effects and information and stacked area charts to the library, amongst a host of other things.
+
+This version still supports all of the original graphs and api options, check the original readme for more information
+
+h3. new options
+* Area charts
+* Stacked area charts and stacked line charts
+* Interactivity through hoverable items to display additional information, and give them a different colour on hover
+* Allow the last item of (horizontal) bar charts and spark bars to be a different colour
+* Ability to add watermarks via a link to an image or an image element
+* Watermark can be placed in the middle of the graph or the lower right corner
+* Add units (such as %) to the vertical axis values (or horizontal in the case of a horizontal bar chart)
+* Horizontal bar charts can now have a rounded ending
+* Linegraphs have an API option that allows them to start at a non-zero horizontal position
+* API option to hide grid lines if there is no label associated with that value
+
+Made at Wakoopa (wakoopa.com)
+
