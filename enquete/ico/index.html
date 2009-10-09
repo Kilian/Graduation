@@ -20,6 +20,22 @@ p.example { color: #555; }
   <h2>Gender</h2>
   <div id="gender" style="width:300px;height:300px;"></div>
 
+  <h2>Age</h2>
+  <div id="age" style="width:1000px;height:300px;"></div>
+
+  <script type="text/javascript">
+var age =
+  new Ico.BarGraph($('age'),
+  [2, 4, 5, 28, 36, 61, 48, 67, 60, 74, 61, 57, 72, 50, 55, 32, 45, 55, 28, 15, 22, 26, 18, 4, 11, 17, 9, 14, 10, 13, 6, 6, 4, 4, 13, 2, 2, 1, 7, 5, 2, 1, 1, 1, 2, 1, 2, 1, 0, 2, 1, 6],
+   {
+   labels: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 56, 57, 59, 60, "~", 67, 70, "NVT"],
+   colour: '#4b80b6',
+   grid: false,
+   background_colour: "#ffffff",
+   bargraph_lastcolour: "#666",
+   });
+</script>
+
   <script type="text/javascript">
 var bargraph_5 =
   new Ico.BarGraph($('gender'),
@@ -167,7 +183,7 @@ var lacking =
    colour: '#4b80b6',
    grid: false,
    background_colour: "#ffffff",
-   bargraph_lastcolour: "#b64b80",
+   bargraph_lastcolour: "#666666",
    });
 </script>
 
@@ -201,7 +217,7 @@ var startuser =
   new Ico.BarGraph($('startuser'),
   [49.8, 50.2],
    {
-   labels: ["Yes (49.8%)", "No (52.2%)"],
+   labels: ["Yes (49.8%)", "No (50.2%)"],
    colour: '#4b80b6',
    grid: false,
    background_colour: "#ffffff",

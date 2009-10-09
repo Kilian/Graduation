@@ -13,11 +13,12 @@ var Ico = {
   BarGraph: {},
   HorizontalBarGraph: {}
 };
+
 /* Supporting methods to make dealing with arrays easier */
 /* Note that some of this work to reduce framework dependencies */
 Array.prototype.sum = function() {
-	for (var i = 0, sum = 0; i < this.length; sum += this[i++]);
-	return sum;
+  for (var i = 0, sum = 0; i < this.length; sum += this[i++]);
+  return sum;
 }
 
 if (typeof Array.prototype.max == 'undefined') {
@@ -96,6 +97,9 @@ Ico.Normaliser = Class.create({
   process: function() {
     this.range = this.max - this.start_value;
     this.step = this.labelStep(this.range);
+    if (this.range/this.step > 15) {
+      this.step *= 3;
+    }
   },
 
   labelStep: function(value) {
@@ -271,15 +275,19 @@ Ico.BaseGraph = Class.create(Ico.Base, {
   },
 
   paddingLeftOffset: function() {
-    /* Find the longest label and multiply it by the font size */
-    var data = this.flat_data;
+    if(this.options.show_vertical_labels) {
+      /* Find the longest label and multiply it by the font size */
+      var data = this.flat_data;
 
-    // Round values
-    data = this.roundValues(data, 2);
+      // Round values
+      data = this.roundValues(data, 2);
 
-    var longest_label_length = $A(data).sort(function(a, b) { return a.toString().length < b.toString().length; }).first().toString().length;
-    longest_label_length = longest_label_length > 2 ? longest_label_length - 1 : longest_label_length;
-    return longest_label_length * this.options.font_size;
+      var longest_label_length = $A(data).sort(function(a, b) { return a.toString().length < b.toString().length; }).first().toString().length;
+      longest_label_length = longest_label_length > 2 ? longest_label_length - 1 : longest_label_length;
+      return longest_label_length * this.options.font_size;
+    } else {
+      return 0;
+    }
   },
 
   paddingBottomOffset: function() {
@@ -600,8 +608,12 @@ Ico.LineGraph = Class.create(Ico.BaseGraph, {
     if(this.options.odd_horizontal_offset>1) {
           index += this.options.odd_horizontal_offset;
       }
-    var currentvalue = this.data_sets.collect(function(data_set) {return data_set[1][index]})[graphindex].toFixed(3);
+    var currentvalue = this.data_sets.collect(function(data_set) {return data_set[1][index]})[graphindex];
         vertical_label_unit = this.options.vertical_label_unit||"";
+        currentvalue = currentvalue.toString().split('.');
+        if(currentvalue[1]) {
+          currentvalue[1] = currentvalue[1].truncate(3, '');
+        }
 
     if(this.options.datalabels) {
       datalabel = datalabel+" <span>"+currentvalue+" "+vertical_label_unit+"</span>";
