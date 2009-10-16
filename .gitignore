@@ -8,5 +8,7 @@ source/*.bbl
 source/*.blg
 source/*.out
 source/*.lot
+source/*.lof
 */internal/*
+enquete/ico/index2.html
 
