@@ -21,15 +21,17 @@
   \bibpunct{(}{)}{;}{a}{,}{,}
 
   % metadata
-  \title{\textsc{Participatie op learning networks verhogen door middel van gebruiksvriendelijkheid} \linebreak (werktitel) \linebreak \emph{Projectverslag}}
+  \title{\textsc{Gebruiksvriendelijk gebruikers~motiveren}
+  \linebreak \small{Deelname op learning networks verhogen mets gebruiksvriendelijkheid} \linebreak \linebreak \emph{Scriptie}}
+
   \author{\textbf{Kilian Valkhof}\\
   Hogeschool Rotterdam\\
   \textit{studentnr.:} 0783312\\
   \\
   \textit{Afstudeerbegeleider:} Sandra Hekkelman\\
-  \textit{Tweede begeleider:}\\
+  \textit{Tweede begeleider:} Rimmert Zelle\\
   \\
-  \textit{Bedrijf:} Wakoopa bv.\\
+  \textit{Bedrijf:} Wakoopa bv\\
   \textit{Bedrijfsbegeleider:} Robert Gaal}
 
   \date{17 augustus 2009 -- \today}
@@ -75,7 +77,7 @@
   \section*{Introductie}
   \addcontentsline{toc}{chapter}{Introductie}
     In de afgelopen jaren zijn er een tweetal dingen gebeurd: sociale netwerken hebben een explosieve groei doorgemaakt
-  en gebruiksvriendelijkheid voor websites hebben (terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
+  en gebruiksvriendelijkheid voor websites hebben (volgens velen terecht) een veel grotere nadruk gekregen dan daarvoor. Hoewel mensen
   als Jacob Nielsen en Jesse James Garrett het ons al jaren vertellen, is het pas de afgelopen jaren `normaal' geworden
   om ook aandacht te besteden aan gebruiksvriendelijkheid. Veel van de theorie op dit gebied focust zich echter op
   informatieve websites (nieuwssites, bedrijfswebsites en weblogs) en minder op de nieuwe vorm van websites: learning networks.
@@ -84,32 +86,33 @@
 
   Doordat mensen op sociale netwerken heel anders bezig zijn dan op gewone informatieve websites --- er sprake van interactie in plaats van passief lezen --- Denk ik dat dit gevolgen heeft voor de gebruiksvriendelijkheid. Waar gebruiksvriendelijkheid op informatieve websites gaat om het effectief vinden van informatie, is het hoofddoel van sociale netwerken de participatie. Mijn afstudeerbedrijf, \emph{Wakoopa}, is zo'n sociaal netwerk, en is daarom met mij geinteresseerd in het verbeteren van de gebruikersvriendelijkheid van de website en het uitvinden welke factoren voor meer participatie zorgen.
 
-    Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en hoe de gebruiksvriendelijkheid van design goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
-
-
-
 
     \section{Introductie van Wakoopa}
       Een korte introductie van Wakoopa is voor het verdere verslag van belang, zodat de lezer een duidelijk beeld heeft van Wakoopa als learning network en de mogelijkheden daarvan. Op de About pagina van Wakoopa \citep{Gaal2007} staat de volgende beschrijving:
-        \begin{quote} Wakoopa is a learning network that helps people discover the best software, games and web apps on the market. Sign-up, install a small tracker on your desktop and automatically create your online software profile that you can share with friends and the world, also through widgets. Wakoopa keeps you updated about what your contacts are using, and sends you smart recommendations. Games, audio \& video players, instant messengers or office tools: Wakoopa knows what's hot.
+        \begin{quote} Wakoopa is a social network that helps people discover the best software, games and web apps on the market. Sign-up, install a small tracker on your desktop and automatically create your online software profile that you can share with friends and the world, also through widgets. Wakoopa keeps you updated about what your contacts are using, and sends you smart recommendations. Games, audio \& video players, instant messengers or office tools: Wakoopa knows what's hot.
         \end{quote}
       Door het installeren van een kleine applicatie op je computer (de tracker), kan Wakoopa bijhouden welke applicaties je allemaal op je computer gebruikt. Deze gegevens worden in een online profiel weergegeven. Daarnaast kunnen gebruikers hun mening geven over de applicaties die zij gebruiken. Dit wordt gecombineerd met een sociaal aspect van het leggen van contacten, het maken van teams, het behalen van punten en het \emph{raten} van applicaties.
 
         \subsection{Wakoopa als learning network}
         In hun paper \emph{Functionality for learning networks: lessons learned from social web application} noemen \citeauthor{Berlanga2007} een aantal kenmerken van sociale netwerken die ook \emph{learning networks} zijn. In plaats van het maken van contacten is het focuspunt van deze sociale netwerken objecten. Een voorbeeld hiervan is Flickr, een sociaal network rondom foto's. Op Wakoopa zijn deze objecten de applicaties die je gebruikt. Om vast te stellen of Wakoopa onder dezelfde categorie valt en om een overzicht te geven van de functionaliteit die Wakoopa biedt, zullen we in tabellen \ref{tab:functies} \ref{tab:acties} en \ref{tab:metaacties} \label{learningnetwork} Wakoopa vergelijken met de kenmerken die \citeauthor{Berlanga2007} hebben opgesteld.
 
-         De drie door \citeauthor{Berlanga2007}  onderzochte learning networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar worden hoe dan ook als \emph{learning networks} omschreven. Wakoopa voldoet in deze tabellen ook niet aan alle vereisten, maar zit qua functionaliteit op vergelijkbare hoogte met Youtube en Flickr (waarbij Delicious minder functionaliteit bied). We kunnen Wakoopa dus als learning network beschouwen.
+ Een learning network heeft een drietal eigenschappen. Het beheerd zichzelf, het organiseert zichzelf en het reguleert zichzelf. Deze eigenschappen uiten zichzelf in de opgesomde lijst van functionaliteiten. Deze functionaliteiten stellen de gebruikers in staat zelfstandig bezig te zijn, zonder dat daar administratie of moderatie bij benodigd is.
+
+         De drie door \citeauthor{Berlanga2007}  onderzochte learning networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar worden hoe dan ook als \emph{learning networks} omschreven. De kolommen voor deze learning networks die hier worden weergegeven zijn overgenomen uit het paper van \citeauthor{Berlanga2007}. Wakoopa voldoet in deze tabellen niet aan alle vereisten, maar zit qua functionaliteit op vergelijkbare hoogte met Youtube en Flickr (waarbij Delicious minder functionaliteit bied). We kunnen Wakoopa dus als learning network beschouwen.
+
+
 
         \begin{table}[ht]
         \centering
         \caption{Self-management functionality}
         \rowcolors{1}{white}{lightgray}
-        \begin{tabular}{r|l}
-          × & Wakoopa \\ \hline
-          Profile & \checkmark \\
-          Contacts & \checkmark \\
-          Resources & \\
-          Tagging & \checkmark
+        \begin{tabular}{r|llll}
+          × & Wakoopa & Delicious & Flickr & Youtube\\ \hline
+          Profile & \checkmark & \checkmark & \checkmark & \checkmark\\
+          Contacts & \checkmark & \checkmark & \checkmark & \checkmark\\
+          Communities & \checkmark & & \checkmark & \checkmark\\
+          Resources & & \checkmark & \checkmark & \checkmark\\
+          Tagging & \checkmark & \checkmark & \checkmark & \checkmark
         \end{tabular}
         \label{tab:functies}
         \end{table}
@@ -117,52 +120,56 @@
         \centering
         \caption{Self-organisation functionality}
         \rowcolors{1}{white}{lightgray}
-        \begin{tabular}{r|l}
-          × & Wakoopa \\ \hline
-          Comment & \checkmark \\
-          Recommend & \\
-          Copy & \\
-          Subscribe & \checkmark \\
-          Add as favourite & \checkmark \\
-          Rate & \checkmark \\
-          Related resources & \checkmark \\
-          Search & Software, Users, Teams, Developers
+        \begin{tabular}{r|p{1.8cm}p{1.8cm}p{1.8cm}p{1.8cm}}
+          × & Wakoopa & Delicious & Flickr & Youtube\\ \hline
+          Comment & \checkmark & & \checkmark & \checkmark\\
+          Recommend & & \checkmark & \checkmark & \checkmark\\
+          Copy & & \checkmark & & \\
+          Subscribe & \checkmark & \checkmark & \checkmark & \checkmark\\
+          Add as favourite & \checkmark & & \checkmark & \checkmark\\
+          Rate & \checkmark & & & \checkmark\\
+          Related resources & \checkmark & \checkmark & \checkmark & \checkmark \\
+          Search & Software, Users, Teams, Developers & Bookmarks del.icio.us Web & Photos Groups People & Videos
         \end{tabular}
+
         \label{tab:acties}
         \end{table}
         \begin{table}[ht]
         \centering
         \caption{Self-regulation functionality}
         \rowcolors{1}{white}{lightgray}
-        \begin{tabular}{r|l}
-          Markeer\ldots & Wakoopa \\ \hline
-          Resources as offensive & \checkmark \\
-          Communities as offensive & \\
-          Private and public resources & \checkmark \\
-          Private and public communities/groups & \checkmark
+        \begin{tabular}{r|llll}
+          Markeer\ldots & Wakoopa & Delicious & Flickr & Youtube\\ \hline
+          Resources as offensive & \checkmark & & \checkmark & \checkmark\\
+          Communities as offensive & & & & \checkmark\\
+          Private and public resources & \checkmark & \checkmark & \checkmark & \checkmark\\
+          Private and public communities/groups & \checkmark & & \checkmark & \checkmark
         \end{tabular}
         \label{tab:metaacties}
         \end{table}
-
 
   \newpage
   \section*{Voorwoord}
   \addcontentsline{toc}{chapter}{Voorwoord}
 
-  \newpage
-  \section*{Doelstelling}
-  \addcontentsline{toc}{chapter}{Doelstelling}
-    Het doel van deze afstudeerstage is uitvinden welke usability factoren invloed hebben op de participatie van gebruikers van sociale netwerken. Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus. Via deze methode kan ik zeggen of de factoren inderdaad invloed hebben, en in welke mate.
+    Gedurende mijn minor user experience design heb ik veel aandacht besteed aan gebruiksvriendelijkheid en dit samen met een grafisch ontwerp goed vertaalt kan worden naar werkende code. Ik hoop dit door te kunnen zetten bij Wakoopa gedurende mijn afstudeertraject.
 
+  \newpage
   \section*{Probleemstelling}
   \addcontentsline{toc}{chapter}{Probleemstelling}
     Deze afstudeerstage heeft de volgende onderzoeksvraag:
     \begin{quotation}
-     \textbf{Hoe kan de participatie op een learning network verhoogd worden door middel van usability?}
+     \textbf{Hoe kan de deelname op een learning network verhoogd worden door gebruik te maken van gebruiksvriendelijkheidtechnieken?}
     \end{quotation}
 
-  \section*{Afbakening van onderzoek}
-  \addcontentsline{toc}{chapter}{Afbakening van onderzoek}
+    \subsection*{Doelstelling}
+  \addcontentsline{toc}{section}{Doelstelling}
+
+    Het doel van deze afstudeerstage is uitvinden welke usability factoren invloed hebben op de participatie van gebruikers van sociale netwerken. Ik hoop met een set aanbevelingen te kunnen komen die specifiek gericht zijn op sociale netwerken, en deze aanbevelingen op de site van Wakoopa door te kunnen voeren als casus. Via deze methode kan ik zeggen of de factoren inderdaad invloed hebben, en in welke mate.
+
+
+  \subsection*{Afbakening van het onderzoek}
+  \addcontentsline{toc}{section}{Afbakening van onderzoek}
     Voor dit onderzoek stellen we twee afbakeningen. Ten eerste onderzoeken we niet alle sociale netwerken, maar kijken enkel naar learning networks zoals uitgelegd in de vorige sectie. Dit doen we omdat de interactie op Learning networks zoals Wakoopa of Flickr anders is dan die van bijvoorbeeld Hyves of Facebook. Deze twee laatste hebben als hoofddoel je in contact te houden met vrienden. Op learning networks is dit ook mogelijk, maar de focus van de interactie (en daarmee de gebruikersdoelen) ligt expliciet op de objecten waaromheen het netwerk is opgebouwd (zoals software of foto's). Vanwege deze focus is het niet mogelijk bevindingen direct op sociale netwerken in het algemeen toe te passen.
 
     Binnen deze afbakening van learning networks stellen we een tweede afbakening. Voor het analyseren gebruiken we gegevens en informatie van Wakoopa, omdat we toegang hebben tot statistieken en enqueteringsdata en de mogelijkheid hebben om A/B testing uit te voeren. Met deze opties kunnen we een holistisch inzicht in de gebruikersvriendelijkheid van een learning network krijgen. Wat we hierdoor binnen dit project niet doen is het onderzoeken in hoeverre de bevindingen van toepassing zijn op andere sociale netwerken. Naar aanleiding van testgegevens komen we met een set van aanbevelingen die op een globaal niveau zullen werken op learning networks, maar zullen dit niet met testdata op andere sociale netwerken onderbouwen.
@@ -178,7 +185,7 @@
     \section{Externe onderzoeken}
       \subsection{\cite{Beenen2004}}
 
-      In \emph{Using social psychology to motivate contributions to online communities} onderzoeken \citeauthor{Beenen2004} welke factoren en stimulansen bijdragen aan meer participatie van gebruikers, in hun case die van een filmsite. Door middel van een onderzoek met doelen voor gebruikers, waarbij ze de bewoording aanpasten, kwamen ze tot de conclusie dat, wanneer je aan een gebruiker duidelijk maakt hoe uniek ze zijn, ze dan veel meer zullen participeren op de website. Daarentegen is het heel lastig ze te motiveren. Enkel het noemen van voordelen om te participeren zorgt er volgens hun onderzoek voor dat mensen dat minder snel zullen doen. Een mogelijke verklaring die ze hiervoor geven is dat, wanneer mensen vertelt wordt dat ze iets moeten doen, ze minder snel geneigd zijn dat ook daadwerkelijk te doen.
+      In \emph{Using social psychology to motivate contributions to online communities} onderzoeken \citeauthor{Beenen2004} welke factoren en stimulansen bijdragen aan meer participatie van gebruikers, in hun casus die van een filmsite. Door middel van een onderzoek met doelen voor gebruikers, waarbij ze de bewoording aanpasten, kwamen ze tot de conclusie dat, wanneer je aan een gebruiker duidelijk maakt hoe uniek ze zijn, ze dan veel meer zullen participeren op de website. Daarentegen is het heel lastig ze te motiveren. Enkel het noemen van voordelen om te participeren zorgt er volgens hun onderzoek voor dat mensen dat minder snel zullen doen. Een mogelijke verklaring die ze hiervoor geven is dat, wanneer mensen vertelt wordt dat ze iets moeten doen, ze minder snel geneigd zijn dat ook daadwerkelijk te doen.
 
       Volgens het onderzoek werkt dit zo, omdat mensen gestimuleerd worden door intrensieke motivatie, maar juist minder snel zullen participeren wanneer ze een extrensieke motievatie wordt gegeven. De overkoepelende conclusie is dat je gebruikers moet tonen hoe uniek hun bijdragen zijn, zonder dat je daarbij vermeld wat de voordelen van deze bijdragen zijn.
 
@@ -268,7 +275,7 @@
     Soorgelijke doortastende dingen zijn te doen met andere delen van een site. Zo kan je bij zoekfunctionaliteit bijvoorbeeld voorspellen waar de gebruiker naar wilt zoeken afhankelijk van het soort pagina waar hij of zij op zitten. Wanneer een gebruiker op een andere gebruikerspagina zit, zal hij of zij waarschijnlijk naar gebruikers zoeken, terwijl wanneer je op een objectpagina waarschijnlijk naar andere object op zoek bent. Op een globale overzichtspagina kan je ook persoonlijke informatie kwijt, zoals bij categorie\"en de applicaties die jij in die categorie gebruikt.
 
     \subsection{Usability Review \citet{Hoekman2008}}
-    In tegenstelling tot het onderzoek van \citeauthor{Alfrink2008} richt het usabilityonderzoek van Miskeeto zich meer op de globale indeling van de pagina's en de navigatie hierop. De nadruk wordt gelegd op een homepage die zeer duidelijk de voordelen (en expliciet niet de \emph{functionaliteit}) uitlegt, en dit in een duidelijk visueel blok zet. \citeauthor{Hoekman2008} Maken een punt voor een abstracter niveau van navigatie, waar dit in drie delen wordt opgedeeld: website-brede navigatie; secundaire navigatie en object navigatie. Dit laatste gaat om de pagina's die bij een bepaald object horen (zoals bijvoorbeeld een pagina met alle tags voor een object) Door deze strict gescheiden te houden, zorg je ervoor dat de gebruiker niet per se hoeft te onthouden waar bepaalde functionaliteit zit, maar dit kan afleiden aan het type functionaliteit.
+    In tegenstelling tot het onderzoek van \citeauthor{Alfrink2008} richt het usabilityonderzoek van Miskeeto zich meer op de globale indeling van de pagina's en de navigatie hierop. De nadruk wordt gelegd op een homepage die zeer duidelijk de voordelen (en expliciet niet de \emph{functionaliteit}, zoals momenteel) uitlegt, en dit in een duidelijk visueel blok zet. \citeauthor{Hoekman2008} Maken een punt voor een abstracter niveau van navigatie, waar dit in drie delen wordt opgedeeld: website-brede navigatie; secundaire navigatie en object navigatie. Dit laatste gaat om de pagina's die bij een bepaald object horen (zoals bijvoorbeeld een pagina met alle tags voor een object) Door deze strict gescheiden te houden, zorg je ervoor dat de gebruiker niet per se hoeft te onthouden waar bepaalde functionaliteit zit, maar dit kan afleiden aan het type functionaliteit.
 
     Dit idee wordt ook gebruikt als tip voor andere delen van een site. Door specifieke blokken een gelijke kleur te geven (zoals bijvoorbeeld \emph{geel} voor \emph{persoonlijk}) cree\"er je een snel overzicht van welke delen van de pagina bij een specifieke soort functionaliteit horen. Dit moet echter wel zeer consistent zijn doorgevoerd, omdat het anders de bezoeker zal verwarren.
 
