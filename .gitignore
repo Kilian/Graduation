@@ -1,14 +1,15 @@
-source/*.aux
-source/*.idx
-source/*.log
-source/*.toc
+*.aux
+*.idx
+*.log
+*.toc
 source/*.pdf
-source/*.xml
-source/*.bbl
-source/*.blg
-source/*.out
-source/*.lot
-source/*.lof
+documents/*.pdf
+*.xml
+*.bbl
+*.blg
+*.out
+*.lot
+*.lof
 */internal/*
 enquete/ico/index2.html
 
