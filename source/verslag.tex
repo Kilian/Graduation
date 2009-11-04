@@ -3,7 +3,7 @@
   \usepackage{ulem}
   \usepackage{alltt}
   \usepackage{amssymb}
-
+  \usepackage{subfigure}
   %graphics
   \usepackage{graphicx}
   \usepackage{wrapfig}
@@ -61,6 +61,8 @@
   \renewcommand{\labelenumi}{\theenumi}
   \renewcommand{\theenumii}{\alph{enumii}}
   \renewcommand{\labelenumii}{\theenumii}
+
+\usepackage{appendix}
 
 \begin{document}
   \normalem
@@ -166,7 +168,7 @@
     Wat we hierdoor binnen dit project niet doen is het onderzoeken in hoeverre de bevindingen van toepassing zijn op andere sociale netwerken. Naar aanleiding van testgegevens komen we met een set van aanbevelingen die op een globaal niveau zullen werken op learning networks, maar zullen dit niet met testdata op andere sociale netwerken onderbouwen.
 
   \newpage
-  \chapter{Wat zeggen andere onderzoeken op het gebied van usability en sociale netwerken?}
+  \chapter{Wat zeggen bestaande onderzoeken op het gebied van usability en sociale netwerken?}
     \label{researchchapter}
     \newpage
 
@@ -280,10 +282,12 @@
 
 
   \newpage
-  \chapter{Wat vinden gebruikers van het sociaal netwerk Wakoopa op het gebied van usability?}
+  \chapter{Wat vinden gebruikers van Wakoopa op het gebied van usability?}
     \label{userchapter}
     \newpage
     \section{Enqu\^etering}
+    \textit{Een enqu\ête is een goede methode om van een grote groep mensen quantitatieve informatie te krijgen. Respondenten krijgen een vragenlijst met voornamelijk meerkeuzevragen, waardoor het achteraf gemakkelijk is om de trends te bepalen. Door middel van een online enqu\^etetool is het heel gemakkelijk om een grote groep mensen te bereiken.}
+
     Onder de gebruikers van Wakoopa is in februari 2009 een enqu\^ete verspreid.\footnote{gebruikmakend van \url{http://surveymonkey.com}} Gebruikers werden door middel van een kleine banner in de header gevraagd deze in te vullen, en konden door dit in te vullen een t-shirt winnen (als extra stimulans). Naast deze banner in de header werden mensen via de blog gevraagd de enqu\^ete in te vullen. De enqu\^ete is in een aantal weken tijd door 1069 mensen ingevuld.
 
     De enqu\^ete was ingedeeld in een drietal delen, de eerste had vragen over de demografie van de gebruikers, de tweede over de werking van de website, en de derde over eventuele nieuwe platformen. Voor het gebruik in dit onderzoek laten we het derde tabblad buiten beschouwing en focussen we enkel op de meningen over de website.
@@ -442,7 +446,7 @@
     \label{datachapter}
     \newpage
     \section{Statistieken}
-    Een learning network doet er goed aan om statistieken bij te houden. een statistiekprogramma houdt allerlei gegevens over de bezoekers van een site bij. Bijvoorbeeld hoeveel bezoeken per dag je hebt, uit welk land ze komen en welke pagina's het meest bezocht worden. Maar ook gedetailleerdere dingen, zoals hoelang ze op een website bleven, hoe vaak ze er terugkomen of via welke site ze binnen zijn gekomen. In geavanceerde statistiekprogramma's, zoals die van Google Analytics, kan je naast deze gegevens ook bepaalde doelen instellen.
+    \textit{Een statistiekprogramma houdt allerlei gegevens over de bezoekers van een site bij. Bijvoorbeeld hoeveel bezoeken per dag je hebt, uit welk land ze komen en welke pagina's het meest bezocht worden. Maar ook gedetailleerdere dingen, zoals hoelang ze op een website bleven, hoe vaak ze er terugkomen of via welke site ze binnen zijn gekomen. In geavanceerde statistiekprogramma's, zoals die van Google Analytics, kan je naast deze gegevens ook bepaalde doelen instellen.}
 
     Het is belangrijk om statistieken bij te houden, omdat ze tot allerlei inzichten kunnen leiden die niet direct zichbaar zijn wanneer je zelf naar de site kijkt. Hierna worden de belangrijkste punten die je uit statistieken kan halen benoemd.
 
@@ -521,7 +525,7 @@
 
 
     \section{A/B testing}
-    A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.
+    \textit{A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.}
 
    Het ontwikkelplatform wat Wakoopa gebruikt, Ruby on Rails, heeft door middel van een plugin de optie om A/B testen uit te voeren. Deze automatiseert het verdelen van de verschillende opties tussen bezoekers en houd per variatie bij hoe vaak de geteste links of functionaliteit aangeklikt wordt.
 
@@ -730,5 +734,12 @@
   \bibliography{../references/referenties}
   \bibliographystyle{plainnat}
   \addcontentsline{toc}{chapter}{Bibliografie}
+  \newpage
+
+  \appendix
+  \addappheadtotoc
+  \input{../documents/analyse_homepage.tex}
+  \input{../documents/navigation_workshop.tex}
+  \newpage
 \end{document}
 
