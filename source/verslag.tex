@@ -330,8 +330,8 @@
     \subsection{Custom Tracking}
     Veel learning networks maken gebruik van \emph{AJAX}, een term die gebruikt wordt om aan te duiden dat delen van de pagina informatie van de server halen, maar niet de gehele pagina verversen. Het nadeel van deze techniek is dat er geen nieuwe \emph{page view} is, en dat dit dus ook niet automatisch met een statistiekprogramma wordt bijgehouden. In Google analytics heb je de mogelijkheid om via JavaScript zelf aan tracking te doen. Door een klein stukje code kan je aangeven dat iemand iets via AJAX heeft opgevraagd:
     \begin{verbatim}
-    if(typeof(pageTracker) !== 'undefined') {
-      pageTracker._trackPageview(’/event/nameofevent’);
+    if(typeof(pageTracker) !== `undefined') {
+      pageTracker._trackPageview(`/event/nameofevent');
     }
     \end{verbatim}
     Op deze manier kan je als learning network een hoop verschillende gebeurtenissen bijhouden. Bijvoorbeeld hoe vaak er op een banner wordt geklikt, of een comment wordt ingevoerd. Je krijgt hiermee inzicht in hoevaak een bepaalde functie wordt gebruikt.
@@ -548,6 +548,7 @@
 
       In de persona's voor Wakoopa komen twee competitieve, een spontane en een humanistische gebruiker voor. Het is voor deze doelgroepen belangrijk dat de juiste informatie snel op een goede manier wordt gepresenteerd.
 
+    \section{Statistieken}
     \subsection{Custom tracking}
     Na het toevoegen van custom tracking was er meer inzicht in welke javascriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
 
