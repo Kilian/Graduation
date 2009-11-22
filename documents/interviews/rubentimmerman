@@ -1,0 +1,68 @@
+interview ruben timmerman
+
+\textbf{Kilian:} Welke learning networks gebruik je zelf?
+
+\textbf{Ruben:} Flickr en Wakoopa, linkedin, maar dat is misschien meer sociaal. Waarschijnlijk nog veel meer, maar dan zou ik even moeten denken. Heb je nog suggesties?
+
+\textbf{Kilian:} Bijvoorbeeld iets als linksharing
+
+\textbf{Ruben:} Doe ik weinig aan, af en toe slideshare. Delicious gebruik ik eigelijk bijna niet meer. Ik gebruik google docs, maar ik weet niet of dat een learning network is. Je shared je docs, maar het is natuurlijk niet open. Je kiest je eigen network. Wij gebruiken hier enkel google docs, maar het is wat minder vrij
+
+\textbf{Kilian:} Welke learning networks hebben hun usability goed op orde, en welke niet?
+
+\textbf{Ruben:} Eigelijk allemaal wel. Ik ben een late adopter, dus de networks die ik gebruik, gebruik ik omdat ze al succesvol zijn. Ik heb nu google wave bijvoorbeeld nog niet gebruikt omdat ik het nut er nog niet van in zie. Dan ga ik het pas gebruiken. Er zijn niet echt networks waar ik ontevreden over ben. Van slideshare kan ik soms wel zeggen dat het niet helemaal geweldig is. Van Flickr heb ik soms echt wel van "wow, wat hebben ze dat slim of handig gedaan". Maar slideshare kan ik prima gebruiken, dus ik zie daar niet echt problemen mee.
+
+\textbf{Kilian:} Heb je al naar google wave gekeken?
+
+\textbf{Ruben:} Nog niet echt. Wat ik hoop dat gaat gebeuren is dat andere bedrijven het googlewave protocol gaan gebruiken voor hun aplicaties, en dat die usability er dan dus al ingebakken zit.
+
+\textbf{Kilian:} Jij doet ook wel eens expert reviews op learning networks. Wat zijn daar de struikelblokken?
+
+\textbf{Ruben:} Ik kijk dan toch stiekem even naar hyves, en dan de delen die onder een learning network kunnen vallen. De herbruikbaarheid van objecten binnen verschillende concepten is een enorm probleem daar. Wat we bijvoorbeeld hadden was het object foto, daar moet je vanalles mee moeten kunnen doen. Dat kan in verschillende contexten, zoals bijvoorbeeld in een bericht, of in een album. Je hebt dan hetzelfde concept ("het bewerken van een foto") in een andere context. We hebben alle objecten en contexten uitgeschreven, dat zijn honderden pagina's waarbij we voor alle objecten opgeschreven waar en op welke manier ze gebruikt worden. Het grootste probleem of uitdaging is volgens mij zorgen dat dat over de hele site klopt.
+
+\textbf{Kilian:} Bij wakoopa hebben we heel erg dat het benoemen van delen of functies. Hoe jij er over denkt is heel anders dan hoe anderen daar over denken.
+
+\textbf{Ruben:} Bij hyves hebben we dat ook altijd gehad. Hoe zij dat oplosten was door middel van een courtesylinkje, en elke keer was dat zo. Gebruikers verwachten dingen op andere plekken, en op een gegeven moment ben je overal linkjes aan het plaatsen. Dat is een probleem
+
+\textbf{Kilian:} Overal linkjes is natuurlijk ook niet optimaal, hoe ga je daar mee om?
+
+\textbf{Ruben:} Waar je dan op komt is dat je je gebruikers eigelijk wilt educaten. Je wilt ze iets gaan leren. Je moet iets bedenken waarbij je de link tussen objecten, dus niet een echte link, maar de link in iemands hoofd, duidelijker moet gaan maken. Door gebruik van hetzelfde icoon, of eenduidig taalgebruik of iets dergelijks. Waar we bij hyves heel vaak op kwamen was dat een aantal verschillende elementen die in de loop van de jaren zijn gemaakt eigelijk heel erg op elkaar lijken. Wat we dan moeten doen is ze groeperen of op elkaar te laten lijken zodat de band tussen de elementen duidelijk is. Je wilt dat omgooien en hetzelfde maken, maar dat moet je dan stapje voor stapje doen. Door dat stukje bij beetje online te zetten zorg je dat gebruikers langzaam leren wat de relatie tussen objecten is. Dat is moeilijk want je maakt toch een beslissing om alles om te gooien.
+
+\textbf{Kilian:} Maak jij veel gebruik van design patterns, kijken naar die objecten samenvoegen.
+
+\textbf{Ruben:} Ja, naast dat je objecten in meerdere contexten kan hebben, zoals een foto editten in een bericht of in een fotoalbum, krijg je ook dat je een video kan editten, en een krabbel kan editten. En daar wil je ook regels voor. Bij hyves is het voornamelijkste wat we daar gedaan hebben is het tekstveld. de Rich text editors verschilde heel erg, en daar hebben we een ding van gemaakt. Een van de eerste dingen die ik daar heb geroepen is dat ze patterns moesten gaan maken. De patterns en de context zijn dus eigelijk de twee dimensies.
+
+\textbf{Kilian:} Zijn er recente stijlontwikkelingen die jou opvallen op het gebied van usability? zoals google suggest, of de google wave scrollbars, of iets heel anders als een video op de homepagina.
+
+\textbf{Ruben:} Moeilijk om daar snel antwoord op te geven. De truuk is om het wiel niet opnieuw uit te vinden. Als jij een learning network hebt, begin met de succesvolste en bouw die naar. Met Eduhub heb ik hetzelfde gedaan, dat is een vergelijkingssite voor opleidingen, en daar heb ik booking.com en funda voor nagebouwd. Pas daarna ben ik zelf dingen aan gaan passen. Maar om trends te noemen. Je ziet ze op allerlei niveau's. In vergelijkingsland is het bijvoorbeeld normaal om meerdere resultaten te vergelijken door middel van vinkjes naast de resultaten. In de e-commerce zie je ze nog sterker, zoals bijvoorbeeld direct onder de bestelbutton een goed-gevoel zinnetje te zetten. Iets als "het is op vooraad, en u heeft het altijd binnen een dag in huis". Dat soort patronen zie je heel erg terug. Je ziet ook dat de grote namen elkaar nadoen of tot dezelfde oplossing komen. Als de interaction designers goed nadenken komen ze vaak tot bijna dezelfde conclusie, omdat ze allen hetzelfde probleem hebben en goed naar hun gebruikers luisteren.
+
+\textbf{Kilian:} Wat zijn jouw favoriete onderzoeksmethodieken?
+
+\textbf{Ruben:} Ik heb heel veel kwalitatieve onderzoeken gedaan, bij mensen thuis of op kantoor of in een lab, en dat is voor opdrachtgevers het leukst, want die krijgen dan coole videos. Veel opdrachtgevers vragen daar om, maar wat er op een gegeven moment gebeurde was twee dingen. Je hebt sites die nog nooit getest zijn en waar een niet zo heel goede ontwerper aan heeft gewerkt, en die zijn eigelijk zo slecht dat je beter een expert review kan doen. Daar kan ik zo al de grote problemen voor aangeven, en dan kan je het geld wat overblijft gebruiken voor een goede ontwerper. Je hebt maar zoveel geld om het te verbeteren, en dan kan je beter een aantal problemen vinden en die ook oplossen, dan een heleboel problemen. Wat daar wel kan is dat je na de eerste verbeteringsronde een gebruikersonderzoek doet. De andere groep sites is eigelijk te goed voor gebruikersonderzoek. Als je kijkt naar booking.com, dat is echt een goede site. Die is jarenlang doorgetest. Je kan daar wel gebruikersonderzoek doen, maar dan is het eigelijk enkel handig als inspiratie voor a/b-tests. Je kan dan inspiratie uit nog meer bronnen halen, zoals interviews, of vragen aan medewerkers of misschien een enquetetool. Daarmee kan je dan met echte tests aan de slag. Bij dat soort goede sites zeg ik tegenwoordig dat ze geen onderzoek moeten doen om problemen te vinden, maar gewoon gelijk te testen op de site zelf.
+
+Wat belangrijk is, is het proces van feedback. Je moet continue feedback hebben en daar mee omgaan. Dan heb je altijd feedback om nieuwe testen op te baseren. Dan kan je heel snel kijken wat het beste werkt. Voor mij zijn de a/b tests en ingebouwde continueue tests, die kijken `welke invloed heeft dit op mijn bankrekening', dus waar het echt om gaat, de heilige graal.
+
+\textbf{Kilian:} Dus je vind, eigelijk moet je niet zozeer onderzoeken doen, maar meer testen
+
+\textbf{Ruben:} Ja, je moet de methodieken gebruiken om feedback en inspiratie te krijgen, en daarmee kwantitatieve tests doen. Dat is mijn filosofie.
+
+\textbf{Kilian:} Kan je dan zeggen dat het veld van usability zo volwassen is geworden dat usability experts zelf al kunnen zeggen wat de echte problemen zijn?
+
+\textbf{Ruben:} Dat niet, maar wel om op een bepaald niveau te komen. Tot dat niveau weet een usability expert meer dan genoeg om je bezig te houden. Voor slechte sites ben ik het met je eens, maar voor sites die een beetje op niveau zit geldt dat niet meer. Er zijn dan zoveel dingen die kunnen, dat je ze gewoon moet testen. Het proces op orde krijgen is denk ik het belangrijkst. De echte usability experts zijn straks niet meer de mensen die zeggen hoe het moet, maar die zeggen hoe je je proces anders moet inrichten. Dat wordt hip de komende jaren.
+
+\textbf{Kilian:} Zijn er methodieken die jij weinig toe vind voegen?
+
+\textbf{Ruben:} Eentje die ik wel een beetje overrated vind zijn online enqu\^etes. Die worden te pas en te onpas op sites worden geknalt. Volgens mij worden die vooral gebruikt om dingen goed te praten. De NOS heeft dat nu bijvoorbeeld, waarin ze letterlijk vragen `welk cijfer geeft u het design van deze site?'. Dan gaan ze na het herontwerp nog eens tienduizend mensen lastig vallen, en dan hopen ze dat er eerst een 6.9 en nu een 7.1 uitkomt, en dat ze dan tegen de manager kunnen zeggen `kijk, het is een verbetering!'. Online enqu\^etes worden volgens mij misbruikt. De bezwaren zijn al lang bekent, maar iedereen gebruikt ze omdat ze zo gemakkelijk lijken. Je krijgt feedback, het is te quantificeren en je kan het aan je manager laten zien. Alleen, enkel bepaalde mensen doen er aan mee, je irriteerd er een hoop gebruikers mee. Er zitten zoveel nadelen aan. Ze hebben absoluut hun plek in het proces, maar enkel als een klein onderdeel.
+
+\textbf{Kilian:} Kom dat misschien omdat die enqu\^etetools altijd direct zichtbaar worden, als je de site nog niet hebt gebruikt?
+
+\textbf{Ruben:} Ja precies. De betere enqu\^etetools zeggen nu `mogen we uw gebruik monitoren en als u van de site afgaat een enqu\^ete laten invullen?'. Maar als je weggaat heb je al helemaal geen zin meer in vragen. Dus daar is vanalles mis mee. Maar omdat het naar managers gemakkelijk is, wordt het dus gebruikt. Het proces wordt gemakkelijker, maar het is niet goed.
+
+\textbf{Kilian:} Welke methodieken vind je goed om voor learning networks te gebruiken?
+
+\textbf{Ruben:} Voor learning networks is het nog meer zo dat het feedbackproces geintegreerd moet zijn, omdat ze zo dicht bij hun gebruikers staan. Hyves heeft bijvoorbeeld een `leuker kunnen we het niet maken, wel gemakkelijker'-hyve, en wakoopa heeft getsatisfaction. Voor elk bedrijf is dat anders, maar feedback moet dus heel gemakkelijk zijn.
+
+\textbf{Kilian:} Hoe vind je uit wat voor jou het beste werkt?
+
+\textbf{Ruben:} Daar kan je dan weer goed een expert voor gebruiken. Die kan dan bijvoorbeeld zeggen dat getsatisfaction te nerdy is voor de doelgroep. Je moet meerdere dingen proberen. Dat proces moet je als bedrijf aandurven. Je organisatie moet er op ingestelt zijn om meerdere dingen te proberen.
+
