@@ -281,6 +281,16 @@
 
     Het is ook belangrijk om de site te testen, bijvoorbeeld door middel van A/B testen, het analyseren van clickmaps en door het maken van `sales' funnels in een statistiekprogramma. Via deze methoden kan je uitvinden wat momenteel de knelpunten op een learning network zijn, en hoe deze te zijn verbeteren.
 
+  \section{Interviews}
+    Ee zijn drie interviews uitgevoerd met usability experts: Bas Bakker, Ruben Timmerman en Bojhan Somers. Het doel van deze interviews was om van experts een bredere kijk op het vakgebied te krijgen. Er werd gevraagd naar hun ervaringen en hun toekomstvisie.
+
+    Alledrie spraken een voorkeur voor lab tests uit, met kanttekening dat het vaak meer zin heeft om eerst een expert review te doen. Dit omdat de meeste sites lang niet goed genoeg zijn, en omdat een usability expert dan al genoeg problemen aan kan wijzen. Zoals Ruben Timmerman zei: `Tot [een bepaald] niveau weet een usability expert meer dan genoeg om je bezig te houden'. Ook kan er daarmee budget uitgespaart worden, omdat een usability review goedkoper is dan een labtest met een groep mensen.
+
+    Volgens alledrie de experts zal er in de toekomst van usability experts veel minder verwacht worden dat ze zich op paginaniveau bezig houden met usability, omdat de kennis daarvan al zo wijdverspreid is dat designers dat zelf ook al goed doen. Zij denken dat het begeleiden van het proces veel belangrijker wordt. Het was opvallend dat alledrie zagen dat het veld zich in die richting bewoog.
+
+    Ze zagen alledrie dat het managen van de feedback loop belangrijker wordt dan het aangeven waar de problemen zijn. De feedback loop is in dit geval het op verschillende manieren ontvangen van suggesties van verschillende partijen, zoals gebruikers via iets als getsatisfaction, werknemers via een issue tracker, a/b testing voor kwantitatieve resultaten en gebruikerstests ter inspiratie voor die a/b tests. Zo ontvang je een grote lijst aan suggesties die je dan kan gebruiken om prioriteiten van nieuwe functionaliteit vast te stellen.
+
+    De volledige interviews staan in bijlage \ref{interviewappendix}.
 
   \newpage
   \chapter{Wat vinden gebruikers van Wakoopa op het gebied van usability?}
@@ -326,7 +336,10 @@
     \end{itemize}
     Deze opdrachten zijn gekozen uit de meest voorkomende acties op Wakoopa. Voor de test krijgen mensen een gevulde account.
 
-    Voor de start van de test wordt aan de proefpersoon gevraagd alle opdrachten door te lezen, samen met de introductie. Er wordt uitgelegd dat zij niks fout kunnen doen en dat ze de website testen, niet zichzelf. In bijlage \ref{abtestsappendix} staan de resultaten van individuele lab tests. De opnames hiervan staan op de bijgeleverde CD.
+    Voor de start van de test wordt aan de proefpersoon gevraagd alle opdrachten door te lezen, samen met de introductie. Er wordt uitgelegd dat zij niks fout kunnen doen en dat ze de website testen, niet zichzelf. In bijlage \ref{labtestsappendix} staan de resultaten van individuele lab tests. De opnames hiervan staan op de bijgeleverde CD.
+
+    \subsection{Bevindingen}
+
 
   \newpage
   \chapter{Technische analyse van gegevens op Wakoopa}
@@ -577,6 +590,23 @@
 
       In de persona's voor Wakoopa komen twee competitieve, een spontane en een humanistische gebruiker voor. Het is voor deze doelgroepen belangrijk dat de juiste informatie snel op een goede manier wordt gepresenteerd.
 
+    \section{Gebruikersonderzoek}
+      \subsection{Enqu\^ete}
+        De meeste respondenten gaven aan de site te bezoeken in reactie op het ontvangen van de wekelijkse nieuwsbrief. Deze nieuwsbrief werd voorheen met de hand verstuurd, en werd daardoor soms niet verstuurd. Naar aanleiding van de enqu\^ete is er voor gekozen om automatisch een wekelijkse mail te versturen, zonder extra introtekst erbij.
+
+        Veel respondenten lieten weten dat de informatie over software niet toereikend genoeg was. De reden die de meesten gaven was dat het moeilijk is interessante reacties te vinden. Hiervoor zou er een stem-systeem moeten worden ingebouwd, waarbij de reacties met de hoogste stemmen bovenaan komen staan, en waar mensen reacties op reacties kunnen plaatsen (een zogenaame threaded discussie).
+
+        Ondanks de mogelijkheid om softwarepagina's gemakkelijk te delen via andere sociale netwerken, bleken veel mensen dit te missen. Daarom is de "share" knop vervangen met een groep icoontjes. Deze iconen zijn duidelijker herkenbaar. Dit is nog verder uit te breiden met functionaliteit die automatisch berichten op andere sociale netwerken plaatst, bijvoorbeeld als een gebruiker een review schrijft.
+
+      \paragraph{\textbf{Verbeterpunten:}}
+      \begin{itemize}
+        \item Verstuur iedere week een nieuwsbrief
+        \item Threaded discussies toevoegen op de softwarepagina's en stemmogelijkheden toevoegen
+        \item Reacties op softwarepagina's sorteren op aantal stemmen
+        \item Het toevoegen van automatisch plaatsen van berichten op andere sociale netwerken
+      \end{itemize}
+
+
     \section{Statistieken}
     \subsection{Custom tracking}
     Na het toevoegen van custom tracking was er meer inzicht in welke javascriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
@@ -589,6 +619,22 @@
         \item Maak tagging duidelijker
       \end{itemize}
 
+    \subsection{A/B testen}
+      \subsubsection{Plaats van de sign-up link op landing pages}
+        In sectie \ref{ctatest} blijkt uit de resultaten dat de sign-up link aan de linkerkant beter werkt dan die aan de rechterkant. Dit was de originele positie, en na afloop van de A/B test blijft de link daar staan.
+
+    \paragraph{\textbf{Verbeterpunten:}}
+      \begin{itemize}
+        \item geen
+      \end{itemize}
+
+      \subsubsection{Het benoemen van de mate waarin een profiel is ingevuld}
+        In sectie \ref{profileprogress} blijkt uit de resultaten hoewel zowel een progressiemeter als een suggestie beter werkten dan enkel een bericht, ze samen percentueel voor minder verbetering zorgen dank enkel de progressiemeter. Daarom is enkel de progressiemeter geimplementeerd.
+
+    \paragraph{\textbf{Verbeterpunten:}}
+      \begin{itemize}
+        \item het toevoegen van een progressiemeter om aan te geven in welke mate je profiel is ingevuld.
+      \end{itemize}
 
   \newpage
   \chapter{De quick wins om participatie te verhogen op learning networks}
@@ -601,10 +647,6 @@
   \newpage
   \chapter*{Discussie}
   \addcontentsline{toc}{chapter}{Discussie}
-
-  \newpage
-  \chapter*{Verklarende woordenlijst}
-  \addcontentsline{toc}{chapter}{Verklarende woordenlijst}
 
   \listoftables
   \addcontentsline{toc}{chapter}{Lijst van tabellen}
