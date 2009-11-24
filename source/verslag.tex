@@ -406,23 +406,22 @@
       \label{ctatest}
       In tegenstelling tot de homepagina hebben onze landing pages (Pagina's waar bezoekers via zoekmachines op terecht komen) wel een sign-up link in de header. Momenteel staat deze in de linkerbovenhoek. In deze A/B test bekijken we of een variate waarin deze in de rechterbovenhoek staat, tot meer clicks leidt dan wanneer deze in de linkerbovenhoek staat. De resultaten staan in Tabel \ref{tab:signupcta}, de conclusie in Hoofdstuk \ref{wak:Editorial2008}.
 
-        \begin{table}[ht]
-        \centering
-        \caption{Resultaten van de sign-up link}
-        \begin{tabular}{r|*{3}{c}}
-          \textbf{Versie}  & Conversie  & Verbetering & Clicks / Pageviews \\ \hline
-          \textbf{Links}   & 0.00036\%  & \emph{n.v.t.}        & 1544 / 4200125 \\
-          Rechts  & 0.00025\%  & -32\%                & 1058 / 4199310 \\
-        \end{tabular}
+      \begin{table}[ht]
+      \centering
+      \begin{tabular}{r|*{3}{c}}
+        \textbf{Versie}  & Conversie  & Verbetering & Clicks / Pageviews \\ \hline
+        \textbf{Links}   & 0.00036\%  & \emph{n.v.t.}        & 1544 / 4200125 \\
+        Rechts  & 0.00025\%  & -32\%                & 1058 / 4199310 \\
+      \end{tabular}
+      \caption{Resultaten van de sign-up link}
+      \label{tab:signupcta}
+      \end{table}
 
-        \label{tab:signupcta}
-        \end{table}
-    \begin{figure}
-      \caption{Links}
-      \includegraphics[width=\textwidth]{../images/abtest/left}
-      \caption{Rechts}
-      \includegraphics[width=\textwidth]{../images/abtest/right}
-    \end{figure}
+      \begin{figure}
+        \subfigure[Links]{\includegraphics[width=\textwidth]{../images/abtest/left}}
+        \subfigure[Rechts]{\includegraphics[width=\textwidth]{../images/abtest/right}}
+        \caption{Plaats van de sign-up link op landing pages}
+      \end{figure}
 
     \subsection{Het benoemen van de mate waarin een profiel is ingevuld}
       \label{profileprogress}
@@ -430,7 +429,6 @@
 
         \begin{table}[ht]
         \centering
-        \caption{Resultaten van het benoemen van de mate waarin een profiel is ingevuld}
         \rowcolors{1}{white}{lightgray}
         \begin{tabular}{r|*{3}{c}}
           \textbf{Versie}                   & Conversie  & Verbetering   & Clicks / Pageviews \\ \hline
@@ -439,22 +437,44 @@
           \textbf{Met progressiemeter}      & 15\%       & 66\%          & 819 / 5355\\
           Met beide  & 12\%       & 33\%          & 635 / 5284\\
         \end{tabular}
+        \caption{Resultaten van het benoemen van de mate waarin een profiel is ingevuld}
         \label{tab:profilecta}
         \end{table}
 
     \begin{figure}
-      \caption{origineel}
-      \includegraphics[width=\textwidth]{../images/abtest/original}
-
-      \caption{met suggestie}
-      \includegraphics[width=\textwidth]{../images/abtest/suggestion}
-
-      \caption{met progressiemeter}
-      \includegraphics[width=\textwidth]{../images/abtest/progresbar}
-
-      \caption{met suggestie en progressiemeter}
-      \includegraphics[width=\textwidth]{../images/abtest/both}
+      \subfigure[Origineel]{\includegraphics[width=\textwidth]{../images/abtest/original}}
+      \subfigure[Met suggestie]{\includegraphics[width=\textwidth]{../images/abtest/suggestion}}
+      \subfigure[Met progressiemeter]{\includegraphics[width=\textwidth]{../images/abtest/progresbar}}
+      \subfigure[Met suggestie en progressiemeter]{\includegraphics[width=\textwidth]{../images/abtest/both}}
+      \caption{Het benoemen van de mate waarin een profiel is ingevuld}
     \end{figure}
+
+
+    \subsection{De call-to-actions op de homepagina}
+      \label{ctahomepagetest}
+
+      In bijlage \ref{analysehomeappendix} staat de uitwerking van een aantal varianten voor de call-to-action afbeeldingen op de homepagina. Origineel werden er 4 functionaliteiten van Wakoopa getoont op de homepagina, zoals te zien in figuur \ref{ctahomeimg}. Deze zijn aangepast naar drie nieuwe versies: \'e\'en die vanuit de gegevens van de survey de meest gewaardeerde opties weergeeft, een versie die dat als voordelen opschrijft, en een versie die dit op een manier weergeeft die de uniekheid van een gebruiker benadrukt.
+    \begin{figure}
+      \begin{center}
+        \includegraphics[width=\textwidth]{../images/newhomepage/original}
+        \caption{Huidige call-to-actions op de homepagina}
+        \label{ctahomeimg}
+      \end{center}
+    \end{figure}
+
+        \begin{table}[ht]
+        \centering
+        \rowcolors{1}{white}{lightgray}
+        \begin{tabular}{r|*{3}{c}}
+          \textbf{Versie}                   & Conversie  & Verbetering    & Clicks / Pageviews \\ \hline
+          Origineel                         & \%        & \emph{n.v.t.}   &  / \\
+          Andere items                      & \%        & \%              &  / \\
+          Voordelen                         & \%        & \%              &  / \\
+          Uniekheid                         & \%        & \%              &  / \\
+        \end{tabular}
+        \caption{Resultaten van de call-to-actions op de homepagina}
+        \label{tab:ctahome}
+        \end{table}
 
   \newpage
   \chapter{Usabilitytechnieken die de participatie op een learning network verhogen}
