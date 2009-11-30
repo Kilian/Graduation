@@ -350,7 +350,7 @@
 
     Het doel van zo'n funnel analyseren is uitvinden op welke manier je de trechtervorm dikker kan krijgen, en dus meer mensen het door jouw gestelde doel kan laten bereiken. Doordat je op een goede manier kan laten zien waar de knelpunten zitten, kun je dit stap voor stap oplossen.
 
-    \subsection{Bounce Rates}
+    \subsection{Bounce rates}
     Bounce Rates is de term voor het percentage wat op een pagina komt, en niet verder klikt naar andere pagina's. Een hoge bounce rate betekent doorgaans dat de pagina niet is wat de gebruiker er van verwachte op het moment dat hij de pagina bezocht. Wanneer je weet welke pagina's een hoge bounce rate hebben, kan je onderzoeken \emph{waarom} die pagina's een hoge bounce rate hebben. Bijvoorbeeld omdat de naam van de pagina niet overeenkomt met de inhoud, of omdat de informatie op de pagina niet volledig genoeg is. Vaak is het zo dat een pagina simpelweg geen goede vervolgstap biedt, en het voor de gebruiker niet duidelijk is wat hij of zij nu moet doen.
 
     De belangrijkste pagina met betrekking tot Bounce Rates is doorgaans de homepagina. Dit is de pagina die nieuwe bezoekers voor het eerst zien, en de pagina die ze moet overhalen om zich aan te melden. Wanneer hier geen duidelijke vervolgstap op staat, of de gebruiker wordt niet genoeg gemotiveerd, zorgt dit voor een hogere bounce rate.
@@ -359,7 +359,7 @@
 
     Daarintegen klikt een op de vier bezoekers door naar de signup pagina, waar vervolgens meer dan de helft zich ook daadwerkelijk inschrijft (dit komt uit de signup funnel). Dat zijn hoge cijfers. Niettemin moet het lukken dit hoger te krijgen door ervoor te zorgen dat mensen op de homepagina minder snel wegklikken. Onder andere het onderzoek van \cite{Hoekman2008} doet een voorstel van hoe dit verbeterd kan worden.
 
-    \subsection{Custom Tracking}
+    \subsection{Custom tracking}
     Veel learning networks maken gebruik van \emph{AJAX}, een term die gebruikt wordt om aan te duiden dat delen van de pagina informatie van de server halen, maar niet de gehele pagina verversen. Het nadeel van deze techniek is dat er geen nieuwe \emph{page view} is, en dat dit dus ook niet automatisch met een statistiekprogramma wordt bijgehouden. In Google analytics heb je de mogelijkheid om via JavaScript zelf aan tracking te doen. Door een klein stukje code kan je aangeven dat iemand iets via AJAX heeft opgevraagd:
     \begin{verbatim}
     if(typeof(pageTracker) !== `undefined') {
@@ -368,7 +368,7 @@
     \end{verbatim}
     Op deze manier kan je als learning network een hoop verschillende gebeurtenissen bijhouden. Bijvoorbeeld hoe vaak er op een banner wordt geklikt, of een comment wordt ingevoerd. Je krijgt hiermee inzicht in hoevaak een bepaalde functie wordt gebruikt.
 
-    Op Wakoopa werd nog geen van de javascript opties getracked. Met behulp van van bovenstaande code is dit ingebouwd zodat we kunnen analyseren welke functies veel gebruikt worden. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{/javascript/pagina-naam/naam-van-functie}. Door middel van de filters in Google Analytics kunnen deze dan gemakkelijk gevonden worden. In bijlage \ref{customtrackingappendix} staat een lijst van de functies die nu getracked worden.
+    Op Wakoopa werd nog geen van de JavaScript opties getracked. Met behulp van van bovenstaande code is dit ingebouwd zodat we kunnen analyseren welke functies veel gebruikt worden. Ter verduidelijking zullen we een niet-bestaande boomstructuur gebruiken, in de vorm van \emph{/JavaScript/pagina-naam/naam-van-functie}. Door middel van de filters in Google Analytics kunnen deze dan gemakkelijk gevonden worden. In bijlage \ref{customtrackingappendix} staat een lijst van de functies die nu getracked worden.
 
     \subsection{Heatmaps}
       \begin{figure}
@@ -378,7 +378,7 @@
       \label{heatmap}
       \end{center}
     \end{figure}
-    Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via javascript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt. Omdat dit vrij intensief is voor de browser van de bezoeker, wordt het pas sinds recent toegepast, en nooit voor een lange duur.
+    Een techniek die pas sinds een paar jaar toegepast wordt is het maken van heatmaps. Deze heatmaps zien eruit als hittemappen, maar geven in plaats van temperatuur de hoeveelheid clicks of de positie van de muis aan op een website. Gedurende een vastgestelde periode houd je iedere click bij via JavaScript. Dit kan je dan later `plotten' op een screenshot, en zo zien waar het meest geklikt wordt. Omdat dit vrij intensief is voor de browser van de bezoeker, wordt het pas sinds recent toegepast, en nooit voor een lange duur.
 
     Door middel van deze techniek kan je goed zien welke delen van de pagina wel en welke delen niet worden gebruikt door je bezoekers. In Figuur \ref{heatmap} zie je een voorbeeld van de homepagina van Wakoopa, gemaakt met Crazyegg.\footnote{\url{http://crazyegg.com}} Wat hier opvalt is dat van de 4 afbeeldingen in het midden van de pagina, enkel de linker twee het meest worden aangeklikt. Hieruit kan je opmaken dat deze twee voor veel mensen interessanter zijn dan de rechter twee. Omgekeerd, de rechter twee zijn niet duidelijk genoeg, of wekken vergeleken met de linker twee niet even veel interesse. Een verbeterpunt. Het is dan aan de ontwikkelaar om te beslissen of dit betekent dat de rechter twee verbeterd moeten worden, weggehaald, of minder nadruk moeten krijgen waarbij de linker twee meer nadruk krijgen.
 
@@ -513,6 +513,19 @@
 
   \section{Technische analyse}
     \subsection{Statistieken}
+      \subsubsection{Goal funnel}
+        Een goal funnel voor de aanmeldprocedure kan goed inzicht geven in waar de meeste aanmeldingen vandaan komen. Je kan problemen in het aanmeldproces duidelijk zien, wanneer er bij \'e\'en bepaalde stap een scherpe daling in het voltooingspercentage is.
+
+        Voor andere onderdelen van een site, zoals het op een later moment aanmelden voor eventuele betaalde accounts, of het koppelen van andere netwerken, kan een goal funnel worden aangemaakt om inzicht te krijgen in hoe gebruikers door het gehele proces lopen.
+
+      \subsubsection{Bounce rates}
+        Een lijst van pagina's met een hoge bounce rate bijhouden is aan te raden. Er kan dan per pagina onderzocht worden wat er mis is, of dat belangrijk is en hoe de bounce rate omlaag gebracht kan worden. Soms is een pagina niet belangrijk genoeg, bijvoorbeeld omdat er heel weinig bezoekers op komen. Afhankelijk van het aantal bezoekers en de bounce rate kan dan bepaald worden welke pagina's verbeterd moeten worden.
+
+      \subsubsection{Custom tracking}
+        Delen van de site die met JavaScript werken worden niet automatisch opgenomen in de statistieken van bijvoorbeeld Google Analytics. Om toch bij te houden hoe vaak deze functionliteit gebruikt wordt, is het slim om hier custom tracking aan toe te voegen.
+
+      \subsubsection{Heatmaps}
+        Heatmaps zijn handig om de homepagina of de signup pagina te analyseren. Er kan uitgevonden worden of de meest belangrijke elementen wel het meest bekeken worden, en welke delen er als belangrijk en minder belangrijk worden gezien.
 
   \newpage
   \chapter{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
@@ -662,7 +675,7 @@
 
     \section{Statistieken}
     \subsection{Custom tracking}
-    Na het toevoegen van custom tracking was er meer inzicht in welke javascriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
+    Na het toevoegen van custom tracking was er meer inzicht in welke JavaScriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
 
     Het toevoegen van favorites gebeurd bijna driemaal zovaak als het toevoegen van tags. Dit is te verklaren met het feit dat favorites op de site vrij gemakkelijk te vinden zijn, terwijl dit bij tags nog niet het geval is. Een conclusie zou kunnen zijn dat mensen favorites als een `gemakkelijke' of socialere vorm van taggen zien.
 
