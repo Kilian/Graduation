@@ -3,8 +3,9 @@
   \usepackage{ulem}
   \usepackage{alltt}
   \usepackage{amssymb}
-  \usepackage{subfigure}
+
   %graphics
+  \usepackage{subfigure}
   \usepackage{graphicx}
   \usepackage{wrapfig}
 
@@ -20,29 +21,10 @@
   \usepackage{natbib}
   \bibpunct{(}{)}{;}{a}{,}{,}
 
-  % metadata
-  \title{\textsc{Gebruiksvriendelijk Gebruikers~Motiveren}
-  \linebreak Deelname op learning networks verhogen met~gebruiksvriendelijkheid \linebreak \linebreak \emph{Scriptie}}
+  %appendix
+  \usepackage{appendix}
 
-  \author{\textbf{Kilian Valkhof}\\
-  Hogeschool Rotterdam\\
-  \textit{studentnr.:} 0783312\\
-  \\
-  \textit{Afstudeerbegeleider:} Sandra Hekkelman\\
-  \textit{Tweede begeleider:} Rimmert Zelle\\
-  \\
-  \textit{Bedrijf:} Wakoopa bv\\
-  \textit{Bedrijfsbegeleider:} Robert Gaal}
-
-  \date{17 augustus 2009 -- \today}
-
-  \makeindex
-
-
-  %prettypage
-  %\hoffset = -0.6in
-  %\textwidth = 6in
-
+  %header and footer style
   \usepackage{lastpage}
   \usepackage{fancyhdr}
   \pagestyle{fancy}
@@ -62,7 +44,23 @@
   \renewcommand{\theenumii}{\alph{enumii}}
   \renewcommand{\labelenumii}{\theenumii}
 
-\usepackage{appendix}
+  % metadata
+  \title{\textsc{Gebruiksvriendelijk Gebruikers~Motiveren}
+  \linebreak Deelname op learning networks verhogen met~gebruiksvriendelijkheid \linebreak \linebreak \emph{Scriptie}}
+
+  \author{\textbf{Kilian Valkhof}\\
+  Hogeschool Rotterdam\\
+  \textit{studentnr.:} 0783312\\
+  \\
+  \textit{Afstudeerbegeleider:} Sandra Hekkelman\\
+  \textit{Tweede begeleider:} Rimmert Zelle\\
+  \\
+  \textit{Bedrijf:} Wakoopa\\
+  \textit{Bedrijfsbegeleider:} Robert Gaal}
+
+  \date{17 augustus 2009 -- \today}
+
+  \makeindex
 
 \begin{document}
   \normalem
@@ -73,6 +71,7 @@
   \addcontentsline{toc}{chapter}{Samenvatting}
 
   \newpage
+  \setcounter{tocdepth}{1}
   \tableofcontents
 
   \newpage
