@@ -388,9 +388,11 @@
     \section{A/B testing}
     \textit{A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.}
 
-   Het ontwikkelplatform wat Wakoopa gebruikt, Ruby on Rails, heeft door middel van een plugin de optie om A/B testen uit te voeren. Deze automatiseert het verdelen van de verschillende opties tussen bezoekers en houd per variatie bij hoe vaak de geteste links of functionaliteit aangeklikt wordt.
+    Voor A/B en multivariate testing zijn verschillende opties. De meest bekende is de Google website optimizer\footnote{\url{http://www.google.com/websiteoptimizer}}. Deze zorgt echter voor beperkingen als er dynamische content moet worden getest, omdat de vervangende HTML van te voren moet worden opgegeven. Er zijn daarom een aantal server side oplossingen. Voor Ruby on Rails zijn dit onder andere seven\_minute\_abs\footnote{\url{http://github.com/paulmars/seven\_minute\_abs}} en A/Bingo\footnote{\url{http://www.bingocardcreator.com/abingo/}}
 
-    Naar aanleiding van de in Hoofdstuk \ref{researchchapter} genoemde onderzoeken hebben we een aantal A/B tests uitgevoerd, die hieronder beschreven staan:
+   Wakoopa gebruikt seven\_minute\_abs vanwege de gemakkelijke implementatie. Deze automatiseert het verdelen van de verschillende opties tussen bezoekers en houd per variatie bij hoe vaak deze aangeklikt wordt.
+
+    Naar aanleiding van de in hoofdstuk \ref{researchchapter} genoemde onderzoeken hebben we een aantal A/B tests uitgevoerd, die hieronder beschreven staan:
 
     \subsection{Plaats van de sign-up link op landing pages}
       \label{ctatest}
@@ -468,6 +470,7 @@
 
   \newpage
   \chapter{Usabilitytechnieken die de participatie op een learning network verhogen}
+    In dit onderzoek wordt gekeken naar de aanbevelingen voor learning networks die volgen uit de vorige hoofdstukken.
 
     \section{Onderzoeken}
       \subsection{\cite{Beenen2004}}
@@ -525,7 +528,12 @@
         Delen van de site die met JavaScript werken worden niet automatisch opgenomen in de statistieken van bijvoorbeeld Google Analytics. Om toch bij te houden hoe vaak deze functionliteit gebruikt wordt, is het slim om hier custom tracking aan toe te voegen.
 
       \subsubsection{Heatmaps}
-        Heatmaps zijn handig om de homepagina of de signup pagina te analyseren. Er kan uitgevonden worden of de meest belangrijke elementen wel het meest bekeken worden, en welke delen er als belangrijk en minder belangrijk worden gezien.
+        Heatmaps zijn handig om de homepagina of de signup pagina te analyseren. Er kan uitgevonden worden of de meest belangrijke elementen wel het meest bekeken worden, en welke delen er als belangrijk en minder belangrijk worden gezien. Dit soort onderzoeken zijn handig om na het invoeren van een nieuw ontwerp in te zetten.
+
+    \subsection{A/B testen}
+      Uit de in dit project uitgevoerde onderzoeken blijkt dat de uitkomst van een A/B test vaak niet is wat een ontwerper verwacht of een usability expert voorspelt. Door A/B testen direct in je learning network te implementeren kunnen aanpassingen direct getest worden.
+
+      Omdat A/B testen op conversie toegespitst is, is het een goede methode om uit te vinden welke ontwerpen voor de meeste acties, en dus participatie, zorgen.
 
   \newpage
   \chapter{Welke verbeteringen zijn er specifiek voor Wakoopa door te voeren?}
@@ -674,6 +682,8 @@
 
 
     \section{Statistieken}
+    \subsection{Bounce Rates}
+
     \subsection{Custom tracking}
     Na het toevoegen van custom tracking was er meer inzicht in welke JavaScriptfunctionaliteit het meest gebruikt werd. Voornamelijk interessant was welke grafieken het meest bekeken werden. grafieken van dagelijks gebruik zijn meer dan twee keer zo populair als de overige grafieken. Een verbetering hier zou dus zijn standaard deze grafiek te laten zien. Wat ook opvalt is dat het bekijken van redenaties achter aanbevelingen, en het verwijderen van niet geschikte aanbevelingen erg vaak gebeurd. Het verwijderen van aanbevelingen gebeurd bijna evenveel als het bekijken van redenaties achter aanbevelingen.
 
