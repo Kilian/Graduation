@@ -419,7 +419,7 @@
 
     \subsection{Het benoemen van de mate waarin een profiel is ingevuld}
       \label{profileprogress}
-      Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.  De resultaten staan in Tabel \ref{tab:profilecta}, de conclusie in hoofdstuk \ref{wak:ctahome}.
+      Wakoopa geeft gebruikers al een berichtje na het inloggen wanneer een profiel nog niet volledig is ingevuld. Uit onderzoek van \cite{Brouns2008} blijkt dat het effectiever is om hier een vervolgstap of een progressiemeter neer te zetten. In deze test bekijken we een viertal variaties: De huidige berichtgeving, een berichtgeving met welk eerstvolgende veld ze nog moeten invullen (bv. Bio), een berichtgeving met een progressiemeter, en een berichtgeving met zowel een progressiemeter als wel eerstvolgende veld ingevuld moet worden.  De resultaten staan in Tabel \ref{tab:profilecta}, de conclusie in hoofdstuk \ref{wak:Brouns2008}.
 
         \begin{table}[ht]
         \centering
@@ -446,7 +446,7 @@
     \subsection{De call-to-actions op de homepagina}
       \label{ctahomepagetest}
 
-      In bijlage \ref{analysehomeappendix} staat de uitwerking van een aantal varianten voor de call-to-action afbeeldingen op de homepagina. Origineel werden er 4 functionaliteiten van Wakoopa getoont op de homepagina, zoals te zien in figuur \ref{ctahomeimg}. Deze zijn aangepast naar drie nieuwe versies: \'e\'en die vanuit de gegevens van de survey de meest gewaardeerde opties weergeeft, een versie die dat als voordelen opschrijft, en een versie die dit op een manier weergeeft die de uniekheid van een gebruiker benadrukt. De resultaten staan in Tabel \ref{tab:ctahome}, de conclusie in hoofdstuk \ref{wak:Brouns2008}.
+      In bijlage \ref{analysehomeappendix} staat de uitwerking van een aantal varianten voor de call-to-action afbeeldingen op de homepagina. Origineel werden er 4 functionaliteiten van Wakoopa getoont op de homepagina, zoals te zien in figuur \ref{ctahomeimg}. Deze zijn aangepast naar drie nieuwe versies: \'e\'en die vanuit de gegevens van de survey de meest gewaardeerde opties weergeeft, een versie die dat als voordelen opschrijft, en een versie die dit op een manier weergeeft die de uniekheid van een gebruiker benadrukt. De resultaten staan in Tabel \ref{tab:ctahome}, de conclusie in hoofdstuk \ref{wak:ctahome}.
     \begin{figure}
       \begin{center}
         \includegraphics[width=\textwidth]{../images/newhomepage/original}
@@ -455,16 +455,15 @@
       \end{center}
     \end{figure}
 
-[TODO]
         \begin{table}[ht]
         \centering
         \rowcolors{1}{white}{lightgray}
         \begin{tabular}{r|*{3}{c}}
           \textbf{Versie}                   & Conversie  & Verbetering    & Clicks / Pageviews \\ \hline
-          Origineel                         & \%        & \emph{n.v.t.}   &  / \\
-          Andere items                      & \%        & \%              &  / \\
-          Voordelen                         & \%        & \%              &  / \\
-          Uniekheid                         & \%        & \%              &  / \\
+          Origineel                         & 5\%        & \emph{n.v.t.}  & 428 / 8001\\
+          Andere items                      & 4\%        & -20\%          & 480 / 11183\\
+          Voordelen                         & 2\%        & -60\%          & 509 / 25408\\
+          Uniekheid                         & 5\%        & 0\%            & 454 / 8659\\
         \end{tabular}
         \caption{Resultaten van de call-to-actions op de homepagina}
         \label{tab:ctahome}
@@ -680,6 +679,9 @@
         \item Het toevoegen van automatisch plaatsen van berichten op andere sociale netwerken
       \end{itemize}
 
+      \subsection{Lab tests}
+[TODO]
+
     \section{Statistieken}
     \subsection{Bounce Rates}
 
@@ -711,13 +713,19 @@
         \item het toevoegen van een progressiemeter om aan te geven in welke mate je profiel is ingevuld.
       \end{itemize}
 
-[TODO]
      \subsubsection{De call-to-actions op de homepagina}
       \label{wak:ctahome}
+      In sectie \ref{ctahomepagetest} blijkt uit de resultaten dat enkel de versie die zich op uniekheid richt even goed werkt als de originele versie, en dat de rest minder conversie heeft. Dit is opmerkelijk, omdat de onderzoeken in bijlage \ref{analysehomeappendix} aangaven dat zowel voordelen als de uniekheid benadrukken beter zouden moeten werken dan enkel de functionaliteit benoemen.
+
+      Een mogelijke reden hiervoor zou kunnen zijn dat de eerstgemaakte stap, het veranderen van de lijst van functionaliteiten, een verkeerde keuze was. Hoewel deze in de enqu\^ete naar voren kwamen als meest gewaardeerd door de gebruikers, spreekt dit wellicht niet nieuwe gebruikers aan.
+
+      Als verbetering op deze test kunnen de originele items omvormen naar items die de uniekheid benadrukken, en bekijken welk effect dit heeft.
+
+      Als uitkomst van deze A/B test zullen de originele items gebruikt worden.
 
     \paragraph{\textbf{Verbeterpunten:}}
       \begin{itemize}
-        \item
+        \item Het origineel behouden
       \end{itemize}
 
   \newpage
