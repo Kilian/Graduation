@@ -140,19 +140,15 @@
         Op Wakoopa is het focuspunt de applicaties die je gebruikt. Om vast te stellen of Wakoopa onder dezelfde categorie valt en om een overzicht te geven van de functionaliteit die Wakoopa biedt, zullen we in tabellen \ref{tab:functies} \ref{tab:acties} en \ref{tab:metaacties} \label{learningnetwork} Wakoopa vergelijken met de kenmerken die \citeauthor{Berlanga2007} hebben opgesteld.
          De drie door \citeauthor{Berlanga2007}  onderzochte learning networks (Delicious, Youtube en Flickr) bevatten niet \emph{alle} omschreven functionaliteit, maar worden hoe dan ook als \emph{learning networks} omschreven. De kolommen voor deze learning networks die hier worden weergegeven zijn overgenomen uit het paper van \citeauthor{Berlanga2007}. Wakoopa voldoet in deze tabellen niet aan alle vereisten, maar zit qua functionaliteit op vergelijkbare hoogte met Youtube en Flickr (waarbij Delicious minder functionaliteit bied). We kunnen Wakoopa dus als learning network beschouwen.
 
-
-
-
   \section*{Voorwoord}
   \addcontentsline{toc}{chapter}{Voorwoord}
     Gedurende mijn opleiding en tijdens mijn persoonlijke ontwikkeling heb ik veel aandacht besteed aan het vakgebied van usability. Ik vind het erg interessant om dit te combineren met de technische achtergrond die ik heb. Het raakvlak van iets bouwen en zorgen dat mensen het prettig vinden om te gebruiken is waar ik het liefst zit. Tijdens mijn opleiding heb ik daarom gekozen voor de minor user experience design, en heb me tijdens de minor verdiept in de combinatie van ontwerpen vanuit het perspectief van een user experience designer, en het bouwen als developer.
 
     Wakoopa is in dat opzicht voor mij het beste stagebedrijf waar ik zou willen werken, omdat ik hier de kans en de vrijheid krijg om verbeteringen direct zelfstandig te implementeren en uit te testen.
 
-    Deze afstudeeropdracht heb ik in bijna volledige openheid in Git versiebeheer op GitHub gemaakt, en daar dagelijks mijn wijzigingen opgezet. Dit zorgte ten eerste voor adequate back-ups, maar ook voor een ideaal logboek van mijn veranderingen. Ook het maken van dit document in \LaTeX was een experiment, omdat ik hier nog niet bekend mee was. Wat mij betreft is dit geslaagd. \LaTeX is relatief gemakkelijk te begrijpen voor developers en neemt ontzettend veel werk uit handen, zoals bijvoorbeeld het bijhouden van referenties (binnen een document, en naar externe bronnen), het maken van indices, typografie en documentstructuur.
+    Deze afstudeeropdracht heb ik in bijna volledige openheid in Git versiebeheer op GitHub gemaakt, en daar dagelijks mijn wijzigingen opgezet. Dit zorgte ten eerste voor adequate back-ups, maar ook voor een ideaal logboek van mijn veranderingen. Ook het maken van dit document in \LaTeX~was een experiment, omdat ik hier nog niet bekend mee was. Wat mij betreft is dit geslaagd. De taal \LaTeX~is relatief gemakkelijk te begrijpen voor developers en neemt ontzettend veel werk uit handen, zoals bijvoorbeeld het bijhouden van referenties (binnen een document, en naar externe bronnen), het maken van indices, typografie en documentstructuur.
 
     Als laatste wil ik mijn dankbaarheid uitten voor de hulp die ik heb gekregen van de labtest participanten, de gebruikers op Wakoopa, de usability experts die ik heb ge\"interviewd en mijn afstudeerbegeleiders, Robert Gaal en Sandra Hekkelman.
-
 
   \newpage
   \section*{Probleemstelling}
@@ -181,7 +177,6 @@
     \newpage
 
     Dit hoofdstuk onderzoekt wat papers en andere bronnen over usability op learning networks en online communities zeggen en hoe dit tot verhoging van de participatie zorgt. Naast deze papers worden er ook usability reviews uitgevoerd op Wakoopa onderzocht.
-
 
     \section{Externe onderzoeken}
       De volgende set van onderzoeken zijn allen van toepassing op learning networks, social networks of gerelateerde onderwerpen als formulieren.
@@ -392,7 +387,6 @@
 
     Het is belangrijk om voordat je een heatmap laat genereren, te bepalen wat de doelen op een pagina zijn, waar de bezoeker moet klikken en welke delen welke soort bezoeker moeten aanspreken. Wanneer je dit doet is het achteraf gemakkelijk om te kijken in hoeverre bezoekers de pagina gebruiken op de manier dat jij bedoelde, en of de doelen die je hebt opgestelt ook daadwerkelijk behaald worden.
 
-
     \section{A/B testing}
     \textit{A/B testing, of multivariate testing, is een methode om twee (A/B) of meerdere (multivariate) variaties op een pagina of lay-out te testen, door deze gedurende een periode willekeurig onder bezoekers te verdelen. Bezoeker \emph{A} krijgt bijvoorbeeld variatie 1 te zien, en bezoeker \emph{B} krijgt variatie 2 te zien. Vervolgens kijk je welke gebruiker sneller of vaker op de door jouw gekozen link klikt of actie uitvoerd. Wanneer je dit met een groot aantal bezoekers gedurende een langere tijd doet, kan je hier statistische analyse op uitvoeren.}
 
@@ -448,7 +442,6 @@
       \subfigure[Met suggestie en progressiemeter]{\includegraphics[width=\textwidth]{../images/abtest/both}}
       \caption{Het benoemen van de mate waarin een profiel is ingevuld}
     \end{figure}
-
 
     \subsection{De call-to-actions op de homepagina}
       \label{ctahomepagetest}
@@ -571,7 +564,6 @@
         \item Meer statistieken bieden
       \end{itemize}
 
-
     \subsection{\cite{Brouns2008}}
     \label{wak:Brouns2008}
     Wakoopa toonde enkel een melding dat een profiel nog niet compleet was, zonder vervolgstappen aan te geven. Door het implementeren van een progressiemeter zijn er 15\% meer mensen die doorklikken naar hun accountgegevens.
@@ -618,7 +610,6 @@
       \begin{itemize}
         \item Navigatiestructuur focussen op gebruikersdoelen
       \end{itemize}
-
 
     \subsubsection{Verbetering van de navigatie}
       \citeauthor{Hoekman2008} doen een voorstel tot verbetering van de navigatie. in figuur \ref{currentnav} is de huidige navigatiestructuur van Wakoopa uitgetekend, en in figuur \ref{miskeetonav} de navigatiestructuur zoals voorgesteld in  \cite{Hoekman2008}. De sitemaps zijn gemaakt met Slickmap.\footnote{\url{http://astuteo.com/slickmap/}} Belangrijk is hierbij op te merken dat de voorgestelde navigatie niet volledig is, en als uitgangspunt bedoeld is. Zo missen de tags, updates en recommendations, die in de huidige site ook nog geen correcte plek hebben. Een ander punt wat opvalt is het gebruik van `My' om persoonlijke onderdelen aan te duiden. Wakoopa gebruikt hier `Your' voor, om het verschil tussen het learning network (wij) en de gebruiker (zij) aan te geven. Er is geen eenduidig antwoord voor welke variant beter is, en verschillende social networks gebruiken verschillende aanduidingen. Myspace en Facebook gebruiken `my', Hyves zowel `mijn' als `je', en last.fm gebruikt `your'.
@@ -689,7 +680,6 @@
         \item Het toevoegen van automatisch plaatsen van berichten op andere sociale netwerken
       \end{itemize}
 
-
     \section{Statistieken}
     \subsection{Bounce Rates}
 
@@ -749,7 +739,6 @@
 
   \listoffigures
   \addcontentsline{toc}{chapter}{Lijst van figuren}
-
 
   \newpage
   \bibliography{../references/referenties}
