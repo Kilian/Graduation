@@ -791,17 +791,37 @@
 
     Op een learning network heb je ook contacten, maar de contacten die je maakt leg je omdat ze met het doel van het learning network te maken hebben, zoals het volgen van een goede fotograaf op flickr. Die volg je omdat je zijn of haar foto's graag wilt zien.
 
+    \section{Motivatie}
+      Zoals je misschien verwacht is motivatie heel belangrijk voor deelname op learning networks. Gelukkig is dit ook breed onderzocht. Uit onderzoek van \cite{Beenen2004} blijkt dat motivatie helpt, maar dat het belangrijk is om niet zomaar voordelen te noemen. Wanneer je dit doet, cre\"eer je een externe motivatie, en het gevolg daarvan is dat gebruikers het idee hebben dat iets \emph{moet} en het daardoor minder snel zullen doen.
+      
+      Beter is het opwekken van interne motivatie. Dit doe je door aan te geven op welke manier iemand zich kan onderscheiden. Op welke manier maakt jouw learning network je gebruiker speciaal? Op welke manier zijn de bijdragen van een gebruiker uniek? Als je daar de nadruk op legt, wek je interne motivatie op en zullen gebruikers.
+
+    \section{Vragen mag}
+      Het is belangrijk om continue feedback van je gebruikers te krijgen. Je kan ze hiervoor natuurlijk een email laten sturen, maar nog handiger is het gebruik van services als Get Satisfaction of UserVoice. Deze websites geven je een gebruikersforum waar je gebruikers naast vragen stellen en bugs melden, nieuwe functionaliteit kunnen opperen en kunnen stemmen welke ze het liefst geimplementeerd zien. Het zal je verbazen hoeveel goede idee\"en je eigen gebruikers hebben!
+      
+      En het kan natuurlijk ook de andere kant op: gebruik de websites om je gebruikers direct te vragen wat ze willen, bijvoorbeeld als je op het punt staat een pagina te herontwerpen of bepaalde functionaliteit toe te voegen. Wat denken je gebruikers ervan? Willen ze het, of zitten ze eigelijk op iets anders te wachten? Welke idee\"en hebben ze zelf over dat deel van jouw netwerk? Allemaal vragen die je direct beantwoord kan krijgen door het simpelweg te vragen.
+            
     \section{Meten is weten}
-      Het is een clich\'e, maar het is waar: door bij te houden wat je gebruikers doen, weet je waar de behoeftes van je gebruikers liggen. Om dat te doen heb je verschillende tools: je kan een site als getSatisfaction of Uservoice gebruiken, je kan gebruikers vragen een enqu\^ete in te vullen, je kan met een aantal mensen uit je doelgroep een
-
-    feedbackloop
-    meten is weten
-      waarde van lab tests
-      waarde van a/b tests
-
-
-      \emph{Dit artikel is geschreven naar aanleiding van mijn onderzoek naar usability op learning networks. Voor meer informatie kan je de volledige scriptie bekijken op \url{http://github.com/Kilian/Graduation}.}
-
+      Het is een clich\'e, maar het is waar: door bij te houden wat je gebruikers doen, weet je waar de behoeftes van je gebruikers liggen. Dit begint al heel simpel met het bijhouden van statistieken. Als je Google Analytics gebruikt, en veel javascript op je website hebt kan je gratis een hoop extra statistieken krijgen. Door aan je javascriptfuncties de volgende code toe te voegen, weet je precies wanneer bepaalde acties worden uitgevoerd:
+      
+    \begin{verbatim}
+    if(typeof pageTracker !== `undefined') {
+      pageTracker._trackPageview(`/event/nameofevent');
+    }
+    \end{verbatim}
+    
+    Door in Google Analytics te zoeken naar `/event' krijg je dan een overzicht van de statistieken van de javascript opties op je site.
+    
+    \section{Testen}
+      Google doet het, Facebook doet het, Firefox doet het. Ik heb het over A/B testing. A/B testing is het tegelijk testen van verschillende versies van een pagina. De versies worden willekeurig tussen bezoekers verdeeld, en er wordt gekeken welke versie meer conversie geeft. Het kan bijvoorbeeld worden ingezet om te kijken welke homepagina voor meer aanmeldingen zorgt, of welke tekst een knop moet hebben om er voor te zorgen dat zoveel mogelijk mensen er op klikken.
+      
+      Met A/B testen kan je heel simpel beginnen. Google heeft er een gratis tool voor genaamt Google Website Optimizer (\url{http://www.google.com/websiteoptimizer}). Deze tool begeleid je door het proces van het opzetten van een experiment, en kan ook goed met Google Analytics omgaan.
+      
+      A/B testen is iets wat ieder learning network zou moeten doen, omdat het direct inzicht geeft in wat voor hogere conversie zorgt. Een goede A/B test om mee te beginnen is bijvoorbeeld een test met de tekst op de `sign up' knop: bedenk een aantal variaties (zoals `sign up now', `sign up - free', `join today'), draai de test voor zolang als Google Website Optimizer zegt dat nodig is en je krijgt eigelijk voor nul extra inspanning meer aanmeldingen. Wie wilt dat nou niet?
+    
+    \paragraph{}
+    Samengevat zijn er een aantal punten die een learning network door kan voeren om deelname te verhogen. Ten eerste is het belangrijk dat, wanneer je je gebruikers wilt motiveren een bepaalde actie uit te voeren, je dit doet door aan te geven hoe die actie hen uniek maakt.
+Daarnaast is het belangrijk om continue feedback te krijgen en te vragen, om zo uit te vinden wat gebruikers willen en welke prioriteit je aan functionaliteit moet geven. Door niet enkel pagina's, maar ook javascript acties te meten, krijg je beter inzicht in hoe gebruikers je learning network gebruiken. Als laatste, door A/B testing in te zetten kan je met kleine wijzigingen de deelname dramatisch beinvloeden. Succes!
 
   \newpage
   \chapter*{Conclusie en Aanbevelingen}
